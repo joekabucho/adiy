@@ -1584,7 +1584,9 @@ img {
   background-color: #000000;
   min-height: 100vh;
   padding: 0;
+  width:80px;
 }
+
 .menu_block .logo_box {
   text-align: center;
   padding: 25px 10px;
@@ -1642,14 +1644,17 @@ img {
 .menu_nav li a:hover {
   background-color: #ffd005;
   color: #020306;
+  border-radius: 15px;
 }
-}
+
 .menu_nav li a:focus {
   background-color: #ffd005;
+  border-radius: 15px;
 }
 .menu_nav li.active a {
   background-color: #ffd005;
   color: #020306;
+  border-radius: 15px;
 }
 .menu_nav .sub-menu {
   position: absolute;
@@ -1685,15 +1690,20 @@ img {
   padding: 8px 15px 8px 50px;
   text-transform: capitalize;
   color: #ffd005;
+  border-radius: 15px;
+}
 }
 .filter_nav li a:hover {
   background-color: #ffd005;
   color: #020306;
+  border-radius: 15px;
 }
 .filter_nav li.active a {
   background-color: #ffd005;
   color: #020306;
+  border-radius: 15px;
 }
+
 
 .social_menu {
   margin-top: 100px;
