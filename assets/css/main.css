@@ -1584,7 +1584,7 @@ img {
   background-color: #000000;
   min-height: 100vh;
   padding: 0;
-  width:80px;
+  width:10px;
 }
 
 .menu_block .logo_box {
@@ -1603,7 +1603,7 @@ img {
   font-weight: 500;
 }
 .menu_block .side_menu_bottom {
-  min-height: 300px;
+  min-height: auto;
 }
 .menu_block .side_menu_bottom .side_menu_bottom_inner {
   position: absolute;
