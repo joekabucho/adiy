@@ -100,7 +100,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n<div class=\"body-container container-fluid\">\n    <a class=\"menu-btn\" href=\"javascript:void(0)\">\n        <i class=\"ion ion-grid\"></i>\n    </a>\n    <div class=\"row justify-content-center\">\n        <!--=================== side menu ====================-->\n        <div class=\"col-lg-2 col-md-3 col-12 menu_block\" style=\"position: sticky\">\n\n            <div class=\"side_menu_section\" >\n\n                <form action=\"\">\n                    <i class=\"fa fa-search\" aria-hidden=\"true\" style=\"color: #ffbf00\"></i>\n                    <input class=\"search-bar form-control\" placeholder=\"search\" style=\"color: #000000\" type=\"search\" [value]=\"search2\"\n                           ngxTypeahead\n                           [taList]=\"Files\"\n                           [taItemTpl]=\"myTemp\"\n                           (taSelected)=\"selectedTempStatic($event)\">\n                    <ng-template #myTemp let-item>\n                        <div class=\"item-name\">\n                            {{item.result.filename}}\n                        </div>\n                    </ng-template>\n                </form>\n                <hr style=\"color: white\">\n                <ul class=\"menu_nav\">\n                    <hr style=\"color: white\">\n                    <li class=\"active\">\n                        <a [routerLink]=\"['/all-templates']\" style=\" text-transform: uppercase;\">\n                            <i class=\"fa fa-picture-o\" style=\"color: #ffbf00\" aria-hidden=\"true\"></i>\n                            All templates\n                        </a>\n                    </li>\n                    <hr>\n                    <li>\n\n                            <a [routerLink]=\"['/ecommerce']\" style=\" text-transform: uppercase;\">\n                                <i class=\"ni ni-briefcase-24\" style=\"color: #ffbf00\"></i>\n                                Corporate Accounts\n                        </a>\n                    </li>\n                    <li>\n                            <a [routerLink]=\"['/checkout-page']\" style=\" text-transform: uppercase;\">\n                                <i class=\"ni ni-single-02\" style=\"color: #ffbf00\"></i>\n                            Personal  templates\n                        </a>\n                    </li>\n                    <li>\n                        <a [routerLink]=\"['/checkout-page']\" style=\" text-transform: uppercase;\">\n                            <i class=\"ni ni-cart\" style=\"color: #ffbf00\"></i>\n                            Checkout\n                        </a>\n\n                    </li>\n                    <li>\n                        <a [routerLink]=\"['/youtube']\" style=\" text-transform: uppercase;\">\n                            <i class=\"fa fa-graduation-cap\" aria-hidden=\"true\"></i>\n                            Tutorials\n                        </a>\n                    </li>\n                    <li>\n                        <a [routerLink]=\"['/chats']\" style=\" text-transform: uppercase;\">\n                            <i class=\"fa fa-comments\" aria-hidden=\"true\"></i>\n                            Chat/support\n                        </a>\n                    </li>\n                    <li>\n                        <a [routerLink]=\"['/register-page']\" style=\" text-transform: uppercase;\">\n                            <i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i>\n                            Logout\n                        </a>\n                    </li>\n                </ul>\n            </div>\n            <!--main menu end -->\n\n            <!--filter menu -->\n            <div class=\"side_menu_section\">\n                <h4 class=\"side_title\">filter by:</h4>\n                <ul  id=\"filtr-container\"  class=\"filter_nav\">\n                    <li  data-filter=\"*\" class=\"active\"><a href=\"javascript:void(0)\"   style=\" text-transform: uppercase;\">all</a></li>\n                    <li data-filter=\".facebook\"> <a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i>  facebook</a></li>\n                    <li data-filter=\".whatsapp_mobile\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-whatsapp\" aria-hidden=\"true\"></i>  whatsapp/mobile</a></li>\n                    <li data-filter=\".youtube\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-youtube\" aria-hidden=\"true\"></i> youtube</a></li>\n                    <li data-filter=\".instagram\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i>  instagram</a></li>\n                    <li data-filter=\".twitter\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-twitter\" aria-hidden=\"true\"></i>  twitter</a></li>\n                    <li data-filter=\".flier_poster\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-newspaper-o\" aria-hidden=\"true\"></i>flier/poster</a></li>\n                    <li data-filter=\".logos\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-grav\" aria-hidden=\"true\"></i> logos</a></li>\n                    <li data-filter=\".cards\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-id-card-o\" aria-hidden=\"true\"></i>cards</a></li>\n\n                </ul>\n            </div>\n            <!--filter menu end -->\n\n            <!--social and copyright -->\n            <div class=\"side_menu_bottom\">\n                <div class=\"side_menu_bottom_inner\">\n\n                    <div class=\"copy_right\">\n                    </div>\n                </div>\n            </div>\n            <!--social and copyright end -->\n\n        </div>\n        <!--=================== side menu end====================-->\n\n        <!--=================== content body ====================-->\n        <div class=\"col-lg-10 col-md-9 col-12 body_block  align-content-center\" appNoRightClick>\n            <div class=\"portfolio\">\n                <div class=\"container-fluid\">\n                    <!--=================== masaonry portfolio start====================-->\n                    <div class=\"grid img-container justify-content-center no-gutters\">\n                        <div class=\"grid-sizer \"></div>\n                        <div class=\"no-data text-center\" *ngIf=\"Allfiles.length == 0\">\n                            <p>There are no files added yet!</p>\n                        </div>\n                        <div class=\"row\">\n                        <div class=\"grid-item  col-lg-3\" *ngFor=\"let product of Allfiles\">\n                            <a href=\"https://server.adiy.site/{{product.name}}\" appNoRightClick title=\"{{product.filename}}\">\n                                <div class=\"project_box_one  {{product.tags}}\" appNoRightClick>\n                                    <img src=\"https://server.adiy.site/{{product.name}}\" alt=\"{{product.filename}}\" />\n                                    <div class=\"product_info\">\n                                        <div class=\"product_info_text\">\n                                            <div class=\"product_info_text_inner\">\n                                                <i class=\"ni ni-zoom-split-in\"></i>\n                                                <h4>{{product.filename}}</h4>\n                                                <div class=\"card-footer\">\n                                                    <div class=\"price-container\">\n                                                        <button class=\"btn-dark\"(click)=\"addToCart(product)\"> Ksh {{product.amount}} </button>\n                                                        <a href=\"http://sanna.adiy.site/{{profile}}/{{product.name}}\" target=\"_blank\"><button class=\"btn-dark\">customise</button> </a>\n\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </a>\n                        </div>\n                    </div>\n                    <!--=================== masaonry portfolio end====================-->\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\n<div class=\"body-container container-fluid\">\n    <a class=\"menu-btn\" href=\"javascript:void(0)\">\n        <i class=\"ion ion-grid\"></i>\n    </a>\n    <div class=\"row justify-content-center\">\n        <!--=================== side menu ====================-->\n        <div class=\"col-lg-2 col-md-3 col-12 menu_block\" style=\"position: sticky\">\n\n            <div class=\"side_menu_section\" style=\"position: sticky\">\n\n                <form action=\"\">\n                    <i class=\"fa fa-search\" aria-hidden=\"true\" style=\"color: #ffbf00\"></i>\n                    <input class=\"search-bar form-control\" placeholder=\"search\" style=\"color: #000000\" type=\"search\" [value]=\"search2\"\n                           ngxTypeahead\n                           [taList]=\"Files\"\n                           [taItemTpl]=\"myTemp\"\n                           (taSelected)=\"selectedTempStatic($event)\">\n                    <ng-template #myTemp let-item>\n                        <div class=\"item-name\">\n                            {{item.result.filename}}\n                        </div>\n                    </ng-template>\n                </form>\n                <hr style=\"color: white\">\n                <ul class=\"menu_nav\">\n                    <hr style=\"color: white\">\n                    <li class=\"active\">\n                        <a [routerLink]=\"['/all-templates']\" style=\" text-transform: uppercase;\">\n                            <i class=\"fa fa-picture-o\" style=\"color: #ffbf00\" aria-hidden=\"true\"></i>\n                            All templates\n                        </a>\n                    </li>\n                    <hr>\n                    <li>\n\n                            <a [routerLink]=\"['/ecommerce']\" style=\" text-transform: uppercase;\">\n                                <i class=\"ni ni-briefcase-24\" style=\"color: #ffbf00\"></i>\n                                Corporate Accounts\n                        </a>\n                    </li>\n                    <li>\n                            <a [routerLink]=\"['/checkout-page']\" style=\" text-transform: uppercase;\">\n                                <i class=\"ni ni-single-02\" style=\"color: #ffbf00\"></i>\n                            Personal  templates\n                        </a>\n                    </li>\n                    <li>\n                        <a [routerLink]=\"['/checkout-page']\" style=\" text-transform: uppercase;\">\n                            <i class=\"ni ni-cart\" style=\"color: #ffbf00\"></i>\n                            Checkout\n                        </a>\n\n                    </li>\n                    <li>\n                        <a [routerLink]=\"['/youtube']\" style=\" text-transform: uppercase;\">\n                            <i class=\"fa fa-graduation-cap\" aria-hidden=\"true\"></i>\n                            Tutorials\n                        </a>\n                    </li>\n                    <li>\n\n                        <a href=\"https://chats.adiy.site\" style=\" text-transform: uppercase;\">\n                            <i class=\"fa fa-comments\" aria-hidden=\"true\"></i>\n                            Chat/support\n                        </a>\n                    </li>\n                    <li>\n                        <a [routerLink]=\"['/register-page']\" style=\" text-transform: uppercase;\">\n                            <i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i>\n                            Logout\n                        </a>\n                    </li>\n                </ul>\n            </div>\n            <!--main menu end -->\n\n            <!--filter menu -->\n            <div class=\"side_menu_section\">\n                <h4 class=\"side_title\">filter by:</h4>\n                <ul  id=\"filtr-container\"  class=\"filter_nav\">\n                    <li  data-filter=\"*\" class=\"active\"><a href=\"javascript:void(0)\"   style=\" text-transform: uppercase;\">all</a></li>\n                    <li data-filter=\".facebook\"> <a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i>  facebook</a></li>\n                    <li data-filter=\".whatsapp_mobile\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-whatsapp\" aria-hidden=\"true\"></i>  whatsapp/mobile</a></li>\n                    <li data-filter=\".youtube\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-youtube\" aria-hidden=\"true\"></i> youtube</a></li>\n                    <li data-filter=\".instagram\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i>  instagram</a></li>\n                    <li data-filter=\".twitter\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-twitter\" aria-hidden=\"true\"></i>  twitter</a></li>\n                    <li data-filter=\".flier_poster\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-newspaper-o\" aria-hidden=\"true\"></i>flier/poster</a></li>\n                    <li data-filter=\".logos\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-grav\" aria-hidden=\"true\"></i> logos</a></li>\n                    <li data-filter=\".cards\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-id-card-o\" aria-hidden=\"true\"></i>cards</a></li>\n\n                </ul>\n            </div>\n            <!--filter menu end -->\n\n            <!--social and copyright -->\n            <div class=\"side_menu_bottom\">\n                <div class=\"side_menu_bottom_inner\">\n\n                    <div class=\"copy_right\">\n                    </div>\n                </div>\n            </div>\n            <!--social and copyright end -->\n\n        </div>\n        <!--=================== side menu end====================-->\n\n        <!--=================== content body ====================-->\n        <div class=\"col-lg-10 col-md-9 col-12 body_block  align-content-center\" appNoRightClick>\n            <div class=\"portfolio\">\n                <div class=\"container-fluid\">\n                    <!--=================== masaonry portfolio start====================-->\n                    <div class=\"grid img-container justify-content-center no-gutters\">\n                        <div class=\"grid-sizer col-sm-12 col-md-6 col-lg-3\"></div>\n                        <div class=\"col-md-12\">\n                            <div class=\"no-data text-center\" *ngIf=\"Allartworks.length == 0\">\n                                <p>There are no files added yet!</p>\n                            </div>\n                            <div class=\"row\">\n                                <div class=\"grid-item  col-lg-3\" *ngFor=\"let art of Allartworks\">\n                                    <a href=\"https://sanaa.adiy.site/media/{{art.blob_thumbnail}}\" title=\"{{art.blob_id}}\">\n                                        <div class=\"project_box_one  flier/poster facebook {{art.tags}}\">\n                                            <img src=\"https://sanaa.adiy.site/media/{{art.blob_thumbnail}}\" alt=\"{{art.blob_id}}\" />\n\n                                            <div class=\"product_info\">\n                                                <div class=\"product_info_text\">\n                                                    <div class=\"product_info_text_inner\">\n                                                        <i class=\"ni ni-zoom-split-in\"></i>\n                                                        <h4>{{art.name}}</h4>\n                                                        <div class=\"card-footer\">\n                                                            <div class=\"price-container\">\n                                                                <!--                                                                                                                    <button class=\"btn-dark\"(click)=\"addToCart(product)\"> Ksh {{product.amount}} </button>-->\n                                                                <span>\n                                                                <a href=\"https://sanaa.adiy.site/{{profile}}/{{art.id}}\" target=\"_blank\"><button class=\"btn btn-lg btn-dark \">customise</button> </a>\n                                                                </span>\n                                                            </div>\n                                                        </div>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                    </a>\n                                </div>\n                            </div>\n                        </div>\n                        <!--=================== masaonry portfolio end====================-->\n                    </div>\n                </div>\n            </div>\n            <!--=================== content body end ====================-->\n        </div>\n</div>\n</div>\n");
 
 /***/ }),
 
@@ -191,7 +191,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\r\n\r\n\r\n<div class=\"body-container container-fluid\">\r\n    <a class=\"menu-btn\" href=\"javascript:void(0)\">\r\n        <i class=\"ion ion-grid\"></i>\r\n    </a>\r\n    <div class=\"row justify-content-center\">\r\n        <!--=================== side menu ====================-->\r\n        <div class=\"col-lg-2 col-md-3 col-12 menu_block\" style=\"position: sticky\">\r\n\r\n            <!--logo -->\r\n<!--            <div class=\"logo_box\" style=\"height: 100px;width: 100px\">-->\r\n<!--                <a>-->\r\n<!--                    <img src=\"../../../assets/img/brand/logo.png\" alt=\"cocoon\">-->\r\n<!--                </a>-->\r\n<!--            </div>-->\r\n            <!--logo end-->\r\n\r\n\r\n            <div class=\"side_menu_section\">\r\n\r\n                <form action=\"\">\r\n                    <i class=\"fa fa-search\" aria-hidden=\"true\" style=\"color: #ffbf00\"></i>\r\n                    <input class=\"search-bar form-control\" placeholder=\"search\" style=\"color: #000000\" type=\"search\" [value]=\"search2\"\r\n                                   ngxTypeahead\r\n                                   [taList]=\"Files\"\r\n                                   [taItemTpl]=\"myTemp\"\r\n                                   (taSelected)=\"selectedTempStatic($event)\">\r\n                    <ng-template #myTemp let-item>\r\n                                    <div class=\"item-name\">\r\n                                        {{item.result.filename}}\r\n                                    </div>\r\n                                </ng-template>\r\n                    </form>\r\n                <hr style=\"color: white\">\r\n                <ul class=\"menu_nav\">\r\n                    <hr style=\"color: white\">\r\n                    <li >\r\n                        <a [routerLink]=\"['/all-templates']\" style=\" text-transform: uppercase;\">\r\n                            <i class=\"fa fa-picture-o\" style=\"color: #ffbf00\" aria-hidden=\"true\"></i>\r\n                            All templates\r\n                        </a>\r\n                    </li>\r\n                    <hr>\r\n                    <li class=\"active\">\r\n\r\n                        <a [routerLink]=\"['/ecommerce']\" style=\" text-transform: uppercase;\">\r\n                            <i class=\"ni ni-briefcase-24\" style=\"color: #ffbf00\"></i>\r\n                            Corporate Accounts\r\n                        </a>\r\n                    </li>\r\n                    <li>\r\n                        <a [routerLink]=\"['/checkout-page']\" style=\" text-transform: uppercase;\">\r\n                            <i class=\"ni ni-single-02\" style=\"color: #ffbf00\"></i>\r\n                            Personal  templates\r\n                        </a>\r\n                    </li>\r\n                    <li>\r\n                        <a [routerLink]=\"['/checkout-page']\" style=\" text-transform: uppercase;\">\r\n                            <i class=\"ni ni-cart\" style=\"color: #ffbf00\"></i>\r\n                            Checkout\r\n                        </a>\r\n\r\n                    </li>\r\n                    <li>\r\n                        <a [routerLink]=\"['/youtube']\" style=\" text-transform: uppercase;\">\r\n                            <i class=\"fa fa-graduation-cap\" aria-hidden=\"true\"></i>\r\n                            Tutorials\r\n                        </a>\r\n                    </li>\r\n                    <li>\r\n                        <a [routerLink]=\"['/chats']\" style=\" text-transform: uppercase;\">\r\n                            <i class=\"fa fa-comments\" aria-hidden=\"true\"></i>\r\n                            Chat/support\r\n                        </a>\r\n                    </li>\r\n                    <li>\r\n                        <a [routerLink]=\"['/register-page']\" style=\" text-transform: uppercase;\">\r\n                            <i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i>\r\n                            Logout\r\n                        </a>\r\n                    </li>\r\n                </ul>\r\n            </div>\r\n            <!--main menu end -->\r\n\r\n            <!--filter menu -->\r\n            <div class=\"side_menu_section\">\r\n                <h4 class=\"side_title\">filter by:</h4>\r\n                <ul  id=\"filtr-container\"  class=\"filter_nav\">\r\n                    <li  data-filter=\"*\" class=\"active\"><a href=\"javascript:void(0)\"  style=\" text-transform: uppercase;\" >all</a></li>\r\n                    <li data-filter=\".facebook\"> <a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i>  facebook</a></li>\r\n                    <li data-filter=\".whatsapp_mobile\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-whatsapp\" aria-hidden=\"true\"></i>  whatsapp/mobile</a></li>\r\n                    <li data-filter=\".youtube\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-youtube\" aria-hidden=\"true\"></i> youtube</a></li>\r\n                    <li data-filter=\".instagram\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i>  instagram</a></li>\r\n                    <li data-filter=\".twitter\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-twitter\" aria-hidden=\"true\"></i>  twitter</a></li>\r\n                    <li data-filter=\".flier_poster\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-newspaper-o\" aria-hidden=\"true\"></i>flier/poster</a></li>\r\n                    <li data-filter=\".logos\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-grav\" aria-hidden=\"true\"></i> logos</a></li>\r\n                    <li data-filter=\".cards\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-id-card-o\" aria-hidden=\"true\"></i>cards</a></li>\r\n\r\n                </ul>\r\n            </div>\r\n            <!--filter menu end -->\r\n\r\n            <!--social and copyright -->\r\n            <div class=\"side_menu_bottom\">\r\n                <div class=\"side_menu_bottom_inner\">\r\n\r\n                    <div class=\"copy_right\">\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <!--social and copyright end -->\r\n\r\n        </div>\r\n        <!--=================== side menu end====================-->\r\n\r\n        <!--=================== content body ====================-->\r\n        <div class=\"col-lg-10 col-md-9 col-12 body_block  align-content-center\" appNoRightClick>\r\n            <div class=\"portfolio\">\r\n                <div class=\"container-fluid\">\r\n                    <!--=================== masaonry portfolio start====================-->\r\n                    <div class=\"grid img-container justify-content-center no-gutters\">\r\n                        <div class=\"grid-sizer col-sm-12 col-md-6 col-lg-3\"></div>\r\n                        <div class=\"col-md-12\">\r\n                            <div class=\"row\">\r\n                        <div class=\"grid-item  col-lg-3\" *ngFor=\"let product of products\">\r\n                            <a href=\"https://server.adiy.site/{{product.name}}\" title=\"{{product.filename}}\">\r\n                                <div class=\"project_box_one  flier/poster facebook {{product.tags}}\">\r\n                                    <img src=\"https://server.adiy.site/{{product.name}}\" alt=\"{{product.filename}}\" />\r\n                                    <div class=\"product_info\">\r\n                                        <div class=\"product_info_text\">\r\n                                            <div class=\"product_info_text_inner\">\r\n                                                <i class=\"ni ni-zoom-split-in\"></i>\r\n                                                <h4>{{product.filename}}</h4>\r\n                                                <div class=\"card-footer\">\r\n                                                    <div class=\"price-container\">\r\n                                                        <button class=\"btn-dark\"(click)=\"addToCart(product)\"> Ksh {{product.amount}} </button>\r\n                                                        <a href=\"http://sanna.adiy.site/{{profile}}/{{product.name}}\" target=\"_blank\"><button class=\"btn-dark\">customise</button> </a>\r\n                                                    </div>\r\n                                                </div>\r\n                                            </div>\r\n                                        </div>\r\n                                    </div>\r\n                                </div>\r\n                            </a>\r\n                        </div>\r\n                    </div>\r\n                    <!--=================== masaonry portfolio end====================-->\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!--=================== content body end ====================-->\r\n    </div>\r\n</div>\r\n    </div>\r\n</div>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\r\n\r\n\r\n<div class=\"body-container container-fluid\">\r\n    <a class=\"menu-btn\" href=\"javascript:void(0)\">\r\n        <i class=\"ion ion-grid\"></i>\r\n    </a>\r\n    <div class=\"row justify-content-center\">\r\n        <!--=================== side menu ====================-->\r\n        <div class=\"col-lg-2 col-md-3 col-12 menu_block\" style=\"position: sticky\">\r\n\r\n            <!--logo -->\r\n<!--            <div class=\"logo_box\" style=\"height: 100px;width: 100px\">-->\r\n<!--                <a>-->\r\n<!--                    <img src=\"../../../assets/img/brand/logo.png\" alt=\"cocoon\">-->\r\n<!--                </a>-->\r\n<!--            </div>-->\r\n            <!--logo end-->\r\n\r\n\r\n            <div class=\"side_menu_section\">\r\n\r\n                <form action=\"\">\r\n                    <i class=\"fa fa-search\" aria-hidden=\"true\" style=\"color: #ffbf00\"></i>\r\n                    <input class=\"search-bar form-control\" placeholder=\"search\" style=\"color: #000000\" type=\"search\" [value]=\"search2\"\r\n                                   ngxTypeahead\r\n                                   [taList]=\"Files\"\r\n                                   [taItemTpl]=\"myTemp\"\r\n                                   (taSelected)=\"selectedTempStatic($event)\">\r\n                    <ng-template #myTemp let-item>\r\n                                    <div class=\"item-name\">\r\n                                        {{item.result.filename}}\r\n                                    </div>\r\n                                </ng-template>\r\n                    </form>\r\n                <hr style=\"color: white\">\r\n                <ul class=\"menu_nav\">\r\n                    <hr style=\"color: white\">\r\n                    <li >\r\n                        <a [routerLink]=\"['/all-templates']\" style=\" text-transform: uppercase;\">\r\n                            <i class=\"fa fa-picture-o\" style=\"color: #ffbf00\" aria-hidden=\"true\"></i>\r\n                            All templates\r\n                        </a>\r\n                    </li>\r\n                    <hr>\r\n                    <li class=\"active\">\r\n\r\n                        <a [routerLink]=\"['/ecommerce']\" style=\" text-transform: uppercase;\">\r\n                            <i class=\"ni ni-briefcase-24\" style=\"color: #ffbf00\"></i>\r\n                            Corporate Accounts\r\n                        </a>\r\n                    </li>\r\n                    <li>\r\n                        <a [routerLink]=\"['/checkout-page']\" style=\" text-transform: uppercase;\">\r\n                            <i class=\"ni ni-single-02\" style=\"color: #ffbf00\"></i>\r\n                            Personal  templates\r\n                        </a>\r\n                    </li>\r\n                    <li>\r\n                        <a [routerLink]=\"['/checkout-page']\" style=\" text-transform: uppercase;\">\r\n                            <i class=\"ni ni-cart\" style=\"color: #ffbf00\"></i>\r\n                            Checkout\r\n                        </a>\r\n\r\n                    </li>\r\n                    <li>\r\n                        <a [routerLink]=\"['/youtube']\" style=\" text-transform: uppercase;\">\r\n                            <i class=\"fa fa-graduation-cap\" aria-hidden=\"true\"></i>\r\n                            Tutorials\r\n                        </a>\r\n                    </li>\r\n                    <li>\r\n                        <a href=\"https://chats.adiy.site\" style=\" text-transform: uppercase;\">\r\n                            <i class=\"fa fa-comments\" aria-hidden=\"true\"></i>\r\n                            Chat/support\r\n                        </a>\r\n                    </li>\r\n                    <li>\r\n                        <a [routerLink]=\"['/register-page']\" style=\" text-transform: uppercase;\">\r\n                            <i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i>\r\n                            Logout\r\n                        </a>\r\n                    </li>\r\n                </ul>\r\n            </div>\r\n            <!--main menu end -->\r\n\r\n            <!--filter menu -->\r\n            <div class=\"side_menu_section\">\r\n                <h4 class=\"side_title\">filter by:</h4>\r\n                <ul  id=\"filtr-container\"  class=\"filter_nav\">\r\n                    <li  data-filter=\"*\" class=\"active\"><a href=\"javascript:void(0)\"  style=\" text-transform: uppercase;\" >all</a></li>\r\n                    <li data-filter=\".facebook\"> <a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i>  facebook</a></li>\r\n                    <li data-filter=\".whatsapp_mobile\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-whatsapp\" aria-hidden=\"true\"></i>  whatsapp/mobile</a></li>\r\n                    <li data-filter=\".youtube\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-youtube\" aria-hidden=\"true\"></i> youtube</a></li>\r\n                    <li data-filter=\".instagram\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i>  instagram</a></li>\r\n                    <li data-filter=\".twitter\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-twitter\" aria-hidden=\"true\"></i>  twitter</a></li>\r\n                    <li data-filter=\".flier_poster\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-newspaper-o\" aria-hidden=\"true\"></i>flier/poster</a></li>\r\n                    <li data-filter=\".logos\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-grav\" aria-hidden=\"true\"></i> logos</a></li>\r\n                    <li data-filter=\".cards\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-id-card-o\" aria-hidden=\"true\"></i>cards</a></li>\r\n\r\n                </ul>\r\n            </div>\r\n            <!--filter menu end -->\r\n\r\n            <!--social and copyright -->\r\n            <div class=\"side_menu_bottom\">\r\n                <div class=\"side_menu_bottom_inner\">\r\n\r\n                    <div class=\"copy_right\">\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <!--social and copyright end -->\r\n\r\n        </div>\r\n        <!--=================== side menu end====================-->\r\n\r\n        <!--=================== content body ====================-->\r\n        <div class=\"col-lg-10 col-md-9 col-12 body_block  align-content-center\" appNoRightClick>\r\n            <div class=\"portfolio\">\r\n                <div class=\"container-fluid\">\r\n                    <!--=================== masaonry portfolio start====================-->\r\n                    <div class=\"grid img-container justify-content-center no-gutters\">\r\n                        <div class=\"grid-sizer col-sm-12 col-md-6 col-lg-3\"></div>\r\n                        <div class=\"col-md-12\">\r\n                            <div class=\"no-data text-center\" *ngIf=\"Files.length == 0\">\r\n                                <p>There are no files added yet!</p>\r\n                            </div>\r\n                            <div class=\"row\">\r\n                                <div class=\"grid-item  col-lg-3\" *ngFor=\"let art of Files\">\r\n                                    <ng-template *ngIf=\"Files.user === profile\">\r\n                                    <a href=\"https://sanaa.adiy.site/media/{{art.filename}}\" title=\"{{art.filename}}\">\r\n                                        <div class=\"project_box_one  flier/poster facebook {{art.tags}}\">\r\n                                            <img src=\"https://sanaa.adiy.site/media/{{art.filename}}\" alt=\"{{art.filename}}\" />\r\n\r\n                                            <div class=\"product_info\">\r\n                                                <div class=\"product_info_text\">\r\n                                                    <div class=\"product_info_text_inner\">\r\n                                                        <i class=\"ni ni-zoom-split-in\"></i>\r\n                                                        <h4>{{art.name}}</h4>\r\n                                                        <div class=\"card-footer\">\r\n                                                            <div class=\"price-container\">\r\n<!--                                                                                                                    <button class=\"btn-dark\"(click)=\"addToCart(product)\"> Ksh {{product.amount}} </button>-->\r\n                                                                <span>\r\n                                                                <a href=\"https://sanaa.adiy.site/{{profile}}/{{art.id}}\" target=\"_blank\"><button class=\"btn btn-lg btn-dark \">customise</button> </a>\r\n                                                                </span>\r\n                                                            </div>\r\n                                                        </div>\r\n                                                    </div>\r\n                                                </div>\r\n                                            </div>\r\n                                        </div>\r\n                                    </a>\r\n                                    </ng-template>\r\n                                </div>\r\n                            </div>\r\n                    </div>\r\n                    <!--=================== masaonry portfolio end====================-->\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!--=================== content body end ====================-->\r\n    </div>\r\n</div>\r\n    </div>\r\n");
 
 /***/ }),
 
@@ -230,7 +230,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\r\n<div class=\"wrapper\">\r\n  <header class=\"header-4 skew-separator\">\r\n    <div class=\"header-wrapper\">\r\n       \r\n      <div class=\"page-header header-video\">\r\n        <div class=\"overlay\"></div>\r\n        <video\r\n          autoplay=\"autoplay\"\r\n          loop=\"loop\"\r\n          muted=\"muted\"\r\n          playsinline=\"playsinline\"\r\n        >\r\n          <source\r\n            src=\"https://www.youtube.com/watch?v=2Gg6Seob5Mg\"\r\n            type=\"video/mp4\"\r\n          />\r\n        </video>\r\n        <div class=\"container text-center\">\r\n          <div class=\"row\">\r\n            <div class=\"col-lg-7 mx-auto\">\r\n              <h1 class=\"video-text\">Welcome to your admin dashboard</h1>\r\n              <h1 class=\"display-3 text-white\">The time to design is right now!</h1>\r\n              <a\r\n                class=\"btn btn-warning btn-icon mt-3 mb-sm-0\"\r\n              >\r\n                <span class=\"btn-inner--icon\">\r\n                  <i class=\"ni ni-button-play\"> </i>\r\n                </span>\r\n                <span class=\"btn-inner--text\"> dashboard </span>\r\n              </a>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </header>\r\n  <div class=\"section section-cards bg-secondary\">\r\n    <div class=\"container\">\r\n      </div>\r\n      <div style=\"padding-right: 60px; padding-left: 60px;\">\r\n        <div class=\"form-group\">\r\n          <div class=\"\">\r\n            <div class=\"card card-pricing card-background\" style=\"background-image: url('./assets/img/ill/pricing_bg.svg')\" data-background=\"image\" style=\"width: 100%\" data-icon=\"big-icon\">\r\n              <div class=\"card-header bg-transparent\">\r\n                <h2 class=\"text-black\">Upload Template</h2>\r\n          </div>\r\n          <div style=\"margin-left: 20px; margin-right: 20px\">\r\n          <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n                <div class=\"input-group input-group-alternative\">\r\n                <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                      <i class=\"ni ni-circle-08\"> </i>\r\n              </span>\r\n          </div> \r\n          <input\r\n          [(ngModel)]=\"file\"\r\n          [ngModelOptions]=\"{standalone: true}\"\r\n          class=\"form-control\"\r\n          type=\"file\"\r\n          id=\"file\"\r\n          (change)=\"handleFileInput($event.target.files)\">\r\n\r\n          </div>\r\n          </div>\r\n\r\n          \r\n          <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n            <div class=\"input-group input-group-alternative\">\r\n              <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n              </div>\r\n             \r\n                <label style=\"padding-top: 10px\">Upload For: </label >\r\n                <select class=\"form-control\" id=\"category\"  [(ngModel)]=\"user\"\r\n                [ngModelOptions]=\"{standalone: true}\"\r\n                type=\"text\" (blur)=\"focus = false\"\r\n                (focus)=\"focus = true\"\r\n                >\r\n                    <option *ngFor=\"let user of users\" [value]=\"user._id\">{{user.name}}</option>\r\n                </select>\r\n            </div>\r\n          </div>\r\n\r\n            <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n              <div class=\"input-group input-group-alternative\">\r\n                <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n                </div>\r\n\r\n                <label style=\"padding-top: 10px\">Tag: </label >\r\n                <select class=\"form-control\" id=\"tags\"  [(ngModel)]=\"tags\"\r\n                        [ngModelOptions]=\"{standalone: true}\"\r\n                        type=\"text\" (blur)=\"focus = false\"\r\n                        (focus)=\"focus = true\"\r\n                        required\r\n                >\r\n                  <option  value=\"facebook\">facebook</option>\r\n                  <option  value=\"whatsapp_mobile\">whatsapp/mobile</option>\r\n                  <option  value=\"youtube\">youtube</option>\r\n                  <option  value=\"instagram\">instagram</option>\r\n                  <option  value=\"twitter\">twitter</option>\r\n                  <option  value=\"flier_poster\">flier/poster</option>\r\n                  <option  value=\"logos\">logos</option>\r\n                  <option  value=\"cards\">cards</option>\r\n                </select>\r\n              </div>\r\n            </div>\r\n            <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n              <div class=\"input-group input-group-alternative\">\r\n                <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n                </div>\r\n\r\n                <label style=\"padding-top: 10px\">type: </label >\r\n                <select class=\"form-control\" id=\"type\"  [(ngModel)]=\"type\"\r\n                        [ngModelOptions]=\"{standalone: true}\"\r\n                        type=\"text\" (blur)=\"focus = false\"\r\n                        (focus)=\"focus = true\"\r\n                        required\r\n                >\r\n                  <option  value=\"svg\">svg</option>\r\n                  <option  value=\"png\">png</option>\r\n                  <option  value=\"jpg\">jpg</option>\r\n                  <option  value=\"jpeg\">jpeg</option>\r\n                  <option  value=\"other\">other</option>\r\n                </select>\r\n              </div>\r\n            </div>\r\n\r\n          <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n            <div class=\"input-group input-group-alternative\">\r\n              <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n              </div>\r\n              <input \r\n               [(ngModel)]=\"amount\"\r\n               [ngModelOptions]=\"{standalone: true}\"\r\n               class=\"form-control\"\r\n               placeholder=\"Amount\" \r\n               type=\"text\" (blur)=\"focus = false\"\r\n               (focus)=\"focus = true\" />\r\n            </div>\r\n          </div>\r\n\r\n          <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n            <div class=\"input-group input-group-alternative\">\r\n              <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n              </div>\r\n              <input \r\n               [(ngModel)]=\"filename\"\r\n               [ngModelOptions]=\"{standalone: true}\"\r\n               class=\"form-control\"\r\n               placeholder=\"Template Name\" \r\n               type=\"text\" (blur)=\"focus = false\"\r\n               (focus)=\"focus = true\" />\r\n            </div>\r\n          </div>\r\n          </div>\r\n          <button class=\"btn btn-primary\" id=\"signup\" (click)=\"upload()\" style=\"width: 140px; margin-left: 40%; margin-bottom: 10px;\">Upload</button>\r\n     \r\n        </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n    <div class=\"table-responsive\">\r\n\r\n      <!-- Show it when there is no jobcard created -->\r\n      <div class=\"no-data text-center\" *ngIf=\"Allfiles.length == 0\">\r\n        <p>There are no files added yet!</p>\r\n      </div>\r\n\r\n      <!-- Jobcard list table, it hides when there is no employee -->\r\n      <div *ngIf=\"Allfiles.length !== 0\">\r\n        <h3 class=\"mb-3 text-center\">Files List</h3>\r\n\r\n        <div style=\"padding-left: 20px; padding-right: 20px;\">\r\n          <table class=\"table align-items-center\" >\r\n            <thead>\r\n            <tr>\r\n              <th>#</th>\r\n              <th scope=\"col\">Name</th>\r\n              <th scope=\"col\">url</th>\r\n              <th scope=\"col\">user</th>\r\n              <th scope=\"col\">uploaded by</th>\r\n                <th scope=\"col\">amount</th>\r\n              <th scope=\"col\">file name</th>\r\n            \r\n            </tr>\r\n            </thead>\r\n            <tbody>\r\n            <tr *ngFor=\"let filess of Allfiles; let i=index;\">\r\n              <td>{{i+1}}</td>\r\n              <td>{{filess.name}}</td>\r\n              <td>{{filess.url}}</td>\r\n              <td>{{filess.user}}</td>\r\n              <td>{{filess.uploadedby}}</td>\r\n              <td>{{filess.amount}}</td>\r\n              <td>{{filess.filename}}</td>\r\n\r\n              <td>\r\n\r\n\r\n               <button type=\"button\" rel=\"tooltip\" class=\"btn btn-danger btn-icon btn-sm \" data-original-title=\"\" title=\"\">\r\n                 <span class=\"delete\" (click)=\"deleteFiles(filess._id)\">Delete</span>\r\n               </button>\r\n              </td>\r\n            </tr>\r\n            </tbody>\r\n          </table>\r\n        </div>\r\n\r\n      </div>\r\n    \r\n    </div>\r\n    <div class=\"container\">\r\n\r\n      <!-- Show it when there is no jobcard created -->\r\n      <div class=\"no-data text-center\" *ngIf=\"Allusers.length == 0\">\r\n        <p>There is users added yet!</p>\r\n      </div>\r\n\r\n      <!-- Jobcard list table, it hides when there is no employee -->\r\n      <div *ngIf=\"Allusers.length !== 0\">\r\n        <h3 class=\"mb-3 text-center\">Users List</h3>\r\n\r\n        <div style=\"padding-left: 20px; padding-right: 20px;\">\r\n          <table class=\"table\" >\r\n            <thead>\r\n            <tr>\r\n              <th>#</th>\r\n              <th scope=\"col\">Name</th>\r\n              <th scope=\"col\">email</th>\r\n              <th scope=\"col\">role</th>\r\n              <th scope=\"col\">department</th>\r\n            </tr>\r\n            </thead>\r\n            <tbody>\r\n            <tr *ngFor=\"let userss of Allusers; let i=index;\">\r\n              <td>{{i+1}}</td>\r\n              <td>{{userss.name}}</td>\r\n              <td>{{userss.email}}</td>\r\n              <td>{{userss.role}}</td>\r\n              <td>{{userss.department}}</td>\r\n\r\n              <td>\r\n\r\n\r\n               <button type=\"button\" rel=\"tooltip\" class=\"btn btn-danger btn-icon btn-sm \" data-original-title=\"\" title=\"\">\r\n                 <span class=\"delete\" (click)=\"deleteUsers(userss._id)\">Delete</span>\r\n               </button>\r\n              </td>\r\n            </tr>\r\n            </tbody>\r\n          </table>\r\n        </div>\r\n        <div class=\"form-group\">\r\n          <label  class=\"form-control-label\"> Site Name</label>\r\n          <input class=\"form-control form-control-alternative\" [(ngModel)]=\"data.userId\"  type=\"text\" [ngModelOptions]=\"{standalone: true}\">\r\n        </div>\r\n        <div class=\"form-group\">\r\n          <label  class=\"form-control-label\"> Site Name</label>\r\n          <input class=\"form-control form-control-alternative\" [(ngModel)]=\"data.filesId\"  type=\"text\" [ngModelOptions]=\"{standalone: true}\">\r\n        </div>\r\n        <div class=\"form-group\">\r\n          <button class=\"btn btn-success btn-lg btn-block\" (click)=\"submitForm()\">Report Incident</button>\r\n        </div>\r\n      </div>\r\n\r\n    </div>\r\n\r\n    <div>\r\n  <!-- Heading Title -->\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\r\n<div class=\"wrapper\">\r\n  <header class=\"header-4 skew-separator\">\r\n    <div class=\"header-wrapper\">\r\n       \r\n      <div class=\"page-header header-video\">\r\n        <div class=\"overlay\"></div>\r\n        <video\r\n          autoplay=\"autoplay\"\r\n          loop=\"loop\"\r\n          muted=\"muted\"\r\n          playsinline=\"playsinline\"\r\n        >\r\n          <source\r\n            src=\"https://www.youtube.com/watch?v=2Gg6Seob5Mg\"\r\n            type=\"video/mp4\"\r\n          />\r\n        </video>\r\n        <div class=\"container text-center\">\r\n          <div class=\"row\">\r\n            <div class=\"col-lg-7 mx-auto\">\r\n              <h1 class=\"video-text\">Welcome to your admin dashboard</h1>\r\n              <h1 class=\"display-3 text-white\">The time to design is right now!</h1>\r\n              <a\r\n                class=\"btn btn-warning btn-icon mt-3 mb-sm-0\"\r\n              >\r\n                <span class=\"btn-inner--icon\">\r\n                  <i class=\"ni ni-button-play\"> </i>\r\n                </span>\r\n                <span class=\"btn-inner--text\"> dashboard </span>\r\n              </a>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </header>\r\n  <div class=\"section section-cards bg-secondary\">\r\n    <div class=\"container\">\r\n      </div>\r\n      <div style=\"padding-right: 60px; padding-left: 60px;\">\r\n        <div class=\"form-group\">\r\n          <div class=\"\">\r\n            <div class=\"card card-pricing card-background\" style=\"background-image: url('./assets/img/ill/pricing_bg.svg')\" data-background=\"image\" style=\"width: 100%\" data-icon=\"big-icon\">\r\n              <div class=\"card-header bg-transparent\">\r\n                <h2 class=\"text-black\">Upload Template</h2>\r\n          </div>\r\n          <div style=\"margin-left: 20px; margin-right: 20px\">\r\n            <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n              <div class=\"input-group input-group-alternative\">\r\n                <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n                </div>\r\n\r\n                <label style=\"padding-top: 10px\">Artwork: </label >\r\n                <select class=\"form-control\" id=\"category\"  [(ngModel)]=\"filename\"\r\n                        [ngModelOptions]=\"{standalone: true}\"\r\n                        type=\"text\" (blur)=\"focus = false\"\r\n                        (focus)=\"focus = true\"\r\n                >\r\n                  <option *ngFor=\"let art of Allartworks\" [value]=\"art.blob_thumbnail\">{{art.data.name}}</option>\r\n                </select>\r\n              </div>\r\n            </div>\r\n          \r\n          <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n            <div class=\"input-group input-group-alternative\">\r\n              <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n              </div>\r\n             \r\n                <label style=\"padding-top: 10px\">Upload For: </label >\r\n                <select class=\"form-control\" id=\"category\"  [(ngModel)]=\"user\"\r\n                [ngModelOptions]=\"{standalone: true}\"\r\n                type=\"text\" (blur)=\"focus = false\"\r\n                (focus)=\"focus = true\"\r\n                >\r\n                    <option *ngFor=\"let user of users\" [value]=\"user._id\">{{user.name}}</option>\r\n                </select>\r\n            </div>\r\n          </div>\r\n\r\n            <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n              <div class=\"input-group input-group-alternative\">\r\n                <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n                </div>\r\n\r\n                <label style=\"padding-top: 10px\">Tag: </label >\r\n                <select class=\"form-control\" id=\"tags\"  [(ngModel)]=\"tags\"\r\n                        [ngModelOptions]=\"{standalone: true}\"\r\n                        type=\"text\" (blur)=\"focus = false\"\r\n                        (focus)=\"focus = true\"\r\n                        required\r\n                >\r\n                  <option  value=\"facebook\">facebook</option>\r\n                  <option  value=\"whatsapp_mobile\">whatsapp/mobile</option>\r\n                  <option  value=\"youtube\">youtube</option>\r\n                  <option  value=\"instagram\">instagram</option>\r\n                  <option  value=\"twitter\">twitter</option>\r\n                  <option  value=\"flier_poster\">flier/poster</option>\r\n                  <option  value=\"logos\">logos</option>\r\n                  <option  value=\"cards\">cards</option>\r\n                </select>\r\n              </div>\r\n            </div>\r\n            <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n              <div class=\"input-group input-group-alternative\">\r\n                <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n                </div>\r\n\r\n                <label style=\"padding-top: 10px\">type: </label >\r\n                <select class=\"form-control\" id=\"type\"  [(ngModel)]=\"type\"\r\n                        [ngModelOptions]=\"{standalone: true}\"\r\n                        type=\"text\" (blur)=\"focus = false\"\r\n                        (focus)=\"focus = true\"\r\n                        required\r\n                >\r\n                  <option  value=\"svg\">svg</option>\r\n                  <option  value=\"png\">png</option>\r\n                  <option  value=\"jpg\">jpg</option>\r\n                  <option  value=\"jpeg\">jpeg</option>\r\n                  <option  value=\"other\">other</option>\r\n                </select>\r\n              </div>\r\n            </div>\r\n\r\n          <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n            <div class=\"input-group input-group-alternative\">\r\n              <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n              </div>\r\n              <input \r\n               [(ngModel)]=\"amount\"\r\n               [ngModelOptions]=\"{standalone: true}\"\r\n               class=\"form-control\"\r\n               placeholder=\"Amount\" \r\n               type=\"text\" (blur)=\"focus = false\"\r\n               (focus)=\"focus = true\" />\r\n            </div>\r\n          </div>\r\n          </div>\r\n          <button class=\"btn btn-primary\" id=\"signup\" (click)=\"upload()\" style=\"width: 140px; margin-left: 40%; margin-bottom: 10px;\">Upload</button>\r\n     \r\n        </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n    <div class=\"table-responsive\">\r\n\r\n      <!-- Show it when there is no jobcard created -->\r\n      <div class=\"no-data text-center\" *ngIf=\"Allfiles.length == 0\">\r\n        <p>There are no files added yet!</p>\r\n      </div>\r\n\r\n      <!-- Jobcard list table, it hides when there is no employee -->\r\n      <div *ngIf=\"Allfiles.length !== 0\">\r\n        <h3 class=\"mb-3 text-center\">Files List</h3>\r\n\r\n        <div style=\"padding-left: 20px; padding-right: 20px;\">\r\n          <table class=\"table align-items-center\" >\r\n            <thead>\r\n            <tr>\r\n              <th>#</th>\r\n              <th scope=\"col\">Name</th>\r\n              <th scope=\"col\">url</th>\r\n              <th scope=\"col\">user</th>\r\n              <th scope=\"col\">uploaded by</th>\r\n                <th scope=\"col\">amount</th>\r\n              <th scope=\"col\">file name</th>\r\n            \r\n            </tr>\r\n            </thead>\r\n            <tbody>\r\n            <tr *ngFor=\"let filess of Allfiles; let i=index;\">\r\n              <td>{{i+1}}</td>\r\n              <td>{{filess.name}}</td>\r\n              <td>{{filess.url}}</td>\r\n              <td>{{filess.user}}</td>\r\n              <td>{{filess.uploadedby}}</td>\r\n              <td>{{filess.amount}}</td>\r\n              <td>{{filess.filename}}</td>\r\n\r\n              <td>\r\n\r\n\r\n               <button type=\"button\" rel=\"tooltip\" class=\"btn btn-danger btn-icon btn-sm \" data-original-title=\"\" title=\"\">\r\n                 <span class=\"delete\" (click)=\"deleteFiles(filess._id)\">Delete</span>\r\n               </button>\r\n              </td>\r\n            </tr>\r\n            </tbody>\r\n          </table>\r\n        </div>\r\n\r\n      </div>\r\n    \r\n    </div>\r\n    <div class=\"container\">\r\n\r\n      <!-- Show it when there is no jobcard created -->\r\n      <div class=\"no-data text-center\" *ngIf=\"Allusers.length == 0\">\r\n        <p>There is users added yet!</p>\r\n      </div>\r\n\r\n      <!-- Jobcard list table, it hides when there is no employee -->\r\n      <div *ngIf=\"Allusers.length !== 0\">\r\n        <h3 class=\"mb-3 text-center\">Users List</h3>\r\n\r\n        <div style=\"padding-left: 20px; padding-right: 20px;\">\r\n          <table class=\"table\" >\r\n            <thead>\r\n            <tr>\r\n              <th>#</th>\r\n              <th scope=\"col\">Name</th>\r\n              <th scope=\"col\">email</th>\r\n              <th scope=\"col\">role</th>\r\n              <th scope=\"col\">department</th>\r\n            </tr>\r\n            </thead>\r\n            <tbody>\r\n            <tr *ngFor=\"let userss of Allusers; let i=index;\">\r\n              <td>{{i+1}}</td>\r\n              <td>{{userss.name}}</td>\r\n              <td>{{userss.email}}</td>\r\n              <td>{{userss.role}}</td>\r\n              <td>{{userss.department}}</td>\r\n\r\n              <td>\r\n\r\n\r\n               <button type=\"button\" rel=\"tooltip\" class=\"btn btn-danger btn-icon btn-sm \" data-original-title=\"\" title=\"\">\r\n                 <span class=\"delete\" (click)=\"deleteUsers(userss._id)\">Delete</span>\r\n               </button>\r\n              </td>\r\n            </tr>\r\n            </tbody>\r\n          </table>\r\n        </div>\r\n      </div>\r\n\r\n    </div>\r\n\r\n    <div>\r\n  <!-- Heading Title -->\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n");
 
 /***/ }),
 
@@ -321,7 +321,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\r\n\r\n<body>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<h1 class=\"font-weight-light text-white text-center\">\r\n  <i class=\"fab fa-youtube\"></i> <a class=\"text-white\" style=\"text-align:center\"  href=\"https://www.youtube.com/channel/UCN0YbL-181uwiTewjS6YxSQ?view_as=subscriber\">ADIY YOUTUBE CHANEL</a></h1>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n\r\n\r\n<ngx-spinner bdColor=\"rgba(51,51,51,0.8)\" size=\"medium\" color=\"#ffffff\" type=\"ball-scale-multiple\">\r\n  <p style=\"font-size: 20px; color: white\">Loading...</p>\r\n</ngx-spinner>\r\n\r\n<div class=\"row\">\r\n  <div *ngFor=\"let video of videos\" class=\"col-xl-3 col-md-6 mb-4\">\r\n<div class=\"card\">\r\n  <div class=\"image\">\r\n    <img  style=\"height: 500px\" [src]=\"video.snippet.thumbnails.high.url\"/>\r\n  </div>\r\n  <div class=\"details\">\r\n    <div class=\"center\">\r\n      <h1>{{video.snippet.title}}</h1>\r\n      <p>{{video.snippet.description.slice(0, 100)}}.</p>\r\n      <ul>\r\n        <button style=\"margin: 20px;\" class=\"btn btn-dark\" (click)=\"lgModal.show();encode(video.id.videoId)\">View</button>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n</div>\r\n</div>\r\n</div>\r\n<div bsModal #lgModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\"\r\n     role=\"dialog\" aria-labelledby=\"dialog-sizes-name1\" height=\"100%\" width=\"100%\">\r\n  <div class=\"modal-dialog modal-xl\">dsf\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <h4 id=\"dialog-sizes-name1\" class=\"modal-title pull-left\">Adiy tutorial</h4>\r\n        <button type=\"button\" class=\"close pull-right\" (click)=\"lgModal.hide()\" aria-label=\"Close\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n\r\n\r\n        <iframe width=\"1100px\" height=\"800px\"\r\n                [src]=\"urlSafe\">\r\n        </iframe>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n</body>\r\n\r\n\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\r\n\r\n<body>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<h1 class=\"font-weight-light text-white text-center\">\r\n  <i class=\"fab fa-youtube\"></i><br> <a class=\"text-white\" style=\"text-align:center\"  href=\"https://www.youtube.com/channel/UCN0YbL-181uwiTewjS6YxSQ?view_as=subscriber\">ADIY YOUTUBE CHANEL</a></h1>\r\n\r\n<br>\r\n<br>\r\n\r\n\r\n<ngx-spinner bdColor=\"rgba(51,51,51,0.8)\" size=\"medium\" color=\"#ffffff\" type=\"ball-scale-multiple\">\r\n  <p style=\"font-size: 20px; color: white\">Loading...</p>\r\n</ngx-spinner>\r\n<div class=\"col-md-12\">\r\n<div class=\"row\" >\r\n  <div *ngFor=\"let video of videos\" class=\"grid-item col-xl-3 \">\r\n<div class=\"card\">\r\n  <div class=\"image\">\r\n    <img  style=\"height: 500px\" [src]=\"video.snippet.thumbnails.high.url\"/>\r\n  </div>\r\n  <div class=\"details\">\r\n    <div class=\"center\">\r\n      <h1>{{video.snippet.title}}</h1>\r\n      <p>{{video.snippet.description.slice(0, 100)}}.</p>\r\n      <ul>\r\n        <button style=\"margin: 20px;\" class=\"btn btn-dark\" (click)=\"lgModal.show();encode(video.id.videoId)\">View</button>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n<div bsModal #lgModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\"\r\n     role=\"dialog\" aria-labelledby=\"dialog-sizes-name1\" height=\"100%\" width=\"100%\">\r\n  <div class=\"modal-dialog modal-xl\">dsf\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <h4 id=\"dialog-sizes-name1\" class=\"modal-title pull-left\">Adiy tutorial</h4>\r\n        <button type=\"button\" class=\"close pull-right\" (click)=\"lgModal.hide()\" aria-label=\"Close\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n\r\n\r\n        <iframe width=\"1100px\" height=\"800px\"\r\n                [src]=\"urlSafe\">\r\n        </iframe>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n</body>\r\n\r\n\r\n");
 
 /***/ }),
 
@@ -1964,13 +1964,13 @@ var PictureUploadComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dev", function() { return dev; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+// export const dev = {
+//     connect: 'https://server.adiy.site'
+// };
 
 var dev = {
-    connect: 'https://server.adiy.site'
+    connect: 'http://localhost:8000'
 };
-// export const dev = {
-//     connect: 'http://localhost:8000'
-// }
 
 
 /***/ }),
@@ -2251,6 +2251,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shared_files_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../shared/files.service */ "./src/app/shared/files.service.ts");
 /* harmony import */ var _config_dev__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../config/dev */ "./src/app/config/dev.ts");
 /* harmony import */ var _shared_users_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../shared/users.service */ "./src/app/shared/users.service.ts");
+/* harmony import */ var _shared_allartworks_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../shared/allartworks.service */ "./src/app/shared/allartworks.service.ts");
+/* harmony import */ var _shared_blob_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../shared/blob.service */ "./src/app/shared/blob.service.ts");
+
+
 
 
 
@@ -2258,15 +2262,24 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var AllTemplatesComponent = /** @class */ (function () {
-    function AllTemplatesComponent(UsersRestApi, http, FilesRestApi) {
+    function AllTemplatesComponent(UsersRestApi, http, ArtWorksService, blopService, FilesRestApi) {
         this.UsersRestApi = UsersRestApi;
         this.http = http;
+        this.ArtWorksService = ArtWorksService;
+        this.blopService = blopService;
         this.FilesRestApi = FilesRestApi;
         this.isCollapsed = true;
         this.fileToUpload = null;
         this.url = _config_dev__WEBPACK_IMPORTED_MODULE_4__["dev"].connect;
         this.Allusers = [];
         this.Allfiles = [];
+        this.Allartworks = [];
+        this.AllBlobs = [];
+        this.Blob = [];
+        this.All = [];
+        this.ArtworksThumbnail = [];
+        this.BlobThumbnail = [];
+        this.ArtWorkUrl = 'https://sanaa.adiy.site/api/artwork';
         this.searchTexts = '';
         this.search2 = '';
         this.Files = [];
@@ -2277,6 +2290,7 @@ var AllTemplatesComponent = /** @class */ (function () {
         this.loadUsers();
         var body = document.getElementsByTagName('body')[0];
         body.classList.add('landing-page');
+        this.loadAllArtWorks();
     };
     AllTemplatesComponent.prototype.selectedTempStatic = function (item) {
         this.search2 = item.filename;
@@ -2317,6 +2331,14 @@ var AllTemplatesComponent = /** @class */ (function () {
         // console.log(item);
         this.getUserDetails(item);
     };
+    AllTemplatesComponent.prototype.loadAllArtWorks = function () {
+        var _this = this;
+        var art = [];
+        return this.ArtWorksService.GetFiles().subscribe(function (data) {
+            art = data;
+            _this.Allartworks = art.filter(function (data) { return data.user_id == 'public'; });
+        });
+    };
     AllTemplatesComponent.prototype.getUserDetails = function (item) {
         var amount = parseFloat(item.amount);
         var userID = localStorage.getItem('profile');
@@ -2329,6 +2351,8 @@ var AllTemplatesComponent = /** @class */ (function () {
     AllTemplatesComponent.ctorParameters = function () { return [
         { type: _shared_users_service__WEBPACK_IMPORTED_MODULE_5__["UsersService"] },
         { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] },
+        { type: _shared_allartworks_service__WEBPACK_IMPORTED_MODULE_6__["AllartworksService"] },
+        { type: _shared_blob_service__WEBPACK_IMPORTED_MODULE_7__["BlobService"] },
         { type: _shared_files_service__WEBPACK_IMPORTED_MODULE_3__["FilesService"] }
     ]; };
     AllTemplatesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -2337,7 +2361,7 @@ var AllTemplatesComponent = /** @class */ (function () {
             template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./all-templates.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/examples/all-templates/all-templates.component.html")).default,
             styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./all-templates.component.scss */ "./src/app/examples/all-templates/all-templates.component.scss")).default, tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./bootstrap.min.css */ "./src/app/examples/all-templates/bootstrap.min.css")).default]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_shared_users_service__WEBPACK_IMPORTED_MODULE_5__["UsersService"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"], _shared_files_service__WEBPACK_IMPORTED_MODULE_3__["FilesService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_shared_users_service__WEBPACK_IMPORTED_MODULE_5__["UsersService"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"], _shared_allartworks_service__WEBPACK_IMPORTED_MODULE_6__["AllartworksService"], _shared_blob_service__WEBPACK_IMPORTED_MODULE_7__["BlobService"], _shared_files_service__WEBPACK_IMPORTED_MODULE_3__["FilesService"]])
     ], AllTemplatesComponent);
     return AllTemplatesComponent;
 }());
@@ -2993,6 +3017,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _config_dev__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../config/dev */ "./src/app/config/dev.ts");
 /* harmony import */ var _shared_files_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../shared/files.service */ "./src/app/shared/files.service.ts");
 /* harmony import */ var _shared_users_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../shared/users.service */ "./src/app/shared/users.service.ts");
+/* harmony import */ var _shared_allartworks_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../shared/allartworks.service */ "./src/app/shared/allartworks.service.ts");
+/* harmony import */ var _shared_blob_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../shared/blob.service */ "./src/app/shared/blob.service.ts");
+
+
 
 
 
@@ -3000,12 +3028,22 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var EcommerceComponent = /** @class */ (function () {
-    function EcommerceComponent(UsersRestApi, http, FilesRestApi) {
+    function EcommerceComponent(UsersRestApi, http, ArtWorksService, FilesRestApi, blopService) {
         this.UsersRestApi = UsersRestApi;
         this.http = http;
+        this.ArtWorksService = ArtWorksService;
         this.FilesRestApi = FilesRestApi;
+        this.blopService = blopService;
         this.searchText = '';
         this.selected_count = 0;
+        this.Allartworks = [];
+        this.AllBlobs = [];
+        this.Blob = [];
+        this.All = [];
+        this.ArtworksThumbnail = [];
+        this.BlobThumbnail = [];
+        this.BlobUrl = 'https://sanaa.adiy.site/api/blob';
+        this.ArtWorkUrl = 'https://sanaa.adiy.site/api/artwork';
         this.filters = [
             {
                 names: 'facebook',
@@ -3088,9 +3126,23 @@ var EcommerceComponent = /** @class */ (function () {
         this.searchText = '';
     };
     EcommerceComponent.prototype.ngOnInit = function () {
+        var _this = this;
         this.getUsersDesigns();
         this.loadFiles();
         this.getUser();
+        this.loadAllArtWorks();
+        this.loadBlobs();
+        this.http.get(this.BlobUrl).subscribe(function (result) {
+            result.forEach(function (x) {
+                _this.BlobThumbnail.push(x.id);
+            });
+        });
+        this.http.get(this.ArtWorkUrl).subscribe(function (result) {
+            result.forEach(function (x) {
+                _this.ArtworksThumbnail.push(x.id);
+                console.log(_this.ArtworksThumbnail);
+            });
+        });
     };
     EcommerceComponent.prototype.getAllUsers = function () {
         var _this = this;
@@ -3125,6 +3177,12 @@ var EcommerceComponent = /** @class */ (function () {
     };
     EcommerceComponent.prototype.getUser = function () {
         this.profile = localStorage.getItem('profile');
+    };
+    EcommerceComponent.prototype.loadBlobs = function () {
+        var _this = this;
+        return this.blopService.GetBlobFiles().subscribe(function (data) {
+            _this.AllBlobs = data;
+        });
     };
     EcommerceComponent.prototype.addToCart = function (item) {
         // console.log(item);
@@ -3193,6 +3251,12 @@ var EcommerceComponent = /** @class */ (function () {
     };
     EcommerceComponent.prototype.download = function () {
     };
+    EcommerceComponent.prototype.loadAllArtWorks = function () {
+        var _this = this;
+        return this.ArtWorksService.GetFiles().subscribe(function (data) {
+            _this.Allartworks = data;
+        });
+    };
     EcommerceComponent.prototype.loadFiles = function () {
         var _this = this;
         return this.FilesRestApi.GetFiles().subscribe(function (data) {
@@ -3212,7 +3276,9 @@ var EcommerceComponent = /** @class */ (function () {
     EcommerceComponent.ctorParameters = function () { return [
         { type: _shared_users_service__WEBPACK_IMPORTED_MODULE_5__["UsersService"] },
         { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] },
-        { type: _shared_files_service__WEBPACK_IMPORTED_MODULE_4__["FilesService"] }
+        { type: _shared_allartworks_service__WEBPACK_IMPORTED_MODULE_6__["AllartworksService"] },
+        { type: _shared_files_service__WEBPACK_IMPORTED_MODULE_4__["FilesService"] },
+        { type: _shared_blob_service__WEBPACK_IMPORTED_MODULE_7__["BlobService"] }
     ]; };
     EcommerceComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -3220,7 +3286,7 @@ var EcommerceComponent = /** @class */ (function () {
             template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./ecommerce.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/examples/ecommerce/ecommerce.component.html")).default,
             styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./bootstrap.min.css */ "./src/app/examples/ecommerce/bootstrap.min.css")).default]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_shared_users_service__WEBPACK_IMPORTED_MODULE_5__["UsersService"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"], _shared_files_service__WEBPACK_IMPORTED_MODULE_4__["FilesService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_shared_users_service__WEBPACK_IMPORTED_MODULE_5__["UsersService"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"], _shared_allartworks_service__WEBPACK_IMPORTED_MODULE_6__["AllartworksService"], _shared_files_service__WEBPACK_IMPORTED_MODULE_4__["FilesService"], _shared_blob_service__WEBPACK_IMPORTED_MODULE_7__["BlobService"]])
     ], EcommerceComponent);
     return EcommerceComponent;
 }());
@@ -3332,6 +3398,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shared_files_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../shared/files.service */ "./src/app/shared/files.service.ts");
 /* harmony import */ var _shared_artworks_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../shared/artworks.service */ "./src/app/shared/artworks.service.ts");
 /* harmony import */ var _shared_artworks__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../shared/artworks */ "./src/app/shared/artworks.ts");
+/* harmony import */ var _shared_allartworks_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../shared/allartworks.service */ "./src/app/shared/allartworks.service.ts");
+
 
 
 
@@ -3341,16 +3409,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var LandingpageComponent = /** @class */ (function () {
-    function LandingpageComponent(restApi, UsersRestApi, FilesRestApi, http) {
+    function LandingpageComponent(restApi, UsersRestApi, FilesRestApi, ArtWorksService, http) {
         this.restApi = restApi;
         this.UsersRestApi = UsersRestApi;
         this.FilesRestApi = FilesRestApi;
+        this.ArtWorksService = ArtWorksService;
         this.http = http;
         this.isCollapsed = true;
         this.fileToUpload = null;
         this.url = _config_dev__WEBPACK_IMPORTED_MODULE_3__["dev"].connect;
         this.Allusers = [];
         this.Allfiles = [];
+        this.Allartworks = [];
         this.getAllUsers();
         this.getUser();
         this.loadFiles();
@@ -3358,6 +3428,7 @@ var LandingpageComponent = /** @class */ (function () {
     }
     LandingpageComponent.prototype.ngOnInit = function () {
         this.loadUsers();
+        this.loadAllArtWorks();
         var body = document.getElementsByTagName('body')[0];
         body.classList.add('landing-page');
     };
@@ -3370,7 +3441,7 @@ var LandingpageComponent = /** @class */ (function () {
     };
     LandingpageComponent.prototype.upload = function () {
         var _this = this;
-        this.postFile(this.fileToUpload, ('/' + this.fileToUpload.name)).subscribe(function (data) {
+        this.postFile(this.fileToUpload, ('/')).subscribe(function (data) {
             console.log(data);
             alert('Template was uploaded successfully');
             _this.user = '';
@@ -3384,7 +3455,6 @@ var LandingpageComponent = /** @class */ (function () {
     };
     LandingpageComponent.prototype.postFile = function (fileToUpload, filename) {
         var formData = new FormData();
-        formData.append('sampleFile', fileToUpload, filename);
         formData.append('user', this.user.toString());
         formData.append('uploadedby', this.profile);
         formData.append('amount', this.amount.toString());
@@ -3407,6 +3477,12 @@ var LandingpageComponent = /** @class */ (function () {
         var _this = this;
         return this.UsersRestApi.getUsers().subscribe(function (data) {
             _this.Allusers = data;
+        });
+    };
+    LandingpageComponent.prototype.loadAllArtWorks = function () {
+        var _this = this;
+        return this.ArtWorksService.GetFiles().subscribe(function (data) {
+            _this.Allartworks = data;
         });
     };
     // Delete employee
@@ -3444,6 +3520,7 @@ var LandingpageComponent = /** @class */ (function () {
         { type: _shared_artworks_service__WEBPACK_IMPORTED_MODULE_6__["ArtWorksService"] },
         { type: _shared_users_service__WEBPACK_IMPORTED_MODULE_4__["UsersService"] },
         { type: _shared_files_service__WEBPACK_IMPORTED_MODULE_5__["FilesService"] },
+        { type: _shared_allartworks_service__WEBPACK_IMPORTED_MODULE_8__["AllartworksService"] },
         { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
     ]; };
     LandingpageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -3452,7 +3529,7 @@ var LandingpageComponent = /** @class */ (function () {
             template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./landingpage.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/examples/landingpage/landingpage.component.html")).default
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_shared_artworks_service__WEBPACK_IMPORTED_MODULE_6__["ArtWorksService"],
-            _shared_users_service__WEBPACK_IMPORTED_MODULE_4__["UsersService"], _shared_files_service__WEBPACK_IMPORTED_MODULE_5__["FilesService"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+            _shared_users_service__WEBPACK_IMPORTED_MODULE_4__["UsersService"], _shared_files_service__WEBPACK_IMPORTED_MODULE_5__["FilesService"], _shared_allartworks_service__WEBPACK_IMPORTED_MODULE_8__["AllartworksService"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
     ], LandingpageComponent);
     return LandingpageComponent;
 }());
@@ -3839,7 +3916,7 @@ var RegisterpageComponent = /** @class */ (function () {
         configurable: true
     });
     RegisterpageComponent.prototype.checkStorage = function () {
-        var checkStorage = localStorage.getItem('loggedIn');
+        var checkStorage = localStorage.getItem('profile');
         if (checkStorage) {
             this.router.navigateByUrl('ecommerce');
         }
@@ -4083,7 +4160,7 @@ var ResetpageComponent = /** @class */ (function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("body {\r\n    margin: 0;\r\n    padding: 0;\r\n    background: #020306;\r\n    font-family: sans-serif;\r\n}\r\n\r\n.card {\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 50%;\r\n    transform: translate(-50%,-50%);\r\n    width: 360px;\r\n    height: 400px;\r\n    background: #000;\r\n}\r\n\r\n.card .image {\r\n    width: 360px;\r\n    height: 400px;\r\n    overflow: hidden;\r\n}\r\n\r\n.card .image img {\r\n    width: 100%;\r\n    transition: .5s;\r\n}\r\n\r\n.card:hover .image img {\r\n    opacity: .5;\r\n    transform: translateX(30%);/*100%*/\r\n}\r\n\r\n.card .details {\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    width: 70%;/*100%*/\r\n    height: 100%;\r\n    background: #ffc107;\r\n    transition: .5s;\r\n    transform-origin: left;\r\n    transform: perspective(2000px) rotateY(-90deg);\r\n}\r\n\r\n.card:hover .details {\r\n    transform: perspective(2000px) rotateY(0deg);\r\n}\r\n\r\n.card .details .center {\r\n    padding: 20px;\r\n    text-align: center;\r\n    background: #020306;\r\n    position: absolute;\r\n    top: 50%;\r\n    transform: translateY(-50%);\r\n}\r\n\r\n.card .details .center h1 {\r\n    margin: 0;\r\n    padding: 0;\r\n    color: #ffd005;\r\n    line-height: 20px;\r\n    font-size: 20px;\r\n    text-transform: uppercase;\r\n}\r\n\r\n.card .details .center h1 span {\r\n    font-size: 14px;\r\n    color: rgba(244, 245, 255, 0.65);\r\n}\r\n\r\n.card .details .center p {\r\n    margin: 10px 0;\r\n    padding: 0;\r\n    color: rgba(255, 255, 255, 0.96);\r\n}\r\n\r\n.card .details .center ul {\r\n    margin: 10px auto 0;\r\n    padding: 0;\r\n    display: table;\r\n}\r\n\r\n.card .details .center ul li {\r\n    list-style: none;\r\n    margin: 0 5px;\r\n    float: left;\r\n}\r\n\r\n.card .details .center ul li a {\r\n    display: block;\r\n    background: #262626;\r\n    color: #fff;\r\n    width: 30px;\r\n    height: 30px;\r\n    line-height: 30px;\r\n    text-align: center;\r\n}\r\n\r\n.card .details .center ul li a:hover {\r\n    background: #ff3636;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZXhhbXBsZXMveW91dHViZS9zdHlsZS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxTQUFTO0lBQ1QsVUFBVTtJQUNWLG1CQUFtQjtJQUNuQix1QkFBdUI7QUFDM0I7O0FBRUE7SUFDSSxrQkFBa0I7SUFDbEIsUUFBUTtJQUNSLFNBQVM7SUFDVCwrQkFBK0I7SUFDL0IsWUFBWTtJQUNaLGFBQWE7SUFDYixnQkFBZ0I7QUFDcEI7O0FBQ0E7SUFDSSxZQUFZO0lBQ1osYUFBYTtJQUNiLGdCQUFnQjtBQUNwQjs7QUFDQTtJQUNJLFdBQVc7SUFDWCxlQUFlO0FBQ25COztBQUNBO0lBQ0ksV0FBVztJQUNYLDBCQUEwQixDQUFDLE9BQU87QUFDdEM7O0FBQ0E7SUFDSSxrQkFBa0I7SUFDbEIsTUFBTTtJQUNOLE9BQU87SUFDUCxVQUFVLENBQUMsT0FBTztJQUNsQixZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLGVBQWU7SUFDZixzQkFBc0I7SUFDdEIsOENBQThDO0FBQ2xEOztBQUNBO0lBQ0ksNENBQTRDO0FBQ2hEOztBQUNBO0lBQ0ksYUFBYTtJQUNiLGtCQUFrQjtJQUNsQixtQkFBbUI7SUFDbkIsa0JBQWtCO0lBQ2xCLFFBQVE7SUFDUiwyQkFBMkI7QUFDL0I7O0FBQ0E7SUFDSSxTQUFTO0lBQ1QsVUFBVTtJQUNWLGNBQWM7SUFDZCxpQkFBaUI7SUFDakIsZUFBZTtJQUNmLHlCQUF5QjtBQUM3Qjs7QUFDQTtJQUNJLGVBQWU7SUFDZixnQ0FBZ0M7QUFDcEM7O0FBQ0E7SUFDSSxjQUFjO0lBQ2QsVUFBVTtJQUNWLGdDQUFnQztBQUNwQzs7QUFDQTtJQUNJLG1CQUFtQjtJQUNuQixVQUFVO0lBQ1YsY0FBYztBQUNsQjs7QUFDQTtJQUNJLGdCQUFnQjtJQUNoQixhQUFhO0lBQ2IsV0FBVztBQUNmOztBQUNBO0lBQ0ksY0FBYztJQUNkLG1CQUFtQjtJQUNuQixXQUFXO0lBQ1gsV0FBVztJQUNYLFlBQVk7SUFDWixpQkFBaUI7SUFDakIsa0JBQWtCO0FBQ3RCOztBQUNBO0lBQ0ksbUJBQW1CO0FBQ3ZCIiwiZmlsZSI6InNyYy9hcHAvZXhhbXBsZXMveW91dHViZS9zdHlsZS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJib2R5IHtcclxuICAgIG1hcmdpbjogMDtcclxuICAgIHBhZGRpbmc6IDA7XHJcbiAgICBiYWNrZ3JvdW5kOiAjMDIwMzA2O1xyXG4gICAgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7XHJcbn1cclxuXHJcbi5jYXJkIHtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHRvcDogNTAlO1xyXG4gICAgbGVmdDogNTAlO1xyXG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwtNTAlKTtcclxuICAgIHdpZHRoOiAzNjBweDtcclxuICAgIGhlaWdodDogNDAwcHg7XHJcbiAgICBiYWNrZ3JvdW5kOiAjMDAwO1xyXG59XHJcbi5jYXJkIC5pbWFnZSB7XHJcbiAgICB3aWR0aDogMzYwcHg7XHJcbiAgICBoZWlnaHQ6IDQwMHB4O1xyXG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcclxufVxyXG4uY2FyZCAuaW1hZ2UgaW1nIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgdHJhbnNpdGlvbjogLjVzO1xyXG59XHJcbi5jYXJkOmhvdmVyIC5pbWFnZSBpbWcge1xyXG4gICAgb3BhY2l0eTogLjU7XHJcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVgoMzAlKTsvKjEwMCUqL1xyXG59XHJcbi5jYXJkIC5kZXRhaWxzIHtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHRvcDogMDtcclxuICAgIGxlZnQ6IDA7XHJcbiAgICB3aWR0aDogNzAlOy8qMTAwJSovXHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICBiYWNrZ3JvdW5kOiAjZmZjMTA3O1xyXG4gICAgdHJhbnNpdGlvbjogLjVzO1xyXG4gICAgdHJhbnNmb3JtLW9yaWdpbjogbGVmdDtcclxuICAgIHRyYW5zZm9ybTogcGVyc3BlY3RpdmUoMjAwMHB4KSByb3RhdGVZKC05MGRlZyk7XHJcbn1cclxuLmNhcmQ6aG92ZXIgLmRldGFpbHMge1xyXG4gICAgdHJhbnNmb3JtOiBwZXJzcGVjdGl2ZSgyMDAwcHgpIHJvdGF0ZVkoMGRlZyk7XHJcbn1cclxuLmNhcmQgLmRldGFpbHMgLmNlbnRlciB7XHJcbiAgICBwYWRkaW5nOiAyMHB4O1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgYmFja2dyb3VuZDogIzAyMDMwNjtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHRvcDogNTAlO1xyXG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC01MCUpO1xyXG59XHJcbi5jYXJkIC5kZXRhaWxzIC5jZW50ZXIgaDEge1xyXG4gICAgbWFyZ2luOiAwO1xyXG4gICAgcGFkZGluZzogMDtcclxuICAgIGNvbG9yOiAjZmZkMDA1O1xyXG4gICAgbGluZS1oZWlnaHQ6IDIwcHg7XHJcbiAgICBmb250LXNpemU6IDIwcHg7XHJcbiAgICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xyXG59XHJcbi5jYXJkIC5kZXRhaWxzIC5jZW50ZXIgaDEgc3BhbiB7XHJcbiAgICBmb250LXNpemU6IDE0cHg7XHJcbiAgICBjb2xvcjogcmdiYSgyNDQsIDI0NSwgMjU1LCAwLjY1KTtcclxufVxyXG4uY2FyZCAuZGV0YWlscyAuY2VudGVyIHAge1xyXG4gICAgbWFyZ2luOiAxMHB4IDA7XHJcbiAgICBwYWRkaW5nOiAwO1xyXG4gICAgY29sb3I6IHJnYmEoMjU1LCAyNTUsIDI1NSwgMC45Nik7XHJcbn1cclxuLmNhcmQgLmRldGFpbHMgLmNlbnRlciB1bCB7XHJcbiAgICBtYXJnaW46IDEwcHggYXV0byAwO1xyXG4gICAgcGFkZGluZzogMDtcclxuICAgIGRpc3BsYXk6IHRhYmxlO1xyXG59XHJcbi5jYXJkIC5kZXRhaWxzIC5jZW50ZXIgdWwgbGkge1xyXG4gICAgbGlzdC1zdHlsZTogbm9uZTtcclxuICAgIG1hcmdpbjogMCA1cHg7XHJcbiAgICBmbG9hdDogbGVmdDtcclxufVxyXG4uY2FyZCAuZGV0YWlscyAuY2VudGVyIHVsIGxpIGEge1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICBiYWNrZ3JvdW5kOiAjMjYyNjI2O1xyXG4gICAgY29sb3I6ICNmZmY7XHJcbiAgICB3aWR0aDogMzBweDtcclxuICAgIGhlaWdodDogMzBweDtcclxuICAgIGxpbmUtaGVpZ2h0OiAzMHB4O1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG59XHJcbi5jYXJkIC5kZXRhaWxzIC5jZW50ZXIgdWwgbGkgYTpob3ZlciB7XHJcbiAgICBiYWNrZ3JvdW5kOiAjZmYzNjM2O1xyXG59XHJcbiJdfQ== */");
+/* harmony default export */ __webpack_exports__["default"] = ("body {\r\n    margin: 0;\r\n    padding: 0;\r\n    background: #020306;\r\n    font-family: sans-serif;\r\n}\r\n\r\n.card {\r\n    position: relative;\r\n    top: 50%;\r\n    left: 50%;\r\n    transform: translate(-50%,-50%);\r\n    width: 360px;\r\n    height: 400px;\r\n    background: #000;\r\n}\r\n\r\n.card .image {\r\n    width: 360px;\r\n    height: 400px;\r\n    overflow: hidden;\r\n}\r\n\r\n.card .image img {\r\n    width: 100%;\r\n    transition: .5s;\r\n}\r\n\r\n.card:hover .image img {\r\n    opacity: .5;\r\n    transform: translateX(30%);/*100%*/\r\n}\r\n\r\n.card .details {\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    width: 70%;/*100%*/\r\n    height: 100%;\r\n    background: #ffc107;\r\n    transition: .5s;\r\n    transform-origin: left;\r\n    transform: perspective(2000px) rotateY(-90deg);\r\n}\r\n\r\n.card:hover .details {\r\n    transform: perspective(2000px) rotateY(0deg);\r\n}\r\n\r\n.card .details .center {\r\n    padding: 20px;\r\n    text-align: center;\r\n    background: #020306;\r\n    position: absolute;\r\n    top: 50%;\r\n    transform: translateY(-50%);\r\n}\r\n\r\n.card .details .center h1 {\r\n    margin: 0;\r\n    padding: 0;\r\n    color: #ffd005;\r\n    line-height: 20px;\r\n    font-size: 20px;\r\n    text-transform: uppercase;\r\n}\r\n\r\n.card .details .center h1 span {\r\n    font-size: 14px;\r\n    color: rgba(244, 245, 255, 0.65);\r\n}\r\n\r\n.card .details .center p {\r\n    margin: 10px 0;\r\n    padding: 0;\r\n    color: rgba(255, 255, 255, 0.96);\r\n}\r\n\r\n.card .details .center ul {\r\n    margin: 10px auto 0;\r\n    padding: 0;\r\n    display: table;\r\n}\r\n\r\n.card .details .center ul li {\r\n    list-style: none;\r\n    margin: 0 5px;\r\n    float: left;\r\n}\r\n\r\n.card .details .center ul li a {\r\n    display: block;\r\n    background: #262626;\r\n    color: #fff;\r\n    width: 30px;\r\n    height: 30px;\r\n    line-height: 30px;\r\n    text-align: center;\r\n}\r\n\r\n.card .details .center ul li a:hover {\r\n    background: #ff3636;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZXhhbXBsZXMveW91dHViZS9zdHlsZS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxTQUFTO0lBQ1QsVUFBVTtJQUNWLG1CQUFtQjtJQUNuQix1QkFBdUI7QUFDM0I7O0FBRUE7SUFDSSxrQkFBa0I7SUFDbEIsUUFBUTtJQUNSLFNBQVM7SUFDVCwrQkFBK0I7SUFDL0IsWUFBWTtJQUNaLGFBQWE7SUFDYixnQkFBZ0I7QUFDcEI7O0FBQ0E7SUFDSSxZQUFZO0lBQ1osYUFBYTtJQUNiLGdCQUFnQjtBQUNwQjs7QUFDQTtJQUNJLFdBQVc7SUFDWCxlQUFlO0FBQ25COztBQUNBO0lBQ0ksV0FBVztJQUNYLDBCQUEwQixDQUFDLE9BQU87QUFDdEM7O0FBQ0E7SUFDSSxrQkFBa0I7SUFDbEIsTUFBTTtJQUNOLE9BQU87SUFDUCxVQUFVLENBQUMsT0FBTztJQUNsQixZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLGVBQWU7SUFDZixzQkFBc0I7SUFDdEIsOENBQThDO0FBQ2xEOztBQUNBO0lBQ0ksNENBQTRDO0FBQ2hEOztBQUNBO0lBQ0ksYUFBYTtJQUNiLGtCQUFrQjtJQUNsQixtQkFBbUI7SUFDbkIsa0JBQWtCO0lBQ2xCLFFBQVE7SUFDUiwyQkFBMkI7QUFDL0I7O0FBQ0E7SUFDSSxTQUFTO0lBQ1QsVUFBVTtJQUNWLGNBQWM7SUFDZCxpQkFBaUI7SUFDakIsZUFBZTtJQUNmLHlCQUF5QjtBQUM3Qjs7QUFDQTtJQUNJLGVBQWU7SUFDZixnQ0FBZ0M7QUFDcEM7O0FBQ0E7SUFDSSxjQUFjO0lBQ2QsVUFBVTtJQUNWLGdDQUFnQztBQUNwQzs7QUFDQTtJQUNJLG1CQUFtQjtJQUNuQixVQUFVO0lBQ1YsY0FBYztBQUNsQjs7QUFDQTtJQUNJLGdCQUFnQjtJQUNoQixhQUFhO0lBQ2IsV0FBVztBQUNmOztBQUNBO0lBQ0ksY0FBYztJQUNkLG1CQUFtQjtJQUNuQixXQUFXO0lBQ1gsV0FBVztJQUNYLFlBQVk7SUFDWixpQkFBaUI7SUFDakIsa0JBQWtCO0FBQ3RCOztBQUNBO0lBQ0ksbUJBQW1CO0FBQ3ZCIiwiZmlsZSI6InNyYy9hcHAvZXhhbXBsZXMveW91dHViZS9zdHlsZS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJib2R5IHtcclxuICAgIG1hcmdpbjogMDtcclxuICAgIHBhZGRpbmc6IDA7XHJcbiAgICBiYWNrZ3JvdW5kOiAjMDIwMzA2O1xyXG4gICAgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7XHJcbn1cclxuXHJcbi5jYXJkIHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIHRvcDogNTAlO1xyXG4gICAgbGVmdDogNTAlO1xyXG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwtNTAlKTtcclxuICAgIHdpZHRoOiAzNjBweDtcclxuICAgIGhlaWdodDogNDAwcHg7XHJcbiAgICBiYWNrZ3JvdW5kOiAjMDAwO1xyXG59XHJcbi5jYXJkIC5pbWFnZSB7XHJcbiAgICB3aWR0aDogMzYwcHg7XHJcbiAgICBoZWlnaHQ6IDQwMHB4O1xyXG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcclxufVxyXG4uY2FyZCAuaW1hZ2UgaW1nIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgdHJhbnNpdGlvbjogLjVzO1xyXG59XHJcbi5jYXJkOmhvdmVyIC5pbWFnZSBpbWcge1xyXG4gICAgb3BhY2l0eTogLjU7XHJcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVgoMzAlKTsvKjEwMCUqL1xyXG59XHJcbi5jYXJkIC5kZXRhaWxzIHtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHRvcDogMDtcclxuICAgIGxlZnQ6IDA7XHJcbiAgICB3aWR0aDogNzAlOy8qMTAwJSovXHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICBiYWNrZ3JvdW5kOiAjZmZjMTA3O1xyXG4gICAgdHJhbnNpdGlvbjogLjVzO1xyXG4gICAgdHJhbnNmb3JtLW9yaWdpbjogbGVmdDtcclxuICAgIHRyYW5zZm9ybTogcGVyc3BlY3RpdmUoMjAwMHB4KSByb3RhdGVZKC05MGRlZyk7XHJcbn1cclxuLmNhcmQ6aG92ZXIgLmRldGFpbHMge1xyXG4gICAgdHJhbnNmb3JtOiBwZXJzcGVjdGl2ZSgyMDAwcHgpIHJvdGF0ZVkoMGRlZyk7XHJcbn1cclxuLmNhcmQgLmRldGFpbHMgLmNlbnRlciB7XHJcbiAgICBwYWRkaW5nOiAyMHB4O1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgYmFja2dyb3VuZDogIzAyMDMwNjtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHRvcDogNTAlO1xyXG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC01MCUpO1xyXG59XHJcbi5jYXJkIC5kZXRhaWxzIC5jZW50ZXIgaDEge1xyXG4gICAgbWFyZ2luOiAwO1xyXG4gICAgcGFkZGluZzogMDtcclxuICAgIGNvbG9yOiAjZmZkMDA1O1xyXG4gICAgbGluZS1oZWlnaHQ6IDIwcHg7XHJcbiAgICBmb250LXNpemU6IDIwcHg7XHJcbiAgICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xyXG59XHJcbi5jYXJkIC5kZXRhaWxzIC5jZW50ZXIgaDEgc3BhbiB7XHJcbiAgICBmb250LXNpemU6IDE0cHg7XHJcbiAgICBjb2xvcjogcmdiYSgyNDQsIDI0NSwgMjU1LCAwLjY1KTtcclxufVxyXG4uY2FyZCAuZGV0YWlscyAuY2VudGVyIHAge1xyXG4gICAgbWFyZ2luOiAxMHB4IDA7XHJcbiAgICBwYWRkaW5nOiAwO1xyXG4gICAgY29sb3I6IHJnYmEoMjU1LCAyNTUsIDI1NSwgMC45Nik7XHJcbn1cclxuLmNhcmQgLmRldGFpbHMgLmNlbnRlciB1bCB7XHJcbiAgICBtYXJnaW46IDEwcHggYXV0byAwO1xyXG4gICAgcGFkZGluZzogMDtcclxuICAgIGRpc3BsYXk6IHRhYmxlO1xyXG59XHJcbi5jYXJkIC5kZXRhaWxzIC5jZW50ZXIgdWwgbGkge1xyXG4gICAgbGlzdC1zdHlsZTogbm9uZTtcclxuICAgIG1hcmdpbjogMCA1cHg7XHJcbiAgICBmbG9hdDogbGVmdDtcclxufVxyXG4uY2FyZCAuZGV0YWlscyAuY2VudGVyIHVsIGxpIGEge1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICBiYWNrZ3JvdW5kOiAjMjYyNjI2O1xyXG4gICAgY29sb3I6ICNmZmY7XHJcbiAgICB3aWR0aDogMzBweDtcclxuICAgIGhlaWdodDogMzBweDtcclxuICAgIGxpbmUtaGVpZ2h0OiAzMHB4O1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG59XHJcbi5jYXJkIC5kZXRhaWxzIC5jZW50ZXIgdWwgbGkgYTpob3ZlciB7XHJcbiAgICBiYWNrZ3JvdW5kOiAjZmYzNjM2O1xyXG59XHJcbiJdfQ== */");
 
 /***/ }),
 
@@ -4704,6 +4781,91 @@ var SectionsComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/shared/allartworks.service.ts":
+/*!***********************************************!*\
+  !*** ./src/app/shared/allartworks.service.ts ***!
+  \***********************************************/
+/*! exports provided: AllartworksService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AllartworksService", function() { return AllartworksService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+
+
+
+
+
+var AllartworksService = /** @class */ (function () {
+    function AllartworksService(http) {
+        this.http = http;
+        // Base url
+        this.baseurl = 'https://sanaa.adiy.site/api/artwork';
+        // tslint:disable-next-line:variable-name
+        this.base_path = 'https://server.adiy.site/api/files';
+        // Http Headers
+        this.httpOptions = {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+                'Content-Type': 'application/json'
+            })
+        };
+    }
+    // GET
+    // tslint:disable-next-line:variable-name
+    AllartworksService.prototype.GetFiless = function (id) {
+        return this.http.get(this.baseurl + id)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["retry"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(this.errorHandl));
+    };
+    // GET
+    AllartworksService.prototype.GetFiles = function () {
+        return this.http.get(this.baseurl)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["retry"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(this.errorHandl));
+    };
+    AllartworksService.prototype.createArtwork = function (data) {
+        return this.http.post(this.baseurl, JSON.stringify(data), this.httpOptions)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["retry"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(this.errorHandl));
+    };
+    // DELETE
+    // tslint:disable-next-line:variable-name
+    AllartworksService.prototype.DeleteFiles = function (id) {
+        return this.http.delete(this.baseurl + id, this.httpOptions)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["retry"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(this.errorHandl));
+    };
+    // Error handling
+    AllartworksService.prototype.errorHandl = function (error) {
+        var errorMessage = '';
+        if (error.error instanceof ErrorEvent) {
+            // Get client-side error
+            errorMessage = error.error.message;
+        }
+        else {
+            // Get server-side error
+            errorMessage = "Error Code: " + error.status + "\nMessage: " + error.message;
+        }
+        console.log(errorMessage);
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["throwError"])(errorMessage);
+    };
+    AllartworksService.ctorParameters = function () { return [
+        { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+    ]; };
+    AllartworksService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+    ], AllartworksService);
+    return AllartworksService;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/shared/artworks.service.ts":
 /*!********************************************!*\
   !*** ./src/app/shared/artworks.service.ts ***!
@@ -4805,6 +4967,91 @@ var Artworks = /** @class */ (function () {
     function Artworks() {
     }
     return Artworks;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/blob.service.ts":
+/*!****************************************!*\
+  !*** ./src/app/shared/blob.service.ts ***!
+  \****************************************/
+/*! exports provided: BlobService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlobService", function() { return BlobService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+
+
+
+
+
+var BlobService = /** @class */ (function () {
+    function BlobService(http) {
+        this.http = http;
+        // Base url
+        this.baseurl = 'https://sanaa.adiy.site/api/blob';
+        // tslint:disable-next-line:variable-name
+        this.base_path = 'https://server.adiy.site/api/files';
+        // Http Headers
+        this.httpOptions = {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+                'Content-Type': 'application/json'
+            })
+        };
+    }
+    // GET
+    // tslint:disable-next-line:variable-name
+    BlobService.prototype.GetFiless = function (id) {
+        return this.http.get(this.baseurl + id)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["retry"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(this.errorHandl));
+    };
+    // GET
+    BlobService.prototype.GetBlobFiles = function () {
+        return this.http.get(this.baseurl)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["retry"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(this.errorHandl));
+    };
+    BlobService.prototype.createArtwork = function (data) {
+        return this.http.post(this.baseurl, JSON.stringify(data), this.httpOptions)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["retry"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(this.errorHandl));
+    };
+    // DELETE
+    // tslint:disable-next-line:variable-name
+    BlobService.prototype.DeleteFiles = function (id) {
+        return this.http.delete(this.baseurl + id, this.httpOptions)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["retry"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(this.errorHandl));
+    };
+    // Error handling
+    BlobService.prototype.errorHandl = function (error) {
+        var errorMessage = '';
+        if (error.error instanceof ErrorEvent) {
+            // Get client-side error
+            errorMessage = error.error.message;
+        }
+        else {
+            // Get server-side error
+            errorMessage = "Error Code: " + error.status + "\nMessage: " + error.message;
+        }
+        console.log(errorMessage);
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["throwError"])(errorMessage);
+    };
+    BlobService.ctorParameters = function () { return [
+        { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+    ]; };
+    BlobService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+    ], BlobService);
+    return BlobService;
 }());
 
 
