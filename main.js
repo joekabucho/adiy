@@ -100,7 +100,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n<div class=\"body-container container-fluid\">\n    <a class=\"menu-btn\" href=\"javascript:void(0)\">\n        <i class=\"ion ion-grid\"></i>\n    </a>\n    <div class=\"row justify-content-center\">\n        <!--=================== side menu ====================-->\n        <div class=\"col-lg-2 col-md-3 col-12 menu_block\" style=\"position: sticky\">\n\n            <div class=\"side_menu_section\" style=\"position: sticky\">\n                <div class=\"row\">\n                <form action=\"\">\n                  <div class=\"col-12\">\n<!--                    <i class=\"fa fa-search\"  aria-hidden=\"true\" style=\"color: #ffbf00\"></i>-->\n                    <input class=\"search-bar form-control\" placeholder=\"search\" style=\"color: #000000; \" type=\"search\" [value]=\"search2\"\n                           ngxTypeahead\n                           [taList]=\"Files\"\n                           [taItemTpl]=\"myTemp\"\n                           (taSelected)=\"selectedTempStatic($event)\">\n                    <ng-template #myTemp let-item>\n                        <div class=\"item-name\">\n                            {{item.result.filename}}\n                        </div>\n                    </ng-template>\n                    </div>\n                </form>\n                </div>\n                <hr style=\"color: white\">\n                <ul class=\"menu_nav\">\n                    <hr style=\"color: white\">\n                    <li class=\"active\">\n                        <a [routerLink]=\"['/all-templates']\" style=\" text-transform: uppercase;\">\n                            <i class=\"fa fa-picture-o\" style=\"color: #ffbf00\" aria-hidden=\"true\"></i>\n                            All templates\n                        </a>\n                    </li>\n                    <hr>\n                    <li>\n\n                            <a [routerLink]=\"['/ecommerce']\" style=\" text-transform: uppercase;\">\n                                <i class=\"ni ni-briefcase-24\" style=\"color: #ffbf00\"></i>\n                                Corporate Accounts\n                        </a>\n                    </li>\n                    <li>\n                            <a [routerLink]=\"['/checkout-page']\" style=\" text-transform: uppercase;\">\n                                <i class=\"ni ni-single-02\" style=\"color: #ffbf00\"></i>\n                            Personal  templates\n                        </a>\n                    </li>\n                    <li>\n                        <a [routerLink]=\"['/checkout-page']\" style=\" text-transform: uppercase;\">\n                            <i class=\"ni ni-cart\" style=\"color: #ffbf00\"></i>\n                            Checkout\n                        </a>\n\n                    </li>\n                    <li>\n                        <a [routerLink]=\"['/youtube']\" style=\" text-transform: uppercase;\">\n                            <i class=\"fa fa-graduation-cap\" aria-hidden=\"true\"></i>\n                            Tutorials\n                        </a>\n                    </li>\n                    <li>\n\n                        <a href=\"https://chats.adiy.site\" style=\" text-transform: uppercase;\">\n                            <i class=\"fa fa-comments\" aria-hidden=\"true\"></i>\n                            Chat/support\n                        </a>\n                    </li>\n                    <li>\n                        <a [routerLink]=\"['/register-page']\" style=\" text-transform: uppercase;\">\n                            <i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i>\n                            Logout\n                        </a>\n                    </li>\n                </ul>\n            </div>\n            <!--main menu end -->\n\n            <!--filter menu -->\n            <div class=\"side_menu_section\">\n                <h4 class=\"side_title\">filter by:</h4>\n                <ul  id=\"filtr-container\"  class=\"filter_nav\">\n                    <li  data-filter=\"*\" class=\"active\"><a href=\"javascript:void(0)\"   style=\" text-transform: uppercase;\">all</a></li>\n                    <li data-filter=\".facebook\"> <a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i>  facebook</a></li>\n                    <li data-filter=\".whatsapp_mobile\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-whatsapp\" aria-hidden=\"true\"></i>  whatsapp/mobile</a></li>\n                    <li data-filter=\".youtube\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-youtube\" aria-hidden=\"true\"></i> youtube</a></li>\n                    <li data-filter=\".instagram\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i>  instagram</a></li>\n                    <li data-filter=\".twitter\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-twitter\" aria-hidden=\"true\"></i>  twitter</a></li>\n                    <li data-filter=\".flier_poster\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-newspaper-o\" aria-hidden=\"true\"></i>flier/poster</a></li>\n                    <li data-filter=\".logos\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-grav\" aria-hidden=\"true\"></i> logos</a></li>\n                    <li data-filter=\".cards\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-id-card-o\" aria-hidden=\"true\"></i>cards</a></li>\n\n                </ul>\n            </div>\n            <!--filter menu end -->\n\n            <!--social and copyright -->\n            <div class=\"side_menu_bottom\">\n                <div class=\"side_menu_bottom_inner\">\n\n                    <div class=\"copy_right\">\n                    </div>\n                </div>\n            </div>\n            <!--social and copyright end -->\n\n        </div>\n        <!--=================== side menu end====================-->\n\n        <!--=================== content body ====================-->\n        <div class=\"col-lg-10 col-md-9 col-12 body_block  align-content-center\" appNoRightClick>\n            <div class=\"portfolio\">\n                <div class=\"container-fluid\">\n                    <!--=================== masaonry portfolio start====================-->\n                    <div class=\"grid img-container justify-content-center no-gutters\">\n                        <div class=\"grid-sizer col-sm-12 col-md-6 col-lg-3\"></div>\n                        <div class=\"col-md-12\">\n                            <div class=\"no-data text-center\" *ngIf=\"Allartworks.length == 0\">\n                                <p>There are no files added yet!</p>\n                            </div>\n                            <div class=\"row\">\n                                <div class=\"grid-item  col-lg-3\" *ngFor=\"let art of Allartworks\">\n                                    <a href=\"https://sanaa.adiy.site/media/{{art.blob_thumbnail}}\" title=\"{{art.blob_id}}\">\n                                        <div class=\"project_box_one  flier/poster facebook {{art.tags}}\">\n                                            <img src=\"https://sanaa.adiy.site/media/{{art.blob_thumbnail}}\" alt=\"{{art.blob_id}}\" />\n\n                                            <div class=\"product_info\">\n                                                <div class=\"product_info_text\">\n                                                    <div class=\"product_info_text_inner\">\n                                                        <i class=\"ni ni-zoom-split-in\"></i>\n                                                        <h4>{{art.name}}</h4>\n                                                        <div class=\"card-footer\">\n                                                            <div class=\"price-container\">\n                                                                <!--                                                                                                                    <button class=\"btn-dark\"(click)=\"addToCart(product)\"> Ksh {{product.amount}} </button>-->\n                                                                <a href=\"https://sanaa.adiy.site/{{profile}}/{{art.id}}\" target=\"_blank\"><button class=\"btn btn-lg btn-dark \">customise</button> </a>\n\n                                                            </div>\n                                                        </div>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                    </a>\n                                </div>\n                            </div>\n                        </div>\n                        <!--=================== masaonry portfolio end====================-->\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n            <!--=================== content body end ====================-->\n        </div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\n<div class=\"body-container container-fluid\">\n    <a class=\"menu-btn\" href=\"javascript:void(0)\">\n        <i class=\"ion ion-grid\"></i>\n    </a>\n    <div class=\"row justify-content-center\">\n        <!--=================== side menu ====================-->\n        <div class=\"col-lg-2 col-md-3 col-12 menu_block\" style=\"position: sticky\">\n\n            <div class=\"side_menu_section\" style=\"position: sticky\">\n                <div class=\"row\">\n                <form action=\"\">\n                  <div class=\"col-12\">\n<!--                    <i class=\"fa fa-search\"  aria-hidden=\"true\" style=\"color: #ffbf00\"></i>-->\n                    <input class=\"search-bar form-control\" placeholder=\"search\" style=\"color: #000000; \" type=\"search\" [value]=\"search2\"\n                           ngxTypeahead\n                           [taList]=\"Files\"\n                           [taItemTpl]=\"myTemp\"\n                           (taSelected)=\"selectedTempStatic($event)\">\n                    <ng-template #myTemp let-item>\n                        <div class=\"item-name\">\n                            {{item.result.filename}}\n                        </div>\n                    </ng-template>\n                    </div>\n                </form>\n                </div>\n                <hr style=\"color: white\">\n                <ul class=\"menu_nav\">\n                    <hr style=\"color: white\">\n                    <li class=\"active\">\n                        <a [routerLink]=\"['/all-templates']\" style=\" text-transform: uppercase;\">\n                            <i class=\"fa fa-picture-o\" style=\"color: #ffbf00\" aria-hidden=\"true\"></i>\n                            All templates\n                        </a>\n                    </li>\n                    <hr>\n                    <li>\n\n                            <a [routerLink]=\"['/ecommerce']\" style=\" text-transform: uppercase;\">\n                                <i class=\"ni ni-briefcase-24\" style=\"color: #ffbf00\"></i>\n                                Corporate Accounts\n                        </a>\n                    </li>\n                    <li>\n                            <a [routerLink]=\"['/pricing-page']\" style=\" text-transform: uppercase;\">\n                                <i class=\"ni ni-single-02\" style=\"color: #ffbf00\"></i>\n                            Personal  templates\n                        </a>\n                    </li>\n                    <li>\n                        <a [routerLink]=\"['/checkout-page']\" style=\" text-transform: uppercase;\">\n                            <i class=\"ni ni-cart\" style=\"color: #ffbf00\"></i>\n                            Checkout\n                        </a>\n\n                    </li>\n                    <li>\n                        <a [routerLink]=\"['/youtube']\" style=\" text-transform: uppercase;\">\n                            <i class=\"fa fa-graduation-cap\" aria-hidden=\"true\"></i>\n                            Tutorials\n                        </a>\n                    </li>\n                    <li>\n\n                        <a href=\"https://chats.adiy.site\" style=\" text-transform: uppercase;\">\n                            <i class=\"fa fa-comments\" aria-hidden=\"true\"></i>\n                            Chat/support\n                        </a>\n                    </li>\n                    <li>\n                        <a [routerLink]=\"['/register-page']\" style=\" text-transform: uppercase;\">\n                            <i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i>\n                            Logout\n                        </a>\n                    </li>\n                </ul>\n            </div>\n            <!--main menu end -->\n\n            <!--filter menu -->\n            <div class=\"side_menu_section\">\n                <h4 class=\"side_title\">filter by:</h4>\n                <ul  id=\"filtr-container\"  class=\"filter_nav\">\n                    <li  data-filter=\"*\" class=\"active\"><a href=\"javascript:void(0)\"   style=\" text-transform: uppercase;\">all</a></li>\n                    <li data-filter=\".facebook\"> <a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i>  facebook</a></li>\n                    <li data-filter=\".whatsapp_mobile\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-whatsapp\" aria-hidden=\"true\"></i>  whatsapp/mobile</a></li>\n                    <li data-filter=\".youtube\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-youtube\" aria-hidden=\"true\"></i> youtube</a></li>\n                    <li data-filter=\".instagram\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i>  instagram</a></li>\n                    <li data-filter=\".twitter\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-twitter\" aria-hidden=\"true\"></i>  twitter</a></li>\n                    <li data-filter=\".flier_poster\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-newspaper-o\" aria-hidden=\"true\"></i>flier/poster</a></li>\n                    <li data-filter=\".logos\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-grav\" aria-hidden=\"true\"></i> logos</a></li>\n                    <li data-filter=\".cards\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-id-card-o\" aria-hidden=\"true\"></i>cards</a></li>\n\n                </ul>\n            </div>\n            <!--filter menu end -->\n\n            <!--social and copyright -->\n            <div class=\"side_menu_bottom\">\n                <div class=\"side_menu_bottom_inner\">\n\n                    <div class=\"copy_right\">\n                    </div>\n                </div>\n            </div>\n            <!--social and copyright end -->\n\n        </div>\n        <!--=================== side menu end====================-->\n\n        <!--=================== content body ====================-->\n        <div class=\"col-lg-10 col-md-9 col-12 body_block  align-content-center\" appNoRightClick>\n            <div class=\"portfolio\">\n                <div class=\"container-fluid\">\n                    <!--=================== masaonry portfolio start====================-->\n                    <div class=\"grid img-container justify-content-center no-gutters\">\n                        <div class=\"grid-sizer col-sm-12 col-md-6 col-lg-3\"></div>\n                        <div class=\"col-md-12\">\n                            <div class=\"no-data text-center\" *ngIf=\"Allartworks.length == 0\">\n                                <p>There are no files added yet!</p>\n                            </div>\n                            <div class=\"row\">\n                                <div class=\"grid-item  col-lg-3\" *ngFor=\"let art of Allartworks\">\n                                    <a href=\"https://sanaa.adiy.site/media/{{art.blob_thumbnail}}\" title=\"{{art.blob_id}}\">\n                                        <div class=\"project_box_one  flier/poster facebook {{art.tags}}\">\n                                            <img src=\"https://sanaa.adiy.site/media/{{art.blob_thumbnail}}\" alt=\"{{art.blob_id}}\" />\n\n                                            <div class=\"product_info\">\n                                                <div class=\"product_info_text\">\n                                                    <div class=\"product_info_text_inner\">\n                                                        <i class=\"ni ni-zoom-split-in\"></i>\n                                                        <h4>{{art.name}}</h4>\n                                                        <div class=\"card-footer\">\n                                                            <div class=\"price-container\">\n                                                                <!--                                                                                                                    <button class=\"btn-dark\"(click)=\"addToCart(product)\"> Ksh {{product.amount}} </button>-->\n                                                                <a href=\"https://sanaa.adiy.site/{{profile}}/{{art.id}}\" target=\"_blank\"><button class=\"btn btn-lg btn-dark \">customise</button> </a>\n\n                                                            </div>\n                                                        </div>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                    </a>\n                                </div>\n                            </div>\n                        </div>\n                        <!--=================== masaonry portfolio end====================-->\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n            <!--=================== content body end ====================-->\n        </div>\n");
 
 /***/ }),
 
@@ -256,7 +256,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\r\n<div class=\"wrapper\">\r\n  <header class=\"header-2 skew-separator\">\r\n    <nav class=\"navbar navbar-expand-lg bg-white navbar-absolute\">\r\n      <div class=\"container\">\r\n        <div class=\"navbar-translate\">\r\n          <a class=\"navbar-brand\" href=\"javascript:;\"> Adiy </a>\r\n          <button\r\n            aria-controls=\"navbarSupportedContent\"\r\n            aria-label=\"Toggle navigation\"\r\n            class=\"navbar-toggler\"\r\n            [attr.aria-expanded]=\"!isCollapsed\"\r\n            (click)=\"isCollapsed = !isCollapsed\"\r\n            id=\"example-header-2\"\r\n            type=\"button\"\r\n          >\r\n            <span class=\"navbar-toggler-icon\"> </span>\r\n          </button>\r\n        </div>\r\n        <div\r\n          class=\"navbar-collapse\"\r\n          [isAnimated]=\"true\"\r\n          [collapse]=\"isCollapsed\"\r\n          id=\"example-header-2\"\r\n        >\r\n          <div class=\"navbar-collapse-header\">\r\n            <div class=\"row\">\r\n              <div class=\"col-6 collapse-brand\">\r\n                <a> Adiy <span> </span> </a>\r\n              </div>\r\n              <div class=\"col-6 collapse-close text-right\">\r\n                <button\r\n                  aria-controls=\"navigation-index\"\r\n                  aria-label=\"Toggle navigation\"\r\n                  class=\"navbar-toggler\"\r\n                  [attr.aria-expanded]=\"!isCollapsed\"\r\n                  (click)=\"isCollapsed = !isCollapsed\"\r\n                  id=\"example-header-2\"\r\n                  type=\"button\"\r\n                >\r\n                  <span> </span> <span> </span>\r\n                </button>\r\n              </div>\r\n            </div>\r\n          </div>\r\n          <ul class=\"navbar-nav mx-auto\">\r\n            <li class=\"nav-item\">\r\n              <a class=\"nav-link\" href=\"javascript:;\"> Home </a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n              <a class=\"nav-link\" href=\"javascript:;\"> About Us </a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n              <a class=\"nav-link\" href=\"javascript:;\"> Products </a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n              <a class=\"nav-link\" href=\"javascript:;\"> Contact Us </a>\r\n            </li>\r\n          </ul>\r\n          <ul class=\"nav navbar-nav navbar-right\">\r\n            <li class=\"nav-item\">\r\n              <a class=\"nav-link\" href=\"https://twitter.com/CreativeTim\">\r\n                <i class=\"fab fa-twitter\"> </i>\r\n              </a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n              <a\r\n                class=\"nav-link\"\r\n                href=\"https://www.facebook.com/CreativeTim\"\r\n              >\r\n                <i class=\"fab fa-facebook-square\"> </i>\r\n              </a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n              <a\r\n                class=\"nav-link\"\r\n                href=\"https://www.instagram.com/CreativeTimOfficial\"\r\n              >\r\n                <i class=\"fab fa-instagram\"> </i>\r\n              </a>\r\n            </li>\r\n          </ul>\r\n        </div>\r\n      </div>\r\n    </nav>\r\n \r\n  </header>\r\n  <div class=\"main mt-5\">\r\n    \r\n    <div class=\"subscribe-line\">\r\n      <div *ngIf=\"!paid\" class=\"container\">\r\n        <div class=\"row\">\r\n          <div class=\"col-lg-6 col-md-10 mx-auto\">\r\n            <div class=\"text-center\">\r\n              <h2 class=\"title\">Download Your Templates Here</h2>\r\n              <p class=\"description\">\r\n                Click download to get your templates.\r\n              </p>\r\n              \r\n            </div>\r\n            <div class=\"card card-raised card-form-horizontal\">\r\n                <button class=\"btn btn-success\" (click)=\"checkPaymentStatus()\">Check Payment Status</button>\r\n\r\n            </div>\r\n\r\n       </div>\r\n     </div>\r\n    </div>\r\n      <div *ngIf=\"paid\" class=\"container\">\r\n        <div class=\"row\">\r\n          <div class=\"col-lg-6 col-md-10 mx-auto\">\r\n            <div class=\"text-center\">\r\n              <h2 class=\"title\">Download Your Templates Here</h2>\r\n              <p class=\"description\">\r\n                Click download to get your templates.\r\n              </p>\r\n            </div>\r\n            <div class=\"card card-raised card-form-horizontal\">\r\n              <div *ngIf=\"templates!=null\">\r\n                <div class=\"card-body\" *ngFor=\"let template of templates[0].items\">\r\n                  <img src =\"http://{{template.url}}\" style=\"width: 100px; height: 100px;\">\r\n                  <p>{{template.filename}}</p>\r\n                   <a  type=\"button\" href=\"http://{{template.url}}\" target=\"_self\" download>\r\n                   <button class=\"btn btn-success\">Download</button>\r\n                  </a>\r\n                  <button style=\"margin: 20px;\" class=\"btn btn-primary\" (click)=\"lgModal.show();encode(template.url)\">Customize</button>\r\n                </div>\r\n              </div>\r\n            </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n \r\n<div bsModal #lgModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\"\r\n     role=\"dialog\" aria-labelledby=\"dialog-sizes-name1\" height=\"100%\" width=\"100%\">\r\n  <div class=\"modal-dialog modal-xl\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <h4 id=\"dialog-sizes-name1\" class=\"modal-title pull-left\">Customize design </h4>\r\n        <button type=\"button\" class=\"close pull-right\" (click)=\"lgModal.hide()\" aria-label=\"Close\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n\r\n\r\n        <iframe [src]=\"urlSafe\"  height=\"975px\" width=\"100%\" style=\"background-image:none\"  sandbox=\"allow-scripts\t allow-same-origin\t\"></iframe>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n\r\n\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\r\n<div class=\"body-container container-fluid\">\r\n  <a class=\"menu-btn\" href=\"javascript:void(0)\">\r\n    <i class=\"ion ion-grid\"></i>\r\n  </a>\r\n  <div class=\"row justify-content-center\">\r\n    <!--=================== side menu ====================-->\r\n    <div class=\"col-lg-2 col-md-3 col-12 menu_block\" style=\"position: sticky\">\r\n\r\n      <div class=\"side_menu_section\" style=\"position: sticky\">\r\n        <div class=\"row\">\r\n          <form action=\"\">\r\n            <div class=\"col-12\">\r\n              <!--                    <i class=\"fa fa-search\"  aria-hidden=\"true\" style=\"color: #ffbf00\"></i>-->\r\n              <input class=\"search-bar form-control\" placeholder=\"search\" style=\"color: #000000; \" type=\"search\" [value]=\"search2\"\r\n                     ngxTypeahead\r\n                     [taList]=\"Files\"\r\n                     [taItemTpl]=\"myTemp\"\r\n                     (taSelected)=\"selectedTempStatic($event)\">\r\n              <ng-template #myTemp let-item>\r\n                <div class=\"item-name\">\r\n                  {{item.result.filename}}\r\n                </div>\r\n              </ng-template>\r\n            </div>\r\n          </form>\r\n        </div>\r\n        <hr style=\"color: white\">\r\n        <ul class=\"menu_nav\">\r\n          <hr style=\"color: white\">\r\n          <li >\r\n            <a [routerLink]=\"['/all-templates']\" style=\" text-transform: uppercase;\">\r\n              <i class=\"fa fa-picture-o\" style=\"color: #ffbf00\" aria-hidden=\"true\"></i>\r\n              All templates\r\n            </a>\r\n          </li>\r\n          <hr>\r\n          <li>\r\n\r\n            <a [routerLink]=\"['/ecommerce']\" style=\" text-transform: uppercase;\">\r\n              <i class=\"ni ni-briefcase-24\" style=\"color: #ffbf00\"></i>\r\n              Corporate Accounts\r\n            </a>\r\n          </li>\r\n          <li class=\"active\">\r\n            <a [routerLink]=\"['/pricing-page']\" style=\" text-transform: uppercase;\">\r\n              <i class=\"ni ni-single-02\" style=\"color: #ffbf00\"></i>\r\n              Personal  templates\r\n            </a>\r\n          </li>\r\n          <li>\r\n            <a [routerLink]=\"['/checkout-page']\" style=\" text-transform: uppercase;\">\r\n              <i class=\"ni ni-cart\" style=\"color: #ffbf00\"></i>\r\n              Checkout\r\n            </a>\r\n\r\n          </li>\r\n          <li>\r\n            <a [routerLink]=\"['/youtube']\" style=\" text-transform: uppercase;\">\r\n              <i class=\"fa fa-graduation-cap\" aria-hidden=\"true\"></i>\r\n              Tutorials\r\n            </a>\r\n          </li>\r\n          <li>\r\n\r\n            <a href=\"https://chats.adiy.site\" style=\" text-transform: uppercase;\">\r\n              <i class=\"fa fa-comments\" aria-hidden=\"true\"></i>\r\n              Chat/support\r\n            </a>\r\n          </li>\r\n          <li>\r\n            <a [routerLink]=\"['/register-page']\" style=\" text-transform: uppercase;\">\r\n              <i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i>\r\n              Logout\r\n            </a>\r\n          </li>\r\n        </ul>\r\n      </div>\r\n      <!--main menu end -->\r\n\r\n      <!--filter menu -->\r\n      <div class=\"side_menu_section\">\r\n        <h4 class=\"side_title\">filter by:</h4>\r\n        <ul  id=\"filtr-container\"  class=\"filter_nav\">\r\n          <li  data-filter=\"*\" class=\"active\"><a href=\"javascript:void(0)\"   style=\" text-transform: uppercase;\">all</a></li>\r\n          <li data-filter=\".facebook\"> <a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i>  facebook</a></li>\r\n          <li data-filter=\".whatsapp_mobile\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-whatsapp\" aria-hidden=\"true\"></i>  whatsapp/mobile</a></li>\r\n          <li data-filter=\".youtube\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-youtube\" aria-hidden=\"true\"></i> youtube</a></li>\r\n          <li data-filter=\".instagram\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i>  instagram</a></li>\r\n          <li data-filter=\".twitter\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-twitter\" aria-hidden=\"true\"></i>  twitter</a></li>\r\n          <li data-filter=\".flier_poster\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-newspaper-o\" aria-hidden=\"true\"></i>flier/poster</a></li>\r\n          <li data-filter=\".logos\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-grav\" aria-hidden=\"true\"></i> logos</a></li>\r\n          <li data-filter=\".cards\"><a href=\"javascript:void(0)\" style=\" text-transform: uppercase;\"><i class=\"fa fa-id-card-o\" aria-hidden=\"true\"></i>cards</a></li>\r\n\r\n        </ul>\r\n      </div>\r\n      <!--filter menu end -->\r\n\r\n      <!--social and copyright -->\r\n      <div class=\"side_menu_bottom\">\r\n        <div class=\"side_menu_bottom_inner\">\r\n\r\n          <div class=\"copy_right\">\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <!--social and copyright end -->\r\n\r\n    </div>\r\n    <!--=================== side menu end====================-->\r\n\r\n    <!--=================== content body ====================-->\r\n    <div class=\"col-lg-10 col-md-9 col-12 body_block  align-content-center\" appNoRightClick>\r\n      <div class=\"portfolio\">\r\n        <div class=\"container-fluid\">\r\n          <!--=================== masaonry portfolio start====================-->\r\n          <div class=\"grid img-container justify-content-center no-gutters\">\r\n            <div class=\"grid-sizer col-sm-12 col-md-6 col-lg-3\"></div>\r\n            <div class=\"col-md-12\">\r\n              <div class=\"no-data text-center\" *ngIf=\"Allartworks.length == 0\">\r\n                <p>There are no files associated to your account!</p>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"grid-item  col-lg-3\" *ngFor=\"let art of Allartworks\">\r\n                  <a href=\"https://sanaa.adiy.site/media/{{art.blob_thumbnail}}\" title=\"{{art.blob_id}}\">\r\n                    <div class=\"project_box_one  flier/poster facebook {{art.tags}}\">\r\n                      <img src=\"https://sanaa.adiy.site/media/{{art.blob_thumbnail}}\" alt=\"{{art.blob_id}}\" />\r\n\r\n                      <div class=\"product_info\">\r\n                        <div class=\"product_info_text\">\r\n                          <div class=\"product_info_text_inner\">\r\n                            <i class=\"ni ni-zoom-split-in\"></i>\r\n                            <h4>{{art.name}}</h4>\r\n                            <div class=\"card-footer\">\r\n                              <div class=\"price-container\">\r\n                                <!--                                                                                                                    <button class=\"btn-dark\"(click)=\"addToCart(product)\"> Ksh {{product.amount}} </button>-->\r\n                                <a href=\"https://sanaa.adiy.site/{{profile}}/{{art.id}}\" target=\"_blank\"><button class=\"btn btn-lg btn-dark \">customise</button> </a>\r\n\r\n                              </div>\r\n                            </div>\r\n                          </div>\r\n                        </div>\r\n                      </div>\r\n                    </div>\r\n                  </a>\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <!--=================== masaonry portfolio end====================-->\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <!--=================== content body end ====================-->\r\n</div>\r\n");
 
 /***/ }),
 
@@ -3581,10 +3581,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PricingpageComponent", function() { return PricingpageComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _shared_files_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../shared/files.service */ "./src/app/shared/files.service.ts");
 /* harmony import */ var _config_dev__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../config/dev */ "./src/app/config/dev.ts");
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+/* harmony import */ var _shared_users_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../shared/users.service */ "./src/app/shared/users.service.ts");
+/* harmony import */ var _shared_allartworks_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../shared/allartworks.service */ "./src/app/shared/allartworks.service.ts");
+/* harmony import */ var _shared_blob_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../shared/blob.service */ "./src/app/shared/blob.service.ts");
+
 
 
 
@@ -3593,118 +3596,105 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var PricingpageComponent = /** @class */ (function () {
-    function PricingpageComponent(http, router, activeroute, sanitizer) {
+    function PricingpageComponent(UsersRestApi, http, ArtWorksService, blopService, FilesRestApi) {
+        this.UsersRestApi = UsersRestApi;
         this.http = http;
-        this.router = router;
-        this.activeroute = activeroute;
-        this.sanitizer = sanitizer;
+        this.ArtWorksService = ArtWorksService;
+        this.blopService = blopService;
+        this.FilesRestApi = FilesRestApi;
         this.isCollapsed = true;
-        this.paid = false;
+        this.fileToUpload = null;
         this.url = _config_dev__WEBPACK_IMPORTED_MODULE_4__["dev"].connect;
+        this.Allusers = [];
+        this.Allfiles = [];
+        this.Allartworks = [];
+        this.AllBlobs = [];
+        this.Blob = [];
+        this.All = [];
+        this.ArtworksThumbnail = [];
+        this.BlobThumbnail = [];
+        this.ArtWorkUrl = 'https://sanaa.adiy.site/api/artwork';
+        this.searchTexts = '';
+        this.search2 = '';
+        this.Files = [];
+        this.getUser();
+        this.loadFiles();
     }
     PricingpageComponent.prototype.ngOnInit = function () {
+        this.loadUsers();
         var body = document.getElementsByTagName('body')[0];
-        body.classList.add('pricing-page');
-        var navbar = document.getElementById('navbar-main');
-        navbar.classList.add('bg-white');
-        navbar.classList.remove('navbar-dark');
-        var logoImage = document.getElementById('brand-logo');
-        logoImage.src = 'assets/img/brand/logo.png';
-        //this.getValues();
-        this.getQueryData();
-        // this.encode();
-        // this.getTemplatesPaidFor();
-        //  this.urlSafe = this.sanitizer.bypassSecurityTrustResourceUrl(this.iframe);
+        body.classList.add('landing-page');
+        this.loadAllArtWorks();
     };
-    PricingpageComponent.prototype.ngOnDestroy = function () {
-        var body = document.getElementsByTagName('body')[0];
-        body.classList.remove('pricing-page');
-        var navbar = document.getElementById('navbar-main');
-        navbar.classList.remove('bg-white');
-        navbar.classList.add('navbar-dark');
-        var logoImage = document.getElementById('brand-logo');
-        logoImage.src = 'assets/img/brand/logo.png';
+    PricingpageComponent.prototype.selectedTempStatic = function (item) {
+        this.search2 = item.filename;
+        console.log(item.filename);
     };
-    PricingpageComponent.prototype.design = function () {
-        // console.log(en);
-    };
-    PricingpageComponent.prototype.encode = function (filename) {
-        console.log(filename);
-        var imgUrl = filename.split('8000')[1];
-        this.iframe = ('https://www.photopea.com#' + encodeURI('{"files":["https://server.adiy.site') + encodeURI(imgUrl) + ('%22') + encodeURI('],"environment": {}}'));
-        this.urlSafe = this.sanitizer.bypassSecurityTrustResourceUrl(this.iframe);
-        // console.log(en);
-    };
-    PricingpageComponent.prototype.getCartItems = function () {
-        // const userID = localStorage.getItem('profile');
-        // const userDet = {
-        //   userid: userID,
-        //   status: "Paid"
-        // };
-        // this.http.post(this.url + '/api/cart/paid', userDet).subscribe((cart) => {
-        //   console.log(cart);
-        //   this.templates = cart;
-        // });
-    };
-    PricingpageComponent.prototype.getTemplatesPaidFor = function () {
+    PricingpageComponent.prototype.getAllUsers = function () {
         var _this = this;
-        if (this.userId != null) {
-            var payload = {
-                userId: this.userId
-            };
-            this.http.post(this.url + '/api/cart/paymentsbyuser', payload).subscribe(function (cart) {
-                console.log(cart);
-                _this.templates = cart;
-                _this.customize = _this.templates[0].items.filename;
+        this.http.get(this.url + '/api/user/getAll').subscribe(function (data) {
+            _this.users = data;
+        });
+    };
+    PricingpageComponent.prototype.getUser = function () {
+        this.profile = localStorage.getItem('profile');
+    };
+    PricingpageComponent.prototype.loadUsers = function () {
+        var _this = this;
+        return this.UsersRestApi.getUsers().subscribe(function (data) {
+            _this.Allusers = data;
+        });
+    };
+    PricingpageComponent.prototype.loadFiles = function () {
+        var _this = this;
+        return this.FilesRestApi.GetFiles().subscribe(function (data) {
+            _this.Allfiles = data;
+        });
+    };
+    // Delete employee
+    // tslint:disable-next-line:variable-name
+    PricingpageComponent.prototype.deleteUsers = function (_id) {
+        var _this = this;
+        if (window.confirm('Are you sure, you want to delete?')) {
+            this.UsersRestApi.DeleteUsers(_id).subscribe(function (data) {
+                _this.loadUsers();
             });
         }
-        else {
-            console.log('No userid was passed, ... aborting');
-        }
     };
-    PricingpageComponent.prototype.checkPaymentStatus = function () {
+    PricingpageComponent.prototype.addToCart = function (item) {
+        // console.log(item);
+        this.getUserDetails(item);
+    };
+    PricingpageComponent.prototype.loadAllArtWorks = function () {
         var _this = this;
-        var payload = {
-            oid: this.transactionId,
-            vid: 'genkey'
+        var art = [];
+        return this.ArtWorksService.GetFiles().subscribe(function (data) {
+            art = data;
+            _this.Allartworks = art.filter(function (data) { return data.user_id == _this.profile; });
+        });
+    };
+    PricingpageComponent.prototype.getUserDetails = function (item) {
+        var amount = parseFloat(item.amount);
+        var userID = localStorage.getItem('profile');
+        var userDet = {
+            userid: userID
         };
-        console.log(payload);
-        this.http.post(this.url + '/api/cart/confirmPay', payload).subscribe(function (data) {
-            var paymentinfo;
-            paymentinfo = data;
-            if (paymentinfo.statusCode === 200) {
-                _this.getTemplatesPaidFor();
-                _this.paid = true;
-            }
-            else {
-                _this.getTemplatesPaidFor();
-                _this.paid = false;
-                alert("It seems your payment has not been received yet.If you have paid, click the button to reload after a few seconds.");
-            }
-        });
-    };
-    PricingpageComponent.prototype.getQueryData = function () {
-        var _this = this;
-        this.activeroute.queryParamMap.subscribe(function (params) {
-            _this.transactionId = params.get('tr');
-            _this.userId = params.get('id');
-        });
+        // Delete employee
+        // tslint:disable-next-line:variable-name
     };
     PricingpageComponent.ctorParameters = function () { return [
-        { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"] },
-        { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] },
-        { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] },
-        { type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_5__["DomSanitizer"] }
+        { type: _shared_users_service__WEBPACK_IMPORTED_MODULE_5__["UsersService"] },
+        { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] },
+        { type: _shared_allartworks_service__WEBPACK_IMPORTED_MODULE_6__["AllartworksService"] },
+        { type: _shared_blob_service__WEBPACK_IMPORTED_MODULE_7__["BlobService"] },
+        { type: _shared_files_service__WEBPACK_IMPORTED_MODULE_3__["FilesService"] }
     ]; };
     PricingpageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-pricingpage',
             template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./pricingpage.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/examples/pricingpage/pricingpage.component.html")).default
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"],
-            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_5__["DomSanitizer"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_shared_users_service__WEBPACK_IMPORTED_MODULE_5__["UsersService"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"], _shared_allartworks_service__WEBPACK_IMPORTED_MODULE_6__["AllartworksService"], _shared_blob_service__WEBPACK_IMPORTED_MODULE_7__["BlobService"], _shared_files_service__WEBPACK_IMPORTED_MODULE_3__["FilesService"]])
     ], PricingpageComponent);
     return PricingpageComponent;
 }());
