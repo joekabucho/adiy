@@ -230,7 +230,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\r\n<div class=\"wrapper\">\r\n  <header class=\"header-4 skew-separator\">\r\n    <div class=\"header-wrapper\">\r\n       \r\n      <div class=\"page-header header-video\">\r\n        <div class=\"overlay\"></div>\r\n        <video\r\n          autoplay=\"autoplay\"\r\n          loop=\"loop\"\r\n          muted=\"muted\"\r\n          playsinline=\"playsinline\"\r\n        >\r\n          <source\r\n            src=\"https://www.youtube.com/watch?v=2Gg6Seob5Mg\"\r\n            type=\"video/mp4\"\r\n          />\r\n        </video>\r\n        <div class=\"container text-center\">\r\n          <div class=\"row\">\r\n            <div class=\"col-lg-7 mx-auto\">\r\n              <h1 class=\"video-text\">Welcome to your admin dashboard</h1>\r\n              <h1 class=\"display-3 text-white\">The time to design is right now!</h1>\r\n              <a\r\n                class=\"btn btn-warning btn-icon mt-3 mb-sm-0\"\r\n              >\r\n                <span class=\"btn-inner--icon\">\r\n                  <i class=\"ni ni-button-play\"> </i>\r\n                </span>\r\n                <span class=\"btn-inner--text\"> dashboard </span>\r\n              </a>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </header>\r\n  <div class=\"section section-cards bg-secondary\">\r\n    <div class=\"container\">\r\n      </div>\r\n      <div style=\"padding-right: 60px; padding-left: 60px;\">\r\n        <div class=\"form-group\">\r\n          <div class=\"\">\r\n            <div class=\"card card-pricing card-background\" style=\"background-image: url('./assets/img/ill/pricing_bg.svg')\" data-background=\"image\" style=\"width: 100%\" data-icon=\"big-icon\">\r\n              <div class=\"card-header bg-transparent\">\r\n                <h2 class=\"text-black\">Upload Template</h2>\r\n          </div>\r\n          <div style=\"margin-left: 20px; margin-right: 20px\">\r\n            <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n              <div class=\"input-group input-group-alternative\">\r\n                <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n                </div>\r\n\r\n                <label style=\"padding-top: 10px\">Artwork: </label >\r\n                <select class=\"form-control\" id=\"category\"  [(ngModel)]=\"filename\"\r\n                        [ngModelOptions]=\"{standalone: true}\"\r\n                        type=\"text\" (blur)=\"focus = false\"\r\n                        (focus)=\"focus = true\"\r\n                        (ngModelChange)=\"changedItem(filename)\"\r\n\r\n                >\r\n                  <option *ngFor=\"let art of Allartworks\" [value]=\"art.blob_thumbnail\" >{{art.data.name}}</option>\r\n                </select>\r\n              </div>\r\n            </div>\r\n            <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n              <div class=\"input-group input-group-alternative\">\r\n                <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n                </div>\r\n\r\n                <label style=\"padding-top: 10px\">Artwork ID: </label >\r\n                <select class=\"form-control\" id=\"artworkid\"  name=\"artworkid\" [(ngModel)]=\"artworkid\"\r\n                        [ngModelOptions]=\"{standalone: true}\"\r\n                        type=\"text\" (blur)=\"focus = false\"\r\n                        (focus)=\"focus = true\"\r\n                >\r\n                  <option *ngFor=\"let artid of Filteredartworks\" [value]=\"artid.id\" >{{artid.id}}</option>\r\n                </select>\r\n              </div>\r\n            </div>\r\n          \r\n          <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n            <div class=\"input-group input-group-alternative\">\r\n              <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n              </div>\r\n             \r\n                <label style=\"padding-top: 10px\">Upload For: </label >\r\n                <select class=\"form-control\" id=\"category\"  [(ngModel)]=\"user\"\r\n                [ngModelOptions]=\"{standalone: true}\"\r\n                type=\"text\" (blur)=\"focus = false\"\r\n                (focus)=\"focus = true\"\r\n                >\r\n                    <option *ngFor=\"let user of users\" [value]=\"user._id\">{{user.name}}</option>\r\n                </select>\r\n            </div>\r\n          </div>\r\n\r\n            <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n              <div class=\"input-group input-group-alternative\">\r\n                <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n                </div>\r\n\r\n                <label style=\"padding-top: 10px\">Tag: </label >\r\n                <select class=\"form-control\" id=\"tags\"  [(ngModel)]=\"tags\"\r\n                        [ngModelOptions]=\"{standalone: true}\"\r\n                        type=\"text\" (blur)=\"focus = false\"\r\n                        (focus)=\"focus = true\"\r\n                        required\r\n                >\r\n                  <option  value=\"facebook\">facebook</option>\r\n                  <option  value=\"whatsapp_mobile\">whatsapp/mobile</option>\r\n                  <option  value=\"youtube\">youtube</option>\r\n                  <option  value=\"instagram\">instagram</option>\r\n                  <option  value=\"twitter\">twitter</option>\r\n                  <option  value=\"flier_poster\">flier/poster</option>\r\n                  <option  value=\"logos\">logos</option>\r\n                  <option  value=\"cards\">cards</option>\r\n                </select>\r\n              </div>\r\n            </div>\r\n            <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n              <div class=\"input-group input-group-alternative\">\r\n                <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n                </div>\r\n\r\n                <label style=\"padding-top: 10px\">type: </label >\r\n                <select class=\"form-control\" id=\"type\"  [(ngModel)]=\"type\"\r\n                        [ngModelOptions]=\"{standalone: true}\"\r\n                        type=\"text\" (blur)=\"focus = false\"\r\n                        (focus)=\"focus = true\"\r\n                        required\r\n                >\r\n                  <option  value=\"svg\">svg</option>\r\n                  <option  value=\"png\">png</option>\r\n                  <option  value=\"jpg\">jpg</option>\r\n                  <option  value=\"jpeg\">jpeg</option>\r\n                  <option  value=\"other\">other</option>\r\n                </select>\r\n              </div>\r\n            </div>\r\n\r\n          <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n            <div class=\"input-group input-group-alternative\">\r\n              <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n              </div>\r\n              <input \r\n               [(ngModel)]=\"amount\"\r\n               [ngModelOptions]=\"{standalone: true}\"\r\n               class=\"form-control\"\r\n               placeholder=\"Amount\" \r\n               type=\"text\" (blur)=\"focus = false\"\r\n               (focus)=\"focus = true\" />\r\n            </div>\r\n          </div>\r\n          </div>\r\n          <button class=\"btn btn-primary\" id=\"signup\" (click)=\"upload()\" style=\"width: 140px; margin-left: 40%; margin-bottom: 10px;\">Upload</button>\r\n     \r\n        </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n    <div class=\"table-responsive\">\r\n\r\n      <!-- Show it when there is no jobcard created -->\r\n      <div class=\"no-data text-center\" *ngIf=\"Allfiles.length == 0\">\r\n        <p>There are no files added yet!</p>\r\n      </div>\r\n\r\n      <!-- Jobcard list table, it hides when there is no employee -->\r\n      <div *ngIf=\"Allfiles.length !== 0\">\r\n        <h3 class=\"mb-3 text-center\">Files List</h3>\r\n\r\n        <div style=\"padding-left: 20px; padding-right: 20px;\">\r\n          <table class=\"table align-items-center\" >\r\n            <thead>\r\n            <tr>\r\n              <th>#</th>\r\n              <th scope=\"col\">Name</th>\r\n              <th scope=\"col\">url</th>\r\n              <th scope=\"col\">user</th>\r\n              <th scope=\"col\">uploaded by</th>\r\n                <th scope=\"col\">amount</th>\r\n              <th scope=\"col\">file name</th>\r\n            \r\n            </tr>\r\n            </thead>\r\n            <tbody>\r\n            <tr *ngFor=\"let filess of Allfiles; let i=index;\">\r\n              <td>{{i+1}}</td>\r\n              <td>{{filess.name}}</td>\r\n              <td>{{filess.url}}</td>\r\n              <td>{{filess.user}}</td>\r\n              <td>{{filess.uploadedby}}</td>\r\n              <td>{{filess.amount}}</td>\r\n              <td>{{filess.filename}}</td>\r\n\r\n              <td>\r\n\r\n\r\n               <button type=\"button\" rel=\"tooltip\" class=\"btn btn-danger btn-icon btn-sm \" data-original-title=\"\" title=\"\">\r\n                 <span class=\"delete\" (click)=\"deleteFiles(filess._id)\">Delete</span>\r\n               </button>\r\n              </td>\r\n            </tr>\r\n            </tbody>\r\n          </table>\r\n        </div>\r\n\r\n      </div>\r\n    \r\n    </div>\r\n    <div class=\"container\">\r\n\r\n      <!-- Show it when there is no jobcard created -->\r\n      <div class=\"no-data text-center\" *ngIf=\"Allusers.length == 0\">\r\n        <p>There is users added yet!</p>\r\n      </div>\r\n\r\n      <!-- Jobcard list table, it hides when there is no employee -->\r\n      <div *ngIf=\"Allusers.length !== 0\">\r\n        <h3 class=\"mb-3 text-center\">Users List</h3>\r\n\r\n        <div style=\"padding-left: 20px; padding-right: 20px;\">\r\n          <table class=\"table\" >\r\n            <thead>\r\n            <tr>\r\n              <th>#</th>\r\n              <th scope=\"col\">Name</th>\r\n              <th scope=\"col\">email</th>\r\n              <th scope=\"col\">role</th>\r\n              <th scope=\"col\">department</th>\r\n            </tr>\r\n            </thead>\r\n            <tbody>\r\n            <tr *ngFor=\"let userss of Allusers; let i=index;\">\r\n              <td>{{i+1}}</td>\r\n              <td>{{userss.name}}</td>\r\n              <td>{{userss.email}}</td>\r\n              <td>{{userss.role}}</td>\r\n              <td>{{userss.department}}</td>\r\n\r\n              <td>\r\n\r\n\r\n               <button type=\"button\" rel=\"tooltip\" class=\"btn btn-danger btn-icon btn-sm \" data-original-title=\"\" title=\"\">\r\n                 <span class=\"delete\" (click)=\"deleteUsers(userss._id)\">Delete</span>\r\n               </button>\r\n              </td>\r\n            </tr>\r\n            </tbody>\r\n          </table>\r\n        </div>\r\n      </div>\r\n\r\n    </div>\r\n\r\n    <div>\r\n  <!-- Heading Title -->\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\r\n<div class=\"wrapper\">\r\n  <header class=\"header-4 skew-separator\">\r\n    <div class=\"header-wrapper\">\r\n       \r\n      <div class=\"page-header header-video\">\r\n        <div class=\"overlay\"></div>\r\n        <video\r\n          autoplay=\"autoplay\"\r\n          loop=\"loop\"\r\n          muted=\"muted\"\r\n          playsinline=\"playsinline\"\r\n        >\r\n          <source\r\n            src=\"https://www.youtube.com/watch?v=2Gg6Seob5Mg\"\r\n            type=\"video/mp4\"\r\n          />\r\n        </video>\r\n        <div class=\"container text-center\">\r\n          <div class=\"row\">\r\n            <div class=\"col-lg-7 mx-auto\">\r\n              <h1 class=\"video-text\">Welcome to your admin dashboard</h1>\r\n              <h1 class=\"display-3 text-white\">The time to design is right now!</h1>\r\n              <a\r\n                class=\"btn btn-warning btn-icon mt-3 mb-sm-0\"\r\n              >\r\n                <span class=\"btn-inner--icon\">\r\n                  <i class=\"ni ni-button-play\"> </i>\r\n                </span>\r\n                <span class=\"btn-inner--text\"> dashboard </span>\r\n              </a>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </header>\r\n  <div class=\"section section-cards bg-secondary\">\r\n    <div class=\"container\">\r\n      </div>\r\n      <div style=\"padding-right: 60px; padding-left: 60px;\">\r\n        <div class=\"form-group\">\r\n          <div class=\"\">\r\n            <div class=\"card card-pricing card-background\" style=\"background-image: url('./assets/img/ill/pricing_bg.svg')\" data-background=\"image\" style=\"width: 100%\" data-icon=\"big-icon\">\r\n              <div class=\"card-header bg-transparent\">\r\n                <h2 class=\"text-black\">Upload Template</h2>\r\n          </div>\r\n          <div style=\"margin-left: 20px; margin-right: 20px\">\r\n            <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n              <div class=\"input-group input-group-alternative\">\r\n                <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n                </div>\r\n\r\n                <label style=\"padding-top: 10px\">Artwork: </label >\r\n                <select class=\"form-control\" id=\"category\"  [(ngModel)]=\"filedata.filename\"\r\n                        [ngModelOptions]=\"{standalone: true}\"\r\n                        type=\"text\" (blur)=\"focus = false\"\r\n                        (focus)=\"focus = true\"\r\n                        (ngModelChange)=\"changedItem(filedata.filename)\"\r\n                        selected\r\n                >\r\n                  <option *ngFor=\"let art of Allartworks\" [value]=\"art.blob_thumbnail\" >{{art.data.name}}</option>\r\n                </select>\r\n              </div>\r\n            </div>\r\n            <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n              <div class=\"input-group input-group-alternative\">\r\n                <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n                </div>\r\n\r\n                <label style=\"padding-top: 10px\">Artwork ID: </label >\r\n                <select class=\"form-control\" id=\"artworkid\"  name=\"name\" [(ngModel)]=\"filedata.name\"\r\n                        [ngModelOptions]=\"{standalone: true}\"\r\n                        type=\"text\" (blur)=\"focus = false\"\r\n                        (focus)=\"focus = true\"\r\n                >\r\n                  <option *ngFor=\"let artid of Filteredartworks\" [value]=\"artid.id\" >{{artid.id}}</option>\r\n                </select>\r\n              </div>\r\n            </div>\r\n          \r\n          <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n            <div class=\"input-group input-group-alternative\">\r\n              <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n              </div>\r\n             \r\n                <label style=\"padding-top: 10px\">Upload For: </label >\r\n                <select class=\"form-control\" id=\"category\"  [(ngModel)]=\"filedata.user\"\r\n                [ngModelOptions]=\"{standalone: true}\"\r\n                type=\"text\" (blur)=\"focus = false\"\r\n                (focus)=\"focus = true\"\r\n                >\r\n                    <option *ngFor=\"let user of users\" [value]=\"user._id\">{{user.name}}</option>\r\n                </select>\r\n            </div>\r\n          </div>\r\n\r\n            <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n              <div class=\"input-group input-group-alternative\">\r\n                <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n                </div>\r\n\r\n                <label style=\"padding-top: 10px\">Tag: </label >\r\n                <select class=\"form-control\" id=\"tags\"  [(ngModel)]=\"filedata.tags\"\r\n                        [ngModelOptions]=\"{standalone: true}\"\r\n                        type=\"text\" (blur)=\"focus = false\"\r\n                        (focus)=\"focus = true\"\r\n                        required\r\n                >\r\n                  <option  value=\"facebook\">facebook</option>\r\n                  <option  value=\"whatsapp_mobile\">whatsapp/mobile</option>\r\n                  <option  value=\"youtube\">youtube</option>\r\n                  <option  value=\"instagram\">instagram</option>\r\n                  <option  value=\"twitter\">twitter</option>\r\n                  <option  value=\"flier_poster\">flier/poster</option>\r\n                  <option  value=\"logos\">logos</option>\r\n                  <option  value=\"cards\">cards</option>\r\n                </select>\r\n              </div>\r\n            </div>\r\n            <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n              <div class=\"input-group input-group-alternative\">\r\n                <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n                </div>\r\n\r\n                <label style=\"padding-top: 10px\">type: </label >\r\n                <select class=\"form-control\" id=\"type\"  [(ngModel)]=\"filedata.type\"\r\n                        [ngModelOptions]=\"{standalone: true}\"\r\n                        type=\"text\" (blur)=\"focus = false\"\r\n                        (focus)=\"focus = true\"\r\n                        required\r\n                >\r\n                  <option  value=\"svg\">svg</option>\r\n                  <option  value=\"png\">png</option>\r\n                  <option  value=\"jpg\">jpg</option>\r\n                  <option  value=\"jpeg\">jpeg</option>\r\n                  <option  value=\"other\">other</option>\r\n                </select>\r\n              </div>\r\n            </div>\r\n\r\n          <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n            <div class=\"input-group input-group-alternative\">\r\n              <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n              </div>\r\n              <input \r\n               [(ngModel)]=\"filedata.amount\"\r\n               [ngModelOptions]=\"{standalone: true}\"\r\n               class=\"form-control\"\r\n               placeholder=\"Amount\" \r\n               type=\"text\" (blur)=\"focus = false\"\r\n               (focus)=\"focus = true\" />\r\n            </div>\r\n          </div>\r\n          </div>\r\n          <button class=\"btn btn-primary\" id=\"signup\" (click)=\"submitFileForm()\" style=\"width: 140px; margin-left: 40%; margin-bottom: 10px;\">Upload</button>\r\n     \r\n        </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n    <div class=\"table-responsive\">\r\n\r\n      <!-- Show it when there is no jobcard created -->\r\n      <div class=\"no-data text-center\" *ngIf=\"Allfiles.length == 0\">\r\n        <p>There are no files added yet!</p>\r\n      </div>\r\n\r\n      <!-- Jobcard list table, it hides when there is no employee -->\r\n      <div *ngIf=\"Allfiles.length !== 0\">\r\n        <h3 class=\"mb-3 text-center\">Files List</h3>\r\n\r\n        <div style=\"padding-left: 20px; padding-right: 20px;\">\r\n          <table class=\"table align-items-center\" >\r\n            <thead>\r\n            <tr>\r\n              <th>#</th>\r\n              <th scope=\"col\">Name</th>\r\n              <th scope=\"col\">url</th>\r\n              <th scope=\"col\">user</th>\r\n              <th scope=\"col\">uploaded by</th>\r\n                <th scope=\"col\">amount</th>\r\n              <th scope=\"col\">file name</th>\r\n            \r\n            </tr>\r\n            </thead>\r\n            <tbody>\r\n            <tr *ngFor=\"let filess of Allfiles; let i=index;\">\r\n              <td>{{i+1}}</td>\r\n              <td>{{filess.name}}</td>\r\n              <td>{{filess.url}}</td>\r\n              <td>{{filess.user}}</td>\r\n              <td>{{filess.uploadedby}}</td>\r\n              <td>{{filess.amount}}</td>\r\n              <td>{{filess.filename}}</td>\r\n\r\n              <td>\r\n\r\n\r\n               <button type=\"button\" rel=\"tooltip\" class=\"btn btn-danger btn-icon btn-sm \" data-original-title=\"\" title=\"\">\r\n                 <span class=\"delete\" (click)=\"deleteFiles(filess._id)\">Delete</span>\r\n               </button>\r\n              </td>\r\n            </tr>\r\n            </tbody>\r\n          </table>\r\n        </div>\r\n\r\n      </div>\r\n    \r\n    </div>\r\n    <div class=\"container\">\r\n\r\n      <!-- Show it when there is no jobcard created -->\r\n      <div class=\"no-data text-center\" *ngIf=\"Allusers.length == 0\">\r\n        <p>There is users added yet!</p>\r\n      </div>\r\n\r\n      <!-- Jobcard list table, it hides when there is no employee -->\r\n      <div *ngIf=\"Allusers.length !== 0\">\r\n        <h3 class=\"mb-3 text-center\">Users List</h3>\r\n\r\n        <div style=\"padding-left: 20px; padding-right: 20px;\">\r\n          <table class=\"table\" >\r\n            <thead>\r\n            <tr>\r\n              <th>#</th>\r\n              <th scope=\"col\">Name</th>\r\n              <th scope=\"col\">email</th>\r\n              <th scope=\"col\">role</th>\r\n              <th scope=\"col\">department</th>\r\n            </tr>\r\n            </thead>\r\n            <tbody>\r\n            <tr *ngFor=\"let userss of Allusers; let i=index;\">\r\n              <td>{{i+1}}</td>\r\n              <td>{{userss.name}}</td>\r\n              <td>{{userss.email}}</td>\r\n              <td>{{userss.role}}</td>\r\n              <td>{{userss.department}}</td>\r\n\r\n              <td>\r\n\r\n\r\n               <button type=\"button\" rel=\"tooltip\" class=\"btn btn-danger btn-icon btn-sm \" data-original-title=\"\" title=\"\">\r\n                 <span class=\"delete\" (click)=\"deleteUsers(userss._id)\">Delete</span>\r\n               </button>\r\n              </td>\r\n            </tr>\r\n            </tbody>\r\n          </table>\r\n        </div>\r\n      </div>\r\n\r\n    </div>\r\n\r\n    <div>\r\n  <!-- Heading Title -->\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n");
 
 /***/ }),
 
@@ -1964,13 +1964,13 @@ var PictureUploadComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dev", function() { return dev; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+// export const dev = {
+//     connect: 'https://server.adiy.site'
+// };
 
 var dev = {
-    connect: 'https://server.adiy.site'
+    connect: 'http://localhost:8000'
 };
-// export const dev = {
-//     connect: 'http://localhost:8000'
-// }
 
 
 /***/ }),
@@ -2308,7 +2308,8 @@ var AllTemplatesComponent = /** @class */ (function () {
         });
     };
     AllTemplatesComponent.prototype.goToUrl = function (id) {
-        this.document.location.href = 'https://sanaa.adiy.site/' + this.profile + '/' + id;
+        var url = 'https://sanaa.adiy.site/' + this.profile + '/' + id;
+        window.open(url, "_blank");
     };
     // Delete employee
     // tslint:disable-next-line:variable-name
@@ -3163,7 +3164,8 @@ var EcommerceComponent = /** @class */ (function () {
         body.classList.remove('ecommerce-page');
     };
     EcommerceComponent.prototype.goToUrl = function (id) {
-        this.document.location.href = 'https://sanaa.adiy.site/' + this.profile + '/' + id;
+        var url = 'https://sanaa.adiy.site/' + this.profile + '/' + id;
+        window.open(url, "_blank");
     };
     EcommerceComponent.prototype.loadmore = function () {
         (document.getElementById('loadmore').style.display = 'block');
@@ -3398,6 +3400,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shared_artworks_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../shared/artworks.service */ "./src/app/shared/artworks.service.ts");
 /* harmony import */ var _shared_artworks__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../shared/artworks */ "./src/app/shared/artworks.ts");
 /* harmony import */ var _shared_allartworks_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../shared/allartworks.service */ "./src/app/shared/allartworks.service.ts");
+/* harmony import */ var _shared_files__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../shared/files */ "./src/app/shared/files.ts");
+
 
 
 
@@ -3425,6 +3429,7 @@ var LandingpageComponent = /** @class */ (function () {
         this.getUser();
         this.loadFiles();
         this.data = new _shared_artworks__WEBPACK_IMPORTED_MODULE_7__["Artworks"]();
+        this.filedata = new _shared_files__WEBPACK_IMPORTED_MODULE_9__["Files"]();
     }
     LandingpageComponent.prototype.ngOnInit = function () {
         this.loadUsers();
@@ -3445,6 +3450,7 @@ var LandingpageComponent = /** @class */ (function () {
             console.log(data);
             alert('Template was uploaded successfully');
             _this.user = '';
+            _this.name = '';
             _this.amount = '';
             _this.type = '';
             _this.tags = '';
@@ -3457,6 +3463,7 @@ var LandingpageComponent = /** @class */ (function () {
     LandingpageComponent.prototype.postFile = function (fileToUpload, filename) {
         var formData = new FormData();
         formData.append('user', this.user.toString());
+        formData.append('name', this.name.toString());
         formData.append('uploadedby', this.profile);
         formData.append('amount', this.amount.toString());
         formData.append('tags', this.tags.toString());
@@ -3512,6 +3519,11 @@ var LandingpageComponent = /** @class */ (function () {
     LandingpageComponent.prototype.submitForm = function () {
         this.restApi.createArtwork(this.data).subscribe(function (response) {
             console.log("art work is created");
+        });
+    };
+    LandingpageComponent.prototype.submitFileForm = function () {
+        this.FilesRestApi.createFiles(this.filedata).subscribe(function (response) {
+            console.log(response);
         });
     };
     // Delete employee
@@ -3685,7 +3697,8 @@ var PricingpageComponent = /** @class */ (function () {
         this.getUserDetails(item);
     };
     PricingpageComponent.prototype.goToUrl = function (id) {
-        this.document.location.href = 'https://sanaa.adiy.site/' + this.profile + '/' + id;
+        var url = 'https://sanaa.adiy.site/' + this.profile + '/' + id;
+        window.open(url, "_blank");
     };
     PricingpageComponent.prototype.loadAllArtWorks = function () {
         var _this = this;
@@ -4896,7 +4909,7 @@ var ArtWorksService = /** @class */ (function () {
     function ArtWorksService(http) {
         this.http = http;
         // Base url
-        this.baseurl = 'http://134.122.78.115:8000';
+        this.baseurl = 'https://server.adiy.site';
         // tslint:disable-next-line:variable-name
         this.base_path = 'https://server.adiy.site/api/files';
         // Http Headers
@@ -5088,7 +5101,7 @@ var FilesService = /** @class */ (function () {
     function FilesService(http) {
         this.http = http;
         // Base url
-        this.baseurl = 'https://server.adiy.site';
+        this.baseurl = 'http://localhost:8000';
         // tslint:disable-next-line:variable-name
         this.base_path = 'https://server.adiy.site/api/files';
         // Http Headers
@@ -5098,6 +5111,15 @@ var FilesService = /** @class */ (function () {
             })
         };
     }
+    FilesService.prototype.createFiles = function (data) {
+        return this.http.post(this.baseurl + '/api/files/', JSON.stringify(data), this.httpOptions)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["retry"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(this.errorHandl));
+    };
+    FilesService.prototype.createItem = function (item) {
+        return this.http
+            .post(this.base_path, JSON.stringify(item), this.httpOptions)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["retry"])(2), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(this.errorHandl));
+    };
     // GET
     // tslint:disable-next-line:variable-name
     FilesService.prototype.GetFiless = function (_id) {
@@ -5139,6 +5161,28 @@ var FilesService = /** @class */ (function () {
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
     ], FilesService);
     return FilesService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/files.ts":
+/*!*********************************!*\
+  !*** ./src/app/shared/files.ts ***!
+  \*********************************/
+/*! exports provided: Files */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Files", function() { return Files; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+
+var Files = /** @class */ (function () {
+    function Files() {
+    }
+    return Files;
 }());
 
 
