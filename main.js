@@ -1964,13 +1964,13 @@ var PictureUploadComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dev", function() { return dev; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-// export const dev = {
-//     connect: 'https://server.adiy.site'
-// };
 
 var dev = {
-    connect: 'http://localhost:8000'
+    connect: 'https://server.adiy.site'
 };
+// export const dev = {
+//     connect: 'http://localhost:8000'
+// }
 
 
 /***/ }),
@@ -5101,7 +5101,7 @@ var FilesService = /** @class */ (function () {
     function FilesService(http) {
         this.http = http;
         // Base url
-        this.baseurl = 'http://localhost:8000';
+        this.baseurl = 'https://server.adiy.site';
         // tslint:disable-next-line:variable-name
         this.base_path = 'https://server.adiy.site/api/files';
         // Http Headers
