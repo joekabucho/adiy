@@ -1992,13 +1992,14 @@ var PictureUploadComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dev", function() { return dev; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-// export const dev = {
-//     connect: 'https://server.adiy.site'
-// };
 
 var dev = {
-    connect: 'http://localhost:8000'
+    connect: 'https://server.adiy.site'
 };
+//
+// export const dev = {
+//     connect: 'http://localhost:8000'
+// }
 
 
 /***/ }),
