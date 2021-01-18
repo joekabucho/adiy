@@ -35,7 +35,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<nav\r\n  class=\"navbar navbar-main navbar-expand-lg navbar-dark headroom--pinned\"\r\n  id=\"navbar-main\"\r\n  style=\"color: #0a0c0d\"\r\n>\r\n  <div class=\"container\">\r\n    <a class=\"navbar-brand mr-lg-5\" [routerLink]=\"['all-templates']\">\r\n      <img style=\"align-items: flex-start\" src=\"assets/img/brand/logo.png\" id=\"brand-logo\"/>\r\n    </a>\r\n    <button\r\n      aria-controls=\"navbar_global\"\r\n      aria-label=\"Toggle navigation\"\r\n      class=\"navbar-toggler\"\r\n      [attr.aria-expanded]=\"!isCollapsed\"\r\n      (click)=\"isCollapsed = !isCollapsed\"\r\n      id=\"navbar_global\"\r\n      type=\"button\"\r\n    >\r\n      <span class=\"navbar-toggler-icon\"> </span>\r\n    </button>\r\n    <div\r\n      class=\"navbar-collapse\"\r\n      [isAnimated]=\"true\"\r\n      [collapse]=\"isCollapsed\"\r\n      id=\"navbar_global\"\r\n    >\r\n      <div class=\"navbar-collapse-header\">\r\n        <div class=\"row\">\r\n          <div class=\"col-6 collapse-close\">\r\n            <button\r\n              aria-controls=\"navbar_global\"\r\n              aria-label=\"Toggle navigation\"\r\n              class=\"navbar-toggler\"\r\n              [attr.aria-expanded]=\"!isCollapsed\"\r\n              (click)=\"isCollapsed = !isCollapsed\"\r\n              id=\"navbar_global\"\r\n              type=\"button\"\r\n            >\r\n              <span> </span> <span> </span>\r\n            </button>\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n      <!--Start of comment -->\r\n      \r\n      <ul class=\"navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto\" *ngIf=\"mobileView()\">\r\n        <li class=\"nav-item dropdown\" dropdown>\r\n          <a\r\n            class=\"nav-link\"\r\n            data-toggle=\"dropdown\"\r\n            dropdownToggle\r\n            href=\"javascript:;\"\r\n            role=\"button\"\r\n          >\r\n            <i class=\"ni ni-app d-lg-none\"> </i>\r\n            <span class=\"nav-link-inner--text\">Actions</span>\r\n          </a>\r\n          <div\r\n            aria-labelledby=\"navbarDropdownMenuLink\"\r\n            class=\"dropdown-menu\"\r\n            *dropdownMenu\r\n          >\r\n            <a class=\"dropdown-item\" [routerLink]=\"['checkout-page']\"\r\n            >\r\n              <i class=\"ni ni-album-2 text-info\"> </i> CheckOut\r\n            </a>\r\n          </div>\r\n        </li>\r\n        <li class=\"nav-item dropdown\" dropdown>\r\n         \r\n          <div\r\n            aria-labelledby=\"navbarDropdownMenuLink\"\r\n            class=\"dropdown-menu\"\r\n            *dropdownMenu\r\n          >\r\n            \r\n            <a class=\"dropdown-item\" [routerLink]=\"['/examples/checkout-page']\">\r\n              <i class=\"ni ni-basket text-orange\"> </i> Checkout Page\r\n            </a>\r\n            \r\n          </div>\r\n        </li>\r\n      </ul>\r\n      <ul class=\"navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto\" *ngIf=\"!mobileView()\">\r\n        <a\r\n        class=\"nav-link\"\r\n        data-toggle=\"dropdown\"\r\n        href=\"javascript:;\"\r\n        role=\"button\"\r\n        (click)=\"checkout()\" >\r\n        <i class=\"ni ni-single-copy-04 d-lg-none\"> </i>\r\n        <span class=\"nav-link-inner--text\">CHECKOUT </span>\r\n      </a>\r\n      </ul>\r\n          <ul class=\"navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto\" *ngIf=\"!mobileView()\">\r\n        <a\r\n        class=\"nav-link\"\r\n        data-toggle=\"dropdown\"\r\n        href=\"javascript:;\"\r\n        role=\"button\"\r\n        [routerLink]=\"['youtube']\">\r\n        <i class=\"ni ni-single-copy-04 d-lg-none\"> </i>\r\n        <span class=\"nav-link-inner--text\">TUTORIALS</span>\r\n      </a>\r\n      </ul>\r\n      <ul class=\"navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto\" *ngIf=\"!mobileView()\">\r\n        <a\r\n        class=\"nav-link\"\r\n        data-toggle=\"dropdown\"\r\n        href=\"javascript:;\"\r\n        role=\"button\"\r\n        [routerLink]=\"['register-page']\"\r\n        (click)=\"logout()\">\r\n        <i class=\"ni ni-single-copy-04 d-lg-none\"> </i>\r\n        <span class=\"nav-link-inner--text\">LOGOUT</span>\r\n      </a>\r\n      </ul>\r\n\r\n   <!-- End of comment-->\r\n      \r\n    </div>\r\n  </div>\r\n</nav>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<nav\r\n  class=\"navbar navbar-main navbar-expand-lg navbar-dark headroom--pinned\"\r\n  id=\"navbar-main\"\r\n  style=\"color: #0a0c0d\"\r\n>\r\n  <div class=\"container\">\r\n    <a class=\"navbar-brand mr-lg-5\" [routerLink]=\"['all-templates']\">\r\n      <img style=\"align-items: flex-start\" src=\"assets/img/brand/logo.png\" id=\"brand-logo\"/>\r\n    </a>\r\n    <button\r\n      aria-controls=\"navbar_global\"\r\n      aria-label=\"Toggle navigation\"\r\n      class=\"navbar-toggler\"\r\n      [attr.aria-expanded]=\"!isCollapsed\"\r\n      (click)=\"isCollapsed = !isCollapsed\"\r\n      id=\"navbar_global\"\r\n      type=\"button\"\r\n    >\r\n      <span class=\"navbar-toggler-icon\"> </span>\r\n    </button>\r\n    <div\r\n      class=\"navbar-collapse\"\r\n      [isAnimated]=\"true\"\r\n      [collapse]=\"isCollapsed\"\r\n      id=\"navbar_global\"\r\n    >\r\n      <div class=\"navbar-collapse-header\">\r\n        <div class=\"row\">\r\n          <div class=\"col-6 collapse-close\">\r\n            <button\r\n              aria-controls=\"navbar_global\"\r\n              aria-label=\"Toggle navigation\"\r\n              class=\"navbar-toggler\"\r\n              [attr.aria-expanded]=\"!isCollapsed\"\r\n              (click)=\"isCollapsed = !isCollapsed\"\r\n              id=\"navbar_global\"\r\n              type=\"button\"\r\n            >\r\n              <span> </span> <span> </span>\r\n            </button>\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n      <!--Start of comment -->\r\n      \r\n      <ul class=\"navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto\" *ngIf=\"mobileView()\">\r\n        <li class=\"nav-item dropdown\" dropdown>\r\n          <a\r\n            class=\"nav-link\"\r\n            data-toggle=\"dropdown\"\r\n            dropdownToggle\r\n            href=\"javascript:;\"\r\n            role=\"button\"\r\n          >\r\n            <i class=\"ni ni-app d-lg-none\"> </i>\r\n            <span class=\"nav-link-inner--text\">Actions</span>\r\n          </a>\r\n          <div\r\n            aria-labelledby=\"navbarDropdownMenuLink\"\r\n            class=\"dropdown-menu\"\r\n            *dropdownMenu\r\n          >\r\n            <a class=\"dropdown-item\" [routerLink]=\"['checkout-page']\"\r\n            >\r\n              <i class=\"ni ni-album-2 text-info\"> </i> CheckOut\r\n            </a>\r\n          </div>\r\n        </li>\r\n        <li class=\"nav-item dropdown\" dropdown>\r\n         \r\n          <div\r\n            aria-labelledby=\"navbarDropdownMenuLink\"\r\n            class=\"dropdown-menu\"\r\n            *dropdownMenu\r\n          >\r\n            \r\n            <a class=\"dropdown-item\" [routerLink]=\"['/examples/checkout-page']\">\r\n              <i class=\"ni ni-basket text-orange\"> </i> Checkout Page\r\n            </a>\r\n            \r\n          </div>\r\n        </li>\r\n      </ul>\r\n      <ul class=\"navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto\" *ngIf=\"!mobileView()\">\r\n        <a\r\n        class=\"nav-link\"\r\n        data-toggle=\"dropdown\"\r\n        href=\"javascript:;\"\r\n        role=\"button\"\r\n        (click)=\"checkout()\" >\r\n        <i class=\"ni ni-single-copy-04 d-lg-none\"> </i>\r\n        <span class=\"nav-link-inner--text\">CHECKOUT </span>\r\n      </a>\r\n      </ul>\r\n          <ul class=\"navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto\" *ngIf=\"!mobileView()\">\r\n        <a\r\n        class=\"nav-link\"\r\n        data-toggle=\"dropdown\"\r\n        href=\"javascript:;\"\r\n        role=\"button\"\r\n        [routerLink]=\"['youtube']\">\r\n        <i class=\"ni ni-single-copy-04 d-lg-none\"> </i>\r\n        <span class=\"nav-link-inner--text\">TUTORIALS</span>\r\n      </a>\r\n      </ul>\r\n      <ul class=\"navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto\" *ngIf=\"!mobileView()\">\r\n        <a\r\n        class=\"nav-link\"\r\n        data-toggle=\"dropdown\"\r\n        href=\"javascript:;\"\r\n        role=\"button\"\r\n        [routerLink]=\"['register-page']\"\r\n        (click)=\"logout()\">\r\n        <i class=\"ni ni-single-copy-04 d-lg-none\"> </i>\r\n        <span class=\"nav-link-inner--text\">LOGOUT</span>\r\n      </a>\r\n      </ul>\r\n      <ul class=\"navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto\" *ngIf=\"!mobileView()\">\r\n        <a\r\n                class=\"nav-link\"\r\n                data-toggle=\"dropdown\"\r\n                href=\"javascript:;\"\r\n                role=\"button\">\r\n          <i class=\"ni ni-single-copy-04 d-lg-none\"> </i>\r\n          <span class=\"nav-link-inner--text\">account expiry:{{expiryDate | date: 'shortDate'}}</span>\r\n        </a>\r\n      </ul>\r\n      <ul class=\"navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto\" *ngIf=\"!mobileView()\">\r\n        <a\r\n                class=\"nav-link\"\r\n                data-toggle=\"dropdown\"\r\n                href=\"javascript:;\"\r\n                role=\"button\">\r\n          <i class=\"ni ni-single-copy-04 d-lg-none\"> </i>\r\n          <span class=\"nav-link-inner--text\">name:{{UserExpiry[0].name}}</span>\r\n        </a>\r\n      </ul>\r\n       next\r\n\r\n   <!-- End of comment-->\r\n      \r\n    </div>\r\n  </div>\r\n</nav>\r\n");
 
 /***/ }),
 
@@ -230,7 +230,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\r\n<div class=\"wrapper\">\r\n  <div class=\"section section-cards bg-secondary\">\r\n    <div class=\"container\">\r\n      </div>\r\n      <div style=\"padding-right: 60px; padding-left: 60px;\">\r\n        <div class=\"form-group\">\r\n          <div class=\"\">\r\n            <div class=\"card card-pricing card-background\" style=\"background-image: url('./assets/img/ill/pricing_bg.svg')\" data-background=\"image\" style=\"width: 100%\" data-icon=\"big-icon\">\r\n              <div class=\"card-header bg-transparent\">\r\n                <h2 class=\"text-black\">Assign Template</h2>\r\n          </div>\r\n              <form [formGroup]=\"assignArtworkForm\">\r\n              <div style=\"margin-left: 20px; margin-right: 20px\">\r\n            <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n              <div class=\"input-group input-group-alternative\">\r\n                <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n                </div>\r\n\r\n                <label style=\"padding-top: 10px\">Artwork: </label >\r\n                <select class=\"form-control\" id=\"type\"  name=\"name\" formControlName=\"type\"\r\n                        type=\"text\" (blur)=\"focus = false\"\r\n                        (focus)=\"focus = true\"\r\n                        (change)=\"changedItem(type)\"\r\n                >\r\n                  <option *ngFor=\"let art of Allartworks\" [value]=\"art.blob_thumbnail\" >{{art.data.name}}</option>\r\n                </select>\r\n               </div>\r\n            </div>\r\n            <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n              <div class=\"input-group input-group-alternative\">\r\n                <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n                </div>\r\n\r\n                <label style=\"padding-top: 10px\">Artwork ID: </label >\r\n                <select class=\"form-control\" id=\"artworkid\"  name=\"name\" formControlName=\"artworkid\"\r\n                        type=\"text\" (blur)=\"focus = false\"  (focus)=\"focus = true\"\r\n                >\r\n                 <option *ngFor=\"let artid of Allartworks\" [value]=\"artid.id\" >{{artid.data.name}}</option>\r\n                </select>\r\n              </div>\r\n            </div>\r\n          \r\n          <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n            <div class=\"input-group input-group-alternative\">\r\n              <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n              </div>\r\n             \r\n                <label style=\"padding-top: 10px\">Upload For: </label >\r\n                <select class=\"form-control\" id=\"category\"  formControlName=\"user\"\r\n                type=\"text\" (blur)=\"focus = false\"\r\n                (focus)=\"focus = true\"\r\n                >\r\n                    <option *ngFor=\"let user of users\" [value]=\"user._id\">{{user.name}}</option>\r\n                </select>\r\n            </div>\r\n          </div>\r\n\r\n            <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n              <div class=\"input-group input-group-alternative\">\r\n                <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n                </div>\r\n\r\n                <label style=\"padding-top: 10px\">Tag: </label >\r\n                <select class=\"form-control\" id=\"tags\"  formControlName=\"tags\"\r\n                        type=\"text\" (blur)=\"focus = false\"\r\n                        (focus)=\"focus = true\"\r\n                        required\r\n                >\r\n                  <option  value=\"facebook\">facebook</option>\r\n                  <option  value=\"whatsapp_mobile\">whatsapp/mobile</option>\r\n                  <option  value=\"youtube\">youtube</option>\r\n                  <option  value=\"instagram\">instagram</option>\r\n                  <option  value=\"twitter\">twitter</option>\r\n                  <option  value=\"flier_poster\">flier/poster</option>\r\n                  <option  value=\"logos\">logos</option>\r\n                  <option  value=\"cards\">cards</option>\r\n                </select>\r\n              </div>\r\n            </div>\r\n\r\n          <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n            <div class=\"input-group input-group-alternative\">\r\n              <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n              </div>\r\n              <input\r\n                      formControlName=\"amount\"\r\n               class=\"form-control\"\r\n               placeholder=\"Amount\" \r\n               type=\"text\" (blur)=\"focus = false\"\r\n               (focus)=\"focus = true\" />\r\n            </div>\r\n          </div>\r\n          </div>\r\n          <button class=\"btn btn-primary\" id=\"signup\" (click)=\"submitFile()\" style=\"width: 140px; margin-left: 10%; margin-bottom: 10px;\">Assign</button>\r\n              </form>\r\n        </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n    <div class=\"row\">\r\n      <div class=\"col-6\">\r\n    <div class=\"card card-nav-tabs text-center\">\r\n      <div class=\"card-header card-header-primary\">\r\n        Users\r\n      </div>\r\n      <div class=\"card-body\">    <div class=\"container\">\r\n\r\n        <!-- Show it when there is no jobcard created -->\r\n        <div class=\"no-data text-center\" *ngIf=\"Allusers.length == 0\">\r\n          <p>There is users added yet!</p>\r\n        </div>\r\n\r\n        <!-- Jobcard list table, it hides when there is no employee -->\r\n        <div *ngIf=\"Allusers.length !== 0\">\r\n          <div style=\"padding-left: 20px; padding-right: 20px;\">\r\n            <table class=\"table\" datatable>\r\n              <thead>\r\n              <tr>\r\n                <th>#</th>\r\n                <th scope=\"col\">Name</th>\r\n                <th scope=\"col\">email</th>\r\n                <th scope=\"col\">role</th>\r\n                <th scope=\"col\">department</th>\r\n                <th scope=\"col\">Account Expiry</th>\r\n                <th scope=\"col\">Actions</th>\r\n              </tr>\r\n              </thead>\r\n              <tbody>\r\n              <tr *ngFor=\"let userss of Allusers; let i=index;\">\r\n                <td>{{i+1}}</td>\r\n                <td>{{userss.name}}</td>\r\n                <td>{{userss.email}}</td>\r\n                <td>{{userss.role}}</td>\r\n                <td>{{userss.department}}</td>\r\n                <td>{{userss.next_payment_date | date: 'shortDate'}}</td>\r\n\r\n                <td>\r\n\r\n                  <button type=\"button\" rel=\"tooltip\" class=\"btn btn-primary btn-icon btn-sm \" data-original-title=\"\" title=\"\"    data-target=\"#modal-form\"\r\n                          (click)=\"modalform.show();updateUser(userss)\">\r\n                    <span class=\"edit\">Subscription</span>\r\n                  </button>\r\n                  <button type=\"button\" rel=\"tooltip\" class=\"btn btn-danger btn-icon btn-sm \" data-original-title=\"\" title=\"\">\r\n                    <span class=\"delete\" (click)=\"deleteUsers(userss._id)\">Delete</span>\r\n                  </button>\r\n                </td>\r\n              </tr>\r\n              </tbody>\r\n            </table>\r\n          </div>\r\n        </div>\r\n\r\n      </div>\r\n\r\n        <div>\r\n          <!-- Heading Title -->\r\n        </div>\r\n      </div>\r\n    </div>\r\n      </div>\r\n      <div class=\"col-6\">\r\n<div class=\"card card-nav-tabs text-center\">\r\n  <div class=\"card-header card-header-primary\">\r\n    Files\r\n  </div>\r\n  <div class=\"card-body\">    <div class=\"container\">\r\n    <div class=\"table-responsive\">\r\n\r\n      <!-- Show it when there is no jobcard created -->\r\n      <div class=\"no-data text-center\" *ngIf=\"Allfiles.length == 0\">\r\n        <p>There are no files assigned yet!</p>\r\n      </div>\r\n\r\n      <!-- Jobcard list table, it hides when there is no employee -->\r\n      <div *ngIf=\"Allfiles.length !== 0\">\r\n        <div style=\"padding-left: 20px; padding-right: 20px;\">\r\n          <table class=\"table align-items-center\" datatable >\r\n            <thead>\r\n            <tr>\r\n              <th>#</th>\r\n              <th scope=\"col\">Name</th>\r\n              <th scope=\"col\">url</th>\r\n              <th scope=\"col\">user</th>\r\n              <th scope=\"col\">uploaded by</th>\r\n                <th scope=\"col\">amount</th>\r\n              <th scope=\"col\">file name</th>\r\n              <th scope=\"col\">Actions</th>\r\n\r\n            </tr>\r\n            </thead>\r\n            <tbody>\r\n            <tr *ngFor=\"let filess of Allfiles; let i=index;\">\r\n              <td>{{i+1}}</td>\r\n              <td>{{filess.name}}</td>\r\n              <td>{{filess.url}}</td>\r\n              <td>{{filess.user}}</td>\r\n              <td>{{filess.uploadedby}}</td>\r\n              <td>{{filess.amount}}</td>\r\n              <td>{{filess.filename}}</td>\r\n\r\n              <td>\r\n\r\n               <button type=\"button\" rel=\"tooltip\" class=\"btn btn-danger btn-icon btn-sm \" data-original-title=\"\" title=\"\">\r\n                 <span class=\"delete\" (click)=\"deleteFiles(filess._id)\">Delete</span>\r\n               </button>\r\n              </td>\r\n            </tr>\r\n            </tbody>\r\n          </table>\r\n        </div>\r\n\r\n      </div>\r\n    \r\n    </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n</div>\r\n  </div>\r\n</div>\r\n</div>\r\n\r\n\r\n<div class=\"col-md-4\">\r\n  <div\r\n          aria-hidden=\"true\"\r\n          aria-labelledby=\"modal-form\"\r\n          bsModal\r\n          class=\"modal fade\"\r\n          #modalform=\"bs-modal\"\r\n          id=\"modal-form\"\r\n          role=\"dialog\"\r\n          tabindex=\"-1\"\r\n  >\r\n    <div\r\n            class=\"modal-dialog modal-dialog-centered modal-sm\"\r\n            role=\"document\"\r\n    >\r\n      <div class=\"modal-content\">\r\n        <div class=\"modal-header\">\r\n          <h6 class=\"modal-title\" id=\"modal-title-default\">\r\n                User subscriptions\r\n          </h6>\r\n          <button\r\n                  aria-label=\"Close\"\r\n                  class=\"close\"\r\n                  data-dismiss=\"modal\"\r\n                  (click)=\"modalform.hide()\"\r\n                  type=\"button\"\r\n          >\r\n            <span aria-hidden=\"true\"> × </span>\r\n          </button>\r\n        </div>\r\n        <div class=\"modal-body p-0\">\r\n          <div class=\"card bg-secondary shadow border-0 mb-0\">\r\n            <div class=\"card-header bg-white pb-5\">\r\n              <div class=\"text-muted text-center mb-3\">\r\n                <small> Extend/Add user subscription</small>\r\n              </div>\r\n            <div class=\"card-body px-lg-5 py-lg-5\">\r\n              <form role=\"form\" [formGroup]=\"expirationForm\">\r\n                <div class=\"form-group mb-3\">\r\n                  <div class=\"input-group input-group-alternative\">\r\n                    <div class=\"input-group-prepend\">\r\n                          <span class=\"input-group-text\">\r\n                            <i class=\"ni ni-email-83\"> </i>\r\n                          </span>\r\n                    </div>\r\n                    <input\r\n                            class=\"form-control\" (blur)=\"focus = false\" (focus)=\"focus = true\"\r\n                            placeholder=\"Expiry Date\"\r\n                            name=\"next_payment_date\"\r\n                            formControlName=\"next_payment_date\"\r\n\r\n                            type=\"datetime-local\"\r\n                    />\r\n                  </div>\r\n                </div>\r\n                <div class=\"text-center\">\r\n                  <button\r\n                          class=\"btn btn-primary my-4\"\r\n                          type=\"button\"\r\n                          (click)=\"expirationDate();modalform.hide()\"\r\n                  >\r\nAssign Expiry date                  </button>\r\n                </div>\r\n              </form>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n</div>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"wrapper\">\r\n  <br>\r\n  <br>\r\n  <br>\r\n<div id=\"background-cards-component\" class=\"tab-pane tab-example-result fade show active\" role=\"tabpanel\" aria-labelledby=\"background-cards-component-tab\">\r\n  <div class=\"row\">\r\n    <div class=\"col-md-6 col-lg-4\">\r\n      <div class=\"card card-blog card-background\" data-animation=\"zooming\">\r\n        <div class=\"full-background\" style=\"background-image: url('assets/img/black.jpeg')\"></div>\r\n        <a href=\"javascript:;\">\r\n          <div class=\"card-body\">\r\n            <div class=\"content-bottom\">\r\n              <h6 class=\"card-category text-white opacity-8\">users</h6>\r\n              <h5 class=\"card-title\">Count:{{users.length}}</h5>\r\n            </div>\r\n          </div>\r\n        </a>\r\n      </div>\r\n    </div>\r\n  <div class=\"col-md-6 col-lg-4\">\r\n    <div class=\"card card-blog card-background\" data-animation=\"zooming\">\r\n      <div class=\"full-background\" style=\"background-image: url('assets/img/black.jpeg')\"></div>\r\n      <a href=\"javascript:;\">\r\n        <div class=\"card-body\">\r\n          <div class=\"content-bottom\">\r\n            <h6 class=\"card-category text-white opacity-8\">templates</h6>\r\n            <h5 class=\"card-title\">Count:{{Allartworks.length}}</h5>\r\n            <h5 class=\"card-title\">Public:{{publicArtworks.length}}</h5>\r\n            <h5 class=\"card-title\">Assigned:{{Allartworks.length - publicArtworks.length}}</h5>\r\n\r\n          </div>\r\n        </div>\r\n      </a>\r\n    </div>\r\n  </div>\r\n  <div class=\"col-md-6 col-lg-4\">\r\n    <div class=\"card card-blog card-background\" data-animation=\"zooming\">\r\n      <div class=\"full-background\" style=\"background-image: url('assets/img/black.jpeg')\"></div>\r\n      <a href=\"javascript:;\">\r\n        <div class=\"card-body\">\r\n          <div class=\"content-bottom\">\r\n            <h6 class=\"card-category text-white opacity-8\">Subscriptions</h6>\r\n            <h5 class=\"card-title\">Count:{{subscriptions.length}}</h5>\r\n          </div>\r\n        </div>\r\n      </a>\r\n    </div>\r\n  </div>\r\n  </div>\r\n</div>\r\n\r\n    <div class=\"row\">\r\n      <div class=\"col-6\">\r\n    <div class=\"card card-nav-tabs text-center\">\r\n      <div class=\"card-header card-header-primary\">\r\n        Users\r\n      </div>\r\n      <div class=\"card-body\">\r\n        <div class=\"container\">\r\n          <div class=\"table-responsive\">\r\n\r\n        <!-- Show it when there is no jobcard created -->\r\n        <div class=\"no-data text-center\" *ngIf=\"Allusers.length == 0\">\r\n          <p>There is users added yet!</p>\r\n        </div>\r\n\r\n        <div *ngIf=\"Allusers.length !== 0\">\r\n          <div style=\"padding-left: 20px; padding-right: 20px;\">\r\n            <table class=\"table\" datatable [dtOptions]=\"dtOptions\">\r\n              <thead>\r\n              <tr>\r\n                <th>#</th>\r\n                <th scope=\"col\">Name</th>\r\n                <th scope=\"col\">email</th>\r\n                <th scope=\"col\">role</th>\r\n                <th scope=\"col\">department</th>\r\n                <th scope=\"col\">Account Expiry</th>\r\n                <th scope=\"col\">Actions</th>\r\n              </tr>\r\n              </thead>\r\n              <tbody>\r\n              <tr *ngFor=\"let userss of Allusers; let i=index;\">\r\n                <td>{{i+1}}</td>\r\n                <td>{{userss.name}}</td>\r\n                <td>{{userss.email}}</td>\r\n                <td>{{userss.role}}</td>\r\n                <td>{{userss.department}}</td>\r\n                <td>{{userss.next_payment_date | date: 'shortDate'}}</td>\r\n\r\n                <td>\r\n\r\n                  <button type=\"button\" rel=\"tooltip\" class=\"btn btn-primary btn-icon btn-sm \" data-original-title=\"\" title=\"\"    data-target=\"#modal-form\"\r\n                          (click)=\"modalform.show();updateUser(userss)\">\r\n                    <span class=\"edit\">Subscription</span>\r\n                  </button>\r\n                  <button type=\"button\" rel=\"tooltip\" class=\"btn btn-danger btn-icon btn-sm \" data-original-title=\"\" title=\"\">\r\n                    <span class=\"delete\" (click)=\"deleteUsers(userss._id)\">Delete</span>\r\n                  </button>\r\n                </td>\r\n              </tr>\r\n              </tbody>\r\n            </table>\r\n          </div>\r\n        </div>\r\n\r\n      </div>\r\n\r\n        <div>\r\n          <!-- Heading Title -->\r\n        </div>\r\n      </div>\r\n    </div>\r\n      </div>\r\n      </div>\r\n      <div class=\"col-6\">\r\n<div class=\"card card-nav-tabs text-center\">\r\n  <div class=\"card-header card-header-primary\">\r\n    Assigned Files\r\n  </div>\r\n  <div class=\"card-body\">\r\n    <div class=\"container\">\r\n    <div class=\"table-responsive\">\r\n\r\n      <!-- Show it when there is no jobcard created -->\r\n      <div class=\"no-data text-center\" *ngIf=\"Allfiles.length == 0\">\r\n        <p>There are no files assigned yet!</p>\r\n      </div>\r\n\r\n      <!-- Jobcard list table, it hides when there is no employee -->\r\n      <div *ngIf=\"Allfiles.length !== 0\">\r\n        <div style=\"padding-left: 20px; padding-right: 20px;\">\r\n          <table class=\"table align-items-center\" datatable [dtOptions]=\"dtOptions\">\r\n            <thead>\r\n            <tr>\r\n              <th>#</th>\r\n              <th scope=\"col\">Name</th>\r\n              <th scope=\"col\">url</th>\r\n              <th scope=\"col\">user</th>\r\n              <th scope=\"col\">uploaded by</th>\r\n                <th scope=\"col\">amount</th>\r\n              <th scope=\"col\">file name</th>\r\n              <th scope=\"col\">Actions</th>\r\n\r\n            </tr>\r\n            </thead>\r\n            <tbody>\r\n            <tr *ngFor=\"let filess of Allfiles; let i=index;\">\r\n              <td>{{i+1}}</td>\r\n              <td>{{filess.name}}</td>\r\n              <td>{{filess.url}}</td>\r\n              <td>{{filess.user}}</td>\r\n              <td>{{filess.uploadedby}}</td>\r\n              <td>{{filess.amount}}</td>\r\n              <td>{{filess.filename}}</td>\r\n\r\n              <td>\r\n\r\n               <button type=\"button\" rel=\"tooltip\" class=\"btn btn-danger btn-icon btn-sm \" data-original-title=\"\" title=\"\">\r\n                 <span class=\"delete\" (click)=\"deleteFiles(filess._id)\">Delete</span>\r\n               </button>\r\n              </td>\r\n            </tr>\r\n            </tbody>\r\n          </table>\r\n        </div>\r\n\r\n      </div>\r\n    \r\n    </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n</div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"col-md-4\">\r\n  <div\r\n          aria-hidden=\"true\"\r\n          aria-labelledby=\"modal-form\"\r\n          bsModal\r\n          class=\"modal fade\"\r\n          #modalform=\"bs-modal\"\r\n          id=\"modal-form\"\r\n          role=\"dialog\"\r\n          tabindex=\"-1\"\r\n  >\r\n    <div\r\n            class=\"modal-dialog modal-dialog-centered modal-sm\"\r\n            role=\"document\"\r\n    >\r\n      <div class=\"modal-content\">\r\n        <div class=\"modal-header\">\r\n          <h6 class=\"modal-title\" id=\"modal-title-default\">\r\n                User subscriptions\r\n          </h6>\r\n          <button\r\n                  aria-label=\"Close\"\r\n                  class=\"close\"\r\n                  data-dismiss=\"modal\"\r\n                  (click)=\"modalform.hide()\"\r\n                  type=\"button\"\r\n          >\r\n            <span aria-hidden=\"true\"> × </span>\r\n          </button>\r\n        </div>\r\n        <div class=\"modal-body p-0\">\r\n          <div class=\"card bg-secondary shadow border-0 mb-0\">\r\n            <div class=\"card-header bg-white pb-5\">\r\n              <div class=\"text-muted text-center mb-3\">\r\n                <small> Extend/Add user subscription</small>\r\n              </div>\r\n            <div class=\"card-body px-lg-5 py-lg-5\">\r\n              <form role=\"form\" [formGroup]=\"expirationForm\">\r\n                <div class=\"form-group mb-3\">\r\n                  <div class=\"input-group input-group-alternative\">\r\n                    <div class=\"input-group-prepend\">\r\n                          <span class=\"input-group-text\">\r\n                            <i class=\"ni ni-email-83\"> </i>\r\n                          </span>\r\n                    </div>\r\n                    <input\r\n                            class=\"form-control\" (blur)=\"focus = false\" (focus)=\"focus = true\"\r\n                            placeholder=\"Expiry Date\"\r\n                            name=\"next_payment_date\"\r\n                            formControlName=\"next_payment_date\"\r\n\r\n                            type=\"datetime-local\"\r\n                    />\r\n                  </div>\r\n                </div>\r\n                <div class=\"text-center\">\r\n                  <button\r\n                          class=\"btn btn-primary my-4\"\r\n                          type=\"button\"\r\n                          (click)=\"expirationDate();modalform.hide()\"\r\n                  >\r\nAssign Expiry date                  </button>\r\n                </div>\r\n              </form>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n</div>\r\n\r\n<div class=\"section section-cards bg-secondary\">\r\n  <div class=\"container\">\r\n  </div>\r\n  <div style=\"padding-right: 60px; padding-left: 60px;\">\r\n    <div class=\"form-group\">\r\n      <div class=\"\">\r\n        <div class=\"card card-pricing card-background\" style=\"background-image: url('./assets/img/ill/pricing_bg.svg')\" data-background=\"image\" style=\"width: 100%\" data-icon=\"big-icon\">\r\n          <div class=\"card-header bg-transparent\">\r\n            <h2 class=\"text-black\">Assign Template</h2>\r\n          </div>\r\n          <form [formGroup]=\"assignArtworkForm\">\r\n            <div style=\"margin-left: 20px; margin-right: 20px\">\r\n              <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n                <div class=\"input-group input-group-alternative\">\r\n                  <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n                  </div>\r\n\r\n                  <label style=\"padding-top: 10px\">Artwork: </label >\r\n                  <select class=\"form-control\" id=\"type\"  name=\"name\" formControlName=\"type\"\r\n                          type=\"text\" (blur)=\"focus = false\"\r\n                          (focus)=\"focus = true\"\r\n                          (change)=\"changedItem(type)\"\r\n                  >\r\n                    <option *ngFor=\"let art of Allartworks\" [value]=\"art.blob_thumbnail\" >{{art.data.name}}</option>\r\n                  </select>\r\n                </div>\r\n              </div>\r\n              <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n                <div class=\"input-group input-group-alternative\">\r\n                  <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n                  </div>\r\n\r\n                  <label style=\"padding-top: 10px\">Artwork ID: </label >\r\n                  <select class=\"form-control\" id=\"artworkid\"  name=\"name\" formControlName=\"artworkid\"\r\n                          type=\"text\" (blur)=\"focus = false\"  (focus)=\"focus = true\"\r\n                  >\r\n                    <option *ngFor=\"let artid of Allartworks\" [value]=\"artid.id\" >{{artid.data.name}}</option>\r\n                  </select>\r\n                </div>\r\n              </div>\r\n\r\n              <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n                <div class=\"input-group input-group-alternative\">\r\n                  <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n                  </div>\r\n\r\n                  <label style=\"padding-top: 10px\">Upload For: </label >\r\n                  <select class=\"form-control\" id=\"category\"  formControlName=\"user\"\r\n                          type=\"text\" (blur)=\"focus = false\"\r\n                          (focus)=\"focus = true\"\r\n                  >\r\n                    <option *ngFor=\"let user of users\" [value]=\"user._id\">{{user.name}}</option>\r\n                  </select>\r\n                </div>\r\n              </div>\r\n\r\n              <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n                <div class=\"input-group input-group-alternative\">\r\n                  <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n                  </div>\r\n\r\n                  <label style=\"padding-top: 10px\">Tag: </label >\r\n                  <select class=\"form-control\" id=\"tags\"  formControlName=\"tags\"\r\n                          type=\"text\" (blur)=\"focus = false\"\r\n                          (focus)=\"focus = true\"\r\n                          required\r\n                  >\r\n                    <option  value=\"facebook\">facebook</option>\r\n                    <option  value=\"whatsapp_mobile\">whatsapp/mobile</option>\r\n                    <option  value=\"youtube\">youtube</option>\r\n                    <option  value=\"instagram\">instagram</option>\r\n                    <option  value=\"twitter\">twitter</option>\r\n                    <option  value=\"flier_poster\">flier/poster</option>\r\n                    <option  value=\"logos\">logos</option>\r\n                    <option  value=\"cards\">cards</option>\r\n                  </select>\r\n                </div>\r\n              </div>\r\n\r\n              <div class=\"form-group mb-3\"  [ngClass]=\"{ 'focused': focus === true }\">\r\n                <div class=\"input-group input-group-alternative\">\r\n                  <div class=\"input-group-prepend\">\r\n                <span class=\"input-group-text\">\r\n                  <i class=\"ni ni-circle-08\"> </i>\r\n                </span>\r\n                  </div>\r\n                  <input\r\n                          formControlName=\"amount\"\r\n                          class=\"form-control\"\r\n                          placeholder=\"Amount\"\r\n                          type=\"text\" (blur)=\"focus = false\"\r\n                          (focus)=\"focus = true\" />\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <button class=\"btn btn-primary\" id=\"signup\" (click)=\"submitFile()\" style=\"width: 140px; margin-left: 10%; margin-bottom: 10px;\">Assign</button>\r\n          </form>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"card card-nav-tabs text-center\">\r\n  <div class=\"card-header card-header-primary\">\r\n    Sanaa Files\r\n  </div>\r\n  <div class=\"card-body\">\r\n    <div class=\"container\">\r\n      <div class=\"table-responsive\">\r\n\r\n        <!-- Show it when there is no jobcard created -->\r\n        <div class=\"no-data text-center\" *ngIf=\"Allartworks.length == 0\">\r\n          <p>There are no files in sanaa yet!</p>\r\n        </div>\r\n\r\n        <!-- Jobcard list table, it hides when there is no employee -->\r\n        <div *ngIf=\"Allartworks.length !== 0\">\r\n          <div>\r\n            <table class=\"table\" datatable [dtOptions]=\"dtOptions\">\r\n              <thead>\r\n              <tr>\r\n                <th>#</th>\r\n                <th scope=\"col\">Name</th>\r\n                <th scope=\"col\">Type</th>\r\n                <th scope=\"col\">user id</th>\r\n                <th scope=\"col\">size</th>\r\n                <th scope=\"col\">font</th>\r\n                <th scope=\"col\">created at</th>\r\n                <th scope=\"col\">updated at</th>\r\n\r\n              </tr>\r\n              </thead>\r\n              <tbody>\r\n              <tr *ngFor=\"let filess of Allartworks; let i=index;\">\r\n                <td>{{i+1}}</td>\r\n                <td>{{filess.data?.imageLibrary[0]?.name}}</td>\r\n                <td>{{filess.data?.imageLibrary[0]?.type}}</td>\r\n                <td>{{filess.data?.imageLibrary[0]?.user_id}}</td>\r\n                <td>{{filess.data?.imageLibrary[0]?.size}}</td>\r\n                <td>{{filess.data?.Font}}</td>\r\n                <td>{{filess.data?.imageLibrary[0]?.created_at| date: 'shortDate'}}</td>\r\n                <td>{{filess.data?.imageLibrary[0]?.updated_at| date: 'shortDate'}}</td>\r\n\r\n              </tr>\r\n              </tbody>\r\n            </table>\r\n          </div>\r\n\r\n        </div>\r\n\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n");
 
 /***/ }),
 
@@ -1831,6 +1831,7 @@ var NavbarComponent = /** @class */ (function () {
         this.router = router;
         this.UsersRestApi = UsersRestApi;
         this.isCollapsed = true;
+        this.users = [];
         router.events.subscribe(function (val) {
             _this.isCollapsed = true;
         });
@@ -1843,17 +1844,16 @@ var NavbarComponent = /** @class */ (function () {
     };
     NavbarComponent.prototype.ngOnInit = function () {
         this.loadAllUsers();
+        this.profile = localStorage.getItem('profile');
     };
     NavbarComponent.prototype.logout = function () {
         localStorage.removeItem('profile');
     };
     NavbarComponent.prototype.loadAllUsers = function () {
         var _this = this;
-        var users = [];
         return this.UsersRestApi.GetUserss().subscribe(function (data) {
-            users = data;
-            _this.UserExpiry = users.filter(function (data) { return data._id == _this.profile; });
-            console.log(users);
+            _this.users = data;
+            _this.UserExpiry = _this.users.filter(function (data) { return data._id === _this.profile; });
             _this.expiryDate = _this.UserExpiry[0].next_payment_date;
         });
     };
@@ -1996,7 +1996,6 @@ __webpack_require__.r(__webpack_exports__);
 var dev = {
     connect: 'https://server.adiy.site'
 };
-//
 // export const dev = {
 //     connect: 'http://localhost:8000'
 // }
@@ -2281,8 +2280,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shared_files_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../shared/files.service */ "./src/app/shared/files.service.ts");
 /* harmony import */ var _config_dev__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../config/dev */ "./src/app/config/dev.ts");
 /* harmony import */ var _shared_users_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../shared/users.service */ "./src/app/shared/users.service.ts");
-/* harmony import */ var _shared_allartworks_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../shared/allartworks.service */ "./src/app/shared/allartworks.service.ts");
-/* harmony import */ var _shared_blob_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../shared/blob.service */ "./src/app/shared/blob.service.ts");
+/* harmony import */ var datatables_net_buttons_js_buttons_flash__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! datatables.net-buttons/js/buttons.flash */ "./node_modules/datatables.net-buttons/js/buttons.flash.js");
+/* harmony import */ var datatables_net_buttons_js_buttons_flash__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(datatables_net_buttons_js_buttons_flash__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var datatables_net_buttons_js_buttons_html5__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! datatables.net-buttons/js/buttons.html5 */ "./node_modules/datatables.net-buttons/js/buttons.html5.js");
+/* harmony import */ var datatables_net_buttons_js_buttons_html5__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(datatables_net_buttons_js_buttons_html5__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var datatables_net_buttons_js_buttons_print__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! datatables.net-buttons/js/buttons.print */ "./node_modules/datatables.net-buttons/js/buttons.print.js");
+/* harmony import */ var datatables_net_buttons_js_buttons_print__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(datatables_net_buttons_js_buttons_print__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var datatables_net__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! datatables.net */ "./node_modules/datatables.net/js/jquery.dataTables.js");
+/* harmony import */ var datatables_net__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(datatables_net__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var datatables_net_buttons__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! datatables.net-buttons */ "./node_modules/datatables.net-buttons/js/dataTables.buttons.js");
+/* harmony import */ var datatables_net_buttons__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(datatables_net_buttons__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _shared_allartworks_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../shared/allartworks.service */ "./src/app/shared/allartworks.service.ts");
+/* harmony import */ var _shared_blob_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../shared/blob.service */ "./src/app/shared/blob.service.ts");
+
+
+
+
+
 
 
 
@@ -2300,6 +2314,8 @@ var AllTemplatesComponent = /** @class */ (function () {
         this.ArtWorksService = ArtWorksService;
         this.blopService = blopService;
         this.FilesRestApi = FilesRestApi;
+        this.selectedFiles = [];
+        this.art = [];
         this.isCollapsed = true;
         this.fileToUpload = null;
         this.url = _config_dev__WEBPACK_IMPORTED_MODULE_5__["dev"].connect;
@@ -2324,11 +2340,11 @@ var AllTemplatesComponent = /** @class */ (function () {
         body.classList.add('landing-page');
         this.loadAllArtWorks();
         this.loadAllUsers();
-        this.getExpiryDate();
+        this.loadFiles();
+        this.loadProfile();
     };
     AllTemplatesComponent.prototype.selectedTempStatic = function (item) {
         this.search2 = item.filename;
-        console.log(item.filename);
     };
     AllTemplatesComponent.prototype.getAllUsers = function () {
         var _this = this;
@@ -2338,6 +2354,15 @@ var AllTemplatesComponent = /** @class */ (function () {
     };
     AllTemplatesComponent.prototype.getUser = function () {
         this.profile = localStorage.getItem('profile');
+    };
+    AllTemplatesComponent.prototype.loadProfile = function () {
+        var _this = this;
+        return this.UsersRestApi.GetUserss().subscribe(function (data) {
+            _this.users = data;
+            _this.UserExpiry = _this.users.filter(function (data) { return data._id === _this.profile; });
+            console.log(_this.UserExpiry);
+            _this.expiryDate = new Date(_this.UserExpiry[0].next_payment_date);
+        });
     };
     AllTemplatesComponent.prototype.loadUsers = function () {
         var _this = this;
@@ -2349,7 +2374,15 @@ var AllTemplatesComponent = /** @class */ (function () {
         var _this = this;
         return this.FilesRestApi.GetFiles().subscribe(function (data) {
             _this.Allfiles = data;
-            console.log(_this.Allfiles);
+            var i;
+            for (i = 0; i < _this.Allfiles.length; i++) {
+                _this.selectedFiles[i] = _this.Allfiles[i].artworkid;
+            }
+            var setFiles = new Set(_this.selectedFiles);
+            return _this.ArtWorksService.GetFiles().subscribe(function (data) {
+                _this.art = data;
+                _this.Allartworks = _this.art.filter(function (data) { return !setFiles.has(data.id); });
+            });
         });
     };
     AllTemplatesComponent.prototype.goToUrl = function (id) {
@@ -2368,17 +2401,9 @@ var AllTemplatesComponent = /** @class */ (function () {
         localStorage.removeItem('profile');
     };
     AllTemplatesComponent.prototype.addToCart = function (item) {
-        // console.log(item);
         this.getUserDetails(item);
     };
     AllTemplatesComponent.prototype.loadAllArtWorks = function () {
-        var _this = this;
-        var setFiles = new Set(this.Allfiles);
-        var art = [];
-        return this.ArtWorksService.GetFiles().subscribe(function (data) {
-            art = data;
-            _this.Allartworks = art.filter(function (data) { return !setFiles.has(data.artworkid); });
-        });
     };
     AllTemplatesComponent.prototype.loadAllUsers = function () {
         var _this = this;
@@ -2388,13 +2413,13 @@ var AllTemplatesComponent = /** @class */ (function () {
             _this.UserExpiry = users.filter(function (data) { return data._id == _this.profile; });
             _this.currentDate = new Date(Date.now());
             _this.expiryDate = new Date(_this.UserExpiry[0].next_payment_date);
+            if (_this.currentDate < _this.expiryDate) {
+                _this.isActive = true;
+            }
+            else {
+                _this.isActive = false;
+            }
         });
-    };
-    AllTemplatesComponent.prototype.getExpiryDate = function () {
-        if (this.currentDate <= this.expiryDate) {
-            this.isActive = true;
-        }
-        this.isActive = false;
     };
     AllTemplatesComponent.prototype.getUserDetails = function (item) {
         var amount = parseFloat(item.amount);
@@ -2409,8 +2434,8 @@ var AllTemplatesComponent = /** @class */ (function () {
         { type: Document, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["DOCUMENT"],] }] },
         { type: _shared_users_service__WEBPACK_IMPORTED_MODULE_6__["UsersService"] },
         { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] },
-        { type: _shared_allartworks_service__WEBPACK_IMPORTED_MODULE_7__["AllartworksService"] },
-        { type: _shared_blob_service__WEBPACK_IMPORTED_MODULE_8__["BlobService"] },
+        { type: _shared_allartworks_service__WEBPACK_IMPORTED_MODULE_12__["AllartworksService"] },
+        { type: _shared_blob_service__WEBPACK_IMPORTED_MODULE_13__["BlobService"] },
         { type: _shared_files_service__WEBPACK_IMPORTED_MODULE_4__["FilesService"] }
     ]; };
     AllTemplatesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -2420,7 +2445,7 @@ var AllTemplatesComponent = /** @class */ (function () {
             styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./all-templates.component.css */ "./src/app/examples/all-templates/all-templates.component.css")).default]
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_common__WEBPACK_IMPORTED_MODULE_3__["DOCUMENT"])),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [Document, _shared_users_service__WEBPACK_IMPORTED_MODULE_6__["UsersService"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"], _shared_allartworks_service__WEBPACK_IMPORTED_MODULE_7__["AllartworksService"], _shared_blob_service__WEBPACK_IMPORTED_MODULE_8__["BlobService"], _shared_files_service__WEBPACK_IMPORTED_MODULE_4__["FilesService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [Document, _shared_users_service__WEBPACK_IMPORTED_MODULE_6__["UsersService"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"], _shared_allartworks_service__WEBPACK_IMPORTED_MODULE_12__["AllartworksService"], _shared_blob_service__WEBPACK_IMPORTED_MODULE_13__["BlobService"], _shared_files_service__WEBPACK_IMPORTED_MODULE_4__["FilesService"]])
     ], AllTemplatesComponent);
     return AllTemplatesComponent;
 }());
@@ -3501,13 +3526,19 @@ var LandingpageComponent = /** @class */ (function () {
         this.FilesRestApi = FilesRestApi;
         this.ArtWorksService = ArtWorksService;
         this.http = http;
+        this.dtOptions = {};
         this.isCollapsed = true;
         this.fileToUpload = null;
+        this.users = [];
         this.url = _config_dev__WEBPACK_IMPORTED_MODULE_3__["dev"].connect;
         this.Allusers = [];
         this.Allfiles = [];
         this.Allartworks = [];
         this.Filteredartworks = [];
+        this.isPaid = [];
+        this.subscriptions = [];
+        this.publicArtworks = [];
+        this.filteredUserArtworks = [];
         this.getAllUsers();
         this.getUser();
         this.loadFiles();
@@ -3519,6 +3550,17 @@ var LandingpageComponent = /** @class */ (function () {
         this.loadAllArtWorks();
         var body = document.getElementsByTagName('body')[0];
         body.classList.add('landing-page');
+        console.log(this.Allartworks);
+        console.log(this.Allusers);
+        this.dtOptions = {
+            pagingType: 'full_numbers',
+            processing: true,
+            pageLength: 10,
+            dom: 'Bfrtip',
+            buttons: [
+                'copy', 'csv', 'excel', 'pdf', 'print'
+            ],
+        };
         this.assignArtworkForm = this.fb.group({
             'uploadedby': this.profile,
             'amount': [null, _angular_forms__WEBPACK_IMPORTED_MODULE_10__["Validators"].required],
@@ -3552,7 +3594,9 @@ var LandingpageComponent = /** @class */ (function () {
         };
         this.FilesRestApi.createFiles(payload)
             .subscribe(function () {
-            console.log('successfully submitted');
+            if (window.confirm('Are you sure, you want to assign this template to this user?')) {
+                console.log('successfully submitted');
+            }
         }, function (error) {
             console.log('unable to submit');
         });
@@ -3561,14 +3605,14 @@ var LandingpageComponent = /** @class */ (function () {
         this.selectedUser = user._id;
     };
     LandingpageComponent.prototype.expirationDate = function () {
+        var _this = this;
         var payload = {
             'next_payment_date': this.expirationForm.get('next_payment_date').value,
             'is_paid': true,
         };
         this.UsersRestApi.UpdateUsers(this.selectedUser, payload)
             .subscribe(function () {
-            console.log('successfully added expiration date');
-            console.log(payload);
+            _this.getAllUsers();
         }, function (error) {
             console.log('unable to submit');
         });
@@ -3577,6 +3621,7 @@ var LandingpageComponent = /** @class */ (function () {
         var _this = this;
         this.http.get(this.url + '/api/user/getAll').subscribe(function (data) {
             _this.users = data;
+            _this.subscriptions = _this.users.filter(function (u) { return u.is_paid === true; });
         });
     };
     LandingpageComponent.prototype.getUser = function () {
@@ -3593,8 +3638,10 @@ var LandingpageComponent = /** @class */ (function () {
         var selectedFilter = [];
         return this.ArtWorksService.GetFiles().subscribe(function (data) {
             _this.Allartworks = data;
+            console.log(_this.Allartworks);
             selectedFilter = data;
             _this.Filteredartworks = selectedFilter.filter(function (data) { return JSON.stringify(data.blob_thumbnail) === localStorage.getItem('selectedArtwork'); }, _this.loadAllArtWorks());
+            _this.publicArtworks = selectedFilter.filter(function (data) { return data.user_id === 'public'; });
         });
     };
     LandingpageComponent.prototype.changedItem = function (artid) {
