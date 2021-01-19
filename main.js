@@ -1854,7 +1854,6 @@ var NavbarComponent = /** @class */ (function () {
         return this.UsersRestApi.GetUserss().subscribe(function (data) {
             _this.users = data;
             _this.UserExpiry = _this.users.filter(function (data) { return data._id === _this.profile; });
-            _this.expiryDate = _this.UserExpiry[0].next_payment_date;
         });
     };
     NavbarComponent.prototype.checkout = function () {
@@ -1992,13 +1991,13 @@ var PictureUploadComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dev", function() { return dev; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+// export const dev = {
+//     connect: 'https://server.adiy.site'
+// };
 
 var dev = {
-    connect: 'https://server.adiy.site'
+    connect: 'http://localhost:8000'
 };
-// export const dev = {
-//     connect: 'http://localhost:8000'
-// }
 
 
 /***/ }),
@@ -3631,7 +3630,6 @@ var LandingpageComponent = /** @class */ (function () {
         var _this = this;
         return this.UsersRestApi.getUsers().subscribe(function (data) {
             _this.Allusers = data;
-            console.log(_this.Allusers);
         });
     };
     LandingpageComponent.prototype.loadAllArtWorks = function () {
@@ -3639,7 +3637,6 @@ var LandingpageComponent = /** @class */ (function () {
         var selectedFilter = [];
         return this.ArtWorksService.GetFiles().subscribe(function (data) {
             _this.Allartworks = data;
-            console.log(_this.Allartworks);
             selectedFilter = data;
             _this.Filteredartworks = selectedFilter.filter(function (data) { return JSON.stringify(data.blob_thumbnail) === localStorage.getItem('selectedArtwork'); }, _this.loadAllArtWorks());
             _this.publicArtworks = selectedFilter.filter(function (data) { return data.user_id === 'public'; });
