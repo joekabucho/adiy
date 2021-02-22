@@ -1600,6 +1600,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var angular_datatables__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! angular-datatables */ "./node_modules/angular-datatables/index.js");
 /* harmony import */ var _angular_service_worker__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! @angular/service-worker */ "./node_modules/@angular/service-worker/fesm5/service-worker.js");
 /* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ../environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var _auth0_angular_jwt__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! @auth0/angular-jwt */ "./node_modules/@auth0/angular-jwt/fesm2015/auth0-angular-jwt.js");
 
 
  // this is needed!
@@ -1610,6 +1611,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 //I keep the new line
+
 
 
 
@@ -1711,6 +1713,7 @@ var AppModule = /** @class */ (function () {
                 _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__["BrowserAnimationsModule"],
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_22__["AppRoutingModule"],
+                _auth0_angular_jwt__WEBPACK_IMPORTED_MODULE_61__["JwtModule"],
                 ngx_typeahead__WEBPACK_IMPORTED_MODULE_54__["NgxTypeaheadModule"],
                 //NotificationService,
                 ngx_bootstrap_dropdown__WEBPACK_IMPORTED_MODULE_9__["BsDropdownModule"].forRoot(),
@@ -1848,6 +1851,7 @@ var NavbarComponent = /** @class */ (function () {
     };
     NavbarComponent.prototype.logout = function () {
         localStorage.removeItem('profile');
+        localStorage.removeItem('access_token');
     };
     NavbarComponent.prototype.loadAllUsers = function () {
         var _this = this;
@@ -2332,6 +2336,7 @@ var AllTemplatesComponent = /** @class */ (function () {
         this.Files = [];
         this.getUser();
         this.loadFiles();
+        this.getAccessToken();
     }
     AllTemplatesComponent.prototype.ngOnInit = function () {
         this.loadUsers();
@@ -2353,6 +2358,9 @@ var AllTemplatesComponent = /** @class */ (function () {
     };
     AllTemplatesComponent.prototype.getUser = function () {
         this.profile = localStorage.getItem('profile');
+    };
+    AllTemplatesComponent.prototype.getAccessToken = function () {
+        this.access_token = localStorage.getItem('access_token');
     };
     AllTemplatesComponent.prototype.loadProfile = function () {
         var _this = this;
@@ -2385,7 +2393,7 @@ var AllTemplatesComponent = /** @class */ (function () {
         });
     };
     AllTemplatesComponent.prototype.goToUrl = function (id) {
-        var url = 'https://sanaa.adiy.site/' + this.profile + '/' + id;
+        var url = 'https://sanaa.adiy.site/' + this.profile + '/' + id + '?token=' + this.access_token;
         window.open(url, "_blank");
     };
     AllTemplatesComponent.prototype.deleteUsers = function (_id) {
@@ -2398,6 +2406,7 @@ var AllTemplatesComponent = /** @class */ (function () {
     };
     AllTemplatesComponent.prototype.logout = function () {
         localStorage.removeItem('profile');
+        localStorage.removeItem('access_token');
     };
     AllTemplatesComponent.prototype.addToCart = function (item) {
         this.getUserDetails(item);
@@ -3200,6 +3209,7 @@ var EcommerceComponent = /** @class */ (function () {
         this.getAllUsers();
         this.loadFiles();
         this.getSelected();
+        this.getAccessToken();
     }
     // Getting Selected Games and Count
     EcommerceComponent.prototype.getSelected = function () {
@@ -3243,6 +3253,9 @@ var EcommerceComponent = /** @class */ (function () {
             _this.users = data;
         });
     };
+    EcommerceComponent.prototype.getAccessToken = function () {
+        this.access_token = localStorage.getItem('access_token');
+    };
     EcommerceComponent.prototype.selectedTempStatic = function (item) {
         this.search2 = item.filename;
         console.log(item.filename);
@@ -3252,7 +3265,7 @@ var EcommerceComponent = /** @class */ (function () {
         body.classList.remove('ecommerce-page');
     };
     EcommerceComponent.prototype.goToUrl = function (id) {
-        var url = 'https://sanaa.adiy.site/' + this.profile + '/' + id;
+        var url = 'https://sanaa.adiy.site/' + this.profile + '/' + id + '?token=' + this.access_token;
         window.open(url, "_blank");
     };
     EcommerceComponent.prototype.loadmore = function () {
@@ -3352,6 +3365,7 @@ var EcommerceComponent = /** @class */ (function () {
     };
     EcommerceComponent.prototype.logout = function () {
         localStorage.removeItem('profile');
+        localStorage.removeItem('access_token');
     };
     // Delete employee
     // tslint:disable-next-line:variable-name
@@ -3813,6 +3827,7 @@ var PricingpageComponent = /** @class */ (function () {
         this.Files = [];
         this.getUser();
         this.loadFiles();
+        this.getAccessToken();
     }
     PricingpageComponent.prototype.ngOnInit = function () {
         this.loadUsers();
@@ -3855,15 +3870,19 @@ var PricingpageComponent = /** @class */ (function () {
             });
         }
     };
+    PricingpageComponent.prototype.getAccessToken = function () {
+        this.access_token = localStorage.getItem('access_token');
+    };
     PricingpageComponent.prototype.logout = function () {
         localStorage.removeItem('profile');
+        localStorage.removeItem('access_token');
     };
     PricingpageComponent.prototype.addToCart = function (item) {
         // console.log(item);
         this.getUserDetails(item);
     };
     PricingpageComponent.prototype.goToUrl = function (id) {
-        var url = 'https://sanaa.adiy.site/' + this.profile + '/' + id;
+        var url = 'https://sanaa.adiy.site/' + this.profile + '/' + id + '?token=' + this.access_token;
         window.open(url, "_blank");
     };
     PricingpageComponent.prototype.loadAllArtWorks = function () {
@@ -4136,6 +4155,7 @@ var RegisterpageComponent = /** @class */ (function () {
                     _this._cookieService.put('email', data.email);
                     _this._cookieService.put('password', data.password);
                     _this._cookieService.put('remember', _this.Formdata.remember);
+                    localStorage.setItem('access_token', data.token);
                     // this.setLoggedIn(true);
                     // tslint:disable-next-line:triple-equals
                     if (data.role == 'User') {
@@ -4359,7 +4379,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".custom-container {\n  width: 100%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZXhhbXBsZXMveW91dHViZS9EOlxcQWRpeVxcYWR5LWNsaWVudC9zcmNcXGFwcFxcZXhhbXBsZXNcXHlvdXR1YmVcXHlvdXR1YmUuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2V4YW1wbGVzL3lvdXR1YmUveW91dHViZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLFdBQUE7QUNDSiIsImZpbGUiOiJzcmMvYXBwL2V4YW1wbGVzL3lvdXR1YmUveW91dHViZS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jdXN0b20tY29udGFpbmVye1xyXG4gICAgd2lkdGggOiAxMDAlO1xyXG59XHJcbiAgIiwiLmN1c3RvbS1jb250YWluZXIge1xuICB3aWR0aDogMTAwJTtcbn0iXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = (".custom-container {\n  width: 100%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZXhhbXBsZXMveW91dHViZS9EOlxcQWRpeVxcYWRpeS1jbGllbnQtZGV2L3NyY1xcYXBwXFxleGFtcGxlc1xceW91dHViZVxceW91dHViZS5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvZXhhbXBsZXMveW91dHViZS95b3V0dWJlLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksV0FBQTtBQ0NKIiwiZmlsZSI6InNyYy9hcHAvZXhhbXBsZXMveW91dHViZS95b3V0dWJlLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmN1c3RvbS1jb250YWluZXJ7XHJcbiAgICB3aWR0aCA6IDEwMCU7XHJcbn1cclxuICAiLCIuY3VzdG9tLWNvbnRhaW5lciB7XG4gIHdpZHRoOiAxMDAlO1xufSJdfQ== */");
 
 /***/ }),
 
@@ -5627,7 +5647,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_3__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\Adiy\ady-client\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! D:\Adiy\adiy-client-dev\src\main.ts */"./src/main.ts");
 
 
 /***/ })
