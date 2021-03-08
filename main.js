@@ -2393,8 +2393,11 @@ var AllTemplatesComponent = /** @class */ (function () {
         });
     };
     AllTemplatesComponent.prototype.goToUrl = function (id) {
-        var url = 'https://sanaa.adiy.site/' + this.profile + '/' + id + '?token=' + this.access_token;
-        window.open(url, "_blank");
+        this.getAccessToken();
+        if (this.access_token !== null) {
+            var url = 'https://sanaa.adiy.site/' + this.profile + '/' + id + '?token=' + this.access_token;
+            window.open(url, "_blank");
+        }
     };
     AllTemplatesComponent.prototype.deleteUsers = function (_id) {
         var _this = this;
@@ -3265,8 +3268,11 @@ var EcommerceComponent = /** @class */ (function () {
         body.classList.remove('ecommerce-page');
     };
     EcommerceComponent.prototype.goToUrl = function (id) {
-        var url = 'https://sanaa.adiy.site/' + this.profile + '/' + id + '?token=' + this.access_token;
-        window.open(url, "_blank");
+        this.getAccessToken();
+        if (this.access_token !== null) {
+            var url = 'https://sanaa.adiy.site/' + this.profile + '/' + id + '?token=' + this.access_token;
+            window.open(url, "_blank");
+        }
     };
     EcommerceComponent.prototype.loadmore = function () {
         (document.getElementById('loadmore').style.display = 'block');
@@ -3882,8 +3888,11 @@ var PricingpageComponent = /** @class */ (function () {
         this.getUserDetails(item);
     };
     PricingpageComponent.prototype.goToUrl = function (id) {
-        var url = 'https://sanaa.adiy.site/' + this.profile + '/' + id + '?token=' + this.access_token;
-        window.open(url, "_blank");
+        this.getAccessToken();
+        if (this.access_token !== null) {
+            var url = 'https://sanaa.adiy.site/' + this.profile + '/' + id + '?token=' + this.access_token;
+            window.open(url, "_blank");
+        }
     };
     PricingpageComponent.prototype.loadAllArtWorks = function () {
         var _this = this;
@@ -4155,7 +4164,8 @@ var RegisterpageComponent = /** @class */ (function () {
                     _this._cookieService.put('email', data.email);
                     _this._cookieService.put('password', data.password);
                     _this._cookieService.put('remember', _this.Formdata.remember);
-                    localStorage.setItem('access_token', data.token);
+                    localStorage.setItem('email', data.email);
+                    _this.setToken();
                     // this.setLoggedIn(true);
                     // tslint:disable-next-line:triple-equals
                     if (data.role == 'User') {
@@ -4247,6 +4257,14 @@ var RegisterpageComponent = /** @class */ (function () {
     };
     RegisterpageComponent.prototype.saveUserDetails = function (user) {
         localStorage.setItem('profile', user._id.toString());
+    };
+    RegisterpageComponent.prototype.setToken = function () {
+        var _this = this;
+        var email = localStorage.getItem('email');
+        this.http.get('https://sanaa.adiy.site/api/auth/make?email=' + email, { responseType: 'text' }).subscribe(function (data) {
+            _this.access_token = data;
+            localStorage.setItem('access_token', data);
+        });
     };
     RegisterpageComponent.ctorParameters = function () { return [
         { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] },
